@@ -1,0 +1,9 @@
+ALIGN 4
+
+#include "F!MercenarySword.event"
+#include "F!MercenaryUnarmed.event"
+
+SalvagedFMercAnim:
+SwordAnim(0x09)
+UnarmedAnim(0x0A)
+WORD 0x0

@@ -1,0 +1,53 @@
+## RuneFirstLikeText
+Ale[X]
+
+## RuneSecondLikeText
+his friends[X]
+
+## RuneFirstDislikeText
+Lies[X]
+
+## RuneSecondDislikeText
+Viljar[X]
+
+## RuneAgeText
+21[X]
+
+## RuneHeightText
+6'0[X]
+
+## RagnaFirstLikeText
+Magic[X]
+
+## RagnaSecondLikeText
+Rune[X]
+
+## RagnaFirstDislikeText
+Asgeir[X]
+
+## RagnaSecondDislikeText
+ignorance[X]
+
+## RagnaAgeText
+16[X]
+
+## RagnaHeightText
+5'6[X]
+
+## EimundFirstLikeText
+Training[X]
+
+## EimundSecondLikeText
+his disciples[X]
+
+## EimundFirstDislikeText
+Cowardice[X]
+
+## EimundSecondDislikeText
+war[X]
+
+## EimundAgeText
+45[X]
+
+## EimundHeightText
+6'3[X]

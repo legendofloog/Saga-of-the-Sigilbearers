@@ -1,0 +1,17 @@
+ALIGN 4
+#include "Fighter Axe Installer.event"
+#include "Fighter Handaxe Installer.event"
+
+Axe_Fighter_Anim:
+AxeAnim(0x19)
+HandAxeAnim(0x1A)
+UnarmedAnim(0x1B)
+WORD 0x0
+
+ALIGN 4
+#include "merm_sw1_builder Installer.event"
+
+Sword_Fighter_Anim:
+SwordAnim(0x0B)
+UnarmedAnim(0x1B)
+WORD 0x0

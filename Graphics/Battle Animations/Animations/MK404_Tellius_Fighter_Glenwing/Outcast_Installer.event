@@ -1,0 +1,11 @@
+ALIGN 4
+
+#include "Outcast Axe Installer.event"
+#include "Outcast Handaxe Installer.event"
+#include "Outcast Unarmed Installer.event"
+
+OutcastAnim:
+AxeAnim(0x3)
+HandAxeAnim(0x4)
+UnarmedAnim(0x8)
+WORD 0x0

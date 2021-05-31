@@ -1,0 +1,116 @@
+ALIGN 4
+DiscipleStanding:
+#incbin "Dmp/Fighter(M)(FE10-Style)AxeStanding{L95}.dmp"
+ALIGN 4
+DiscipleMoving:
+#incbin "Dmp/Fighter(M)(FE10-Style)AxeMoving{L95}.dmp"
+
+ALIGN 4
+RagnaStanding:
+#incbin "Dmp/Mage (F) Alt (Leif, MeatofJustice)-stand.dmp"
+ALIGN 4
+RagnaMoving:
+#incbin "Dmp/Mage (F) Alt (Leif, MeatofJustice)-move.dmp"
+
+ALIGN 4
+AxeCavStanding:
+#incbin "Dmp/AxeCavStanding {team SALVAGED}.dmp"
+ALIGN 4
+AxeCavMoving:
+#incbin "Dmp/AxeCavMoving {team SALVAGED}.dmp"
+ALIGN 4
+LanceCavStanding:
+#incbin "Dmp/LanceCavStanding {team SALVAGED}.dmp" 
+ALIGN 4
+LanceCavMoving:
+#incbin "Dmp/LanceCavMoving {team SALVAGED}.dmp" 
+ALIGN 4
+SwordCavStanding:
+#incbin "Dmp/SwordCavStanding {team SALVAGED}.dmp" 
+ALIGN 4
+SwordCavMoving:
+#incbin "Dmp/SwordCavMoving {team SALVAGED}.dmp" 
+
+ALIGN 4
+SwordKnightStanding:
+#incbin "Dmp/SwordArmorStanding{team Salvaged}.dmp"
+ALIGN 4
+SwordKnightMoving:
+#incbin "Dmp/SwordArmorMoving{team Salvaged}.dmp"
+ALIGN 4
+LanceKnightStanding:
+#incbin "Dmp/LanceArmorStanding{team Salvaged}.dmp"
+ALIGN 4
+LanceKnightMoving:
+#incbin "Dmp/LanceArmorMoving{team Salvaged}.dmp"
+ALIGN 4
+AxeKnightStanding:
+#incbin "Dmp/AxeArmorStanding{team Salvaged}.dmp"
+ALIGN 4
+AxeKnightMoving:
+#incbin "Dmp/AxeArmorMoving{team Salvaged}.dmp"
+
+ALIGN 4
+F_MercStanding:
+#incbin "Dmp/Mercenary (F) Sword {Agro}-stand.dmp"
+ALIGN 4
+F_MercMoving:
+#incbin "Dmp/Mercenary (F) Sword {Agro}-move.dmp"
+
+ALIGN 4
+M_SoldierStanding:
+#incbin "Dmp/Soldier (M) Shield Lance {Rexacuse, Peerless, Alusq}-stand.dmp"
+ALIGN 4
+M_SoldierMoving:
+#incbin "Dmp/Soldier (M) Shield Lance {Rexacuse, Peerless, Alusq}-move.dmp"
+
+ALIGN 4
+AxeWyvernStanding:
+#incbin "Dmp/AxeWyvernRiderStanding{Unknown}.dmp"
+ALIGN 4
+AxeWyvernMoving:
+#incbin "Dmp/AxeWyvernRiderMoving{Unknown}.dmp"
+
+ALIGN 4
+LancerStanding:
+#incbin "Dmp/Deserter (M) Lance Standing {Alusq}.dmp"
+ALIGN 4
+LancerMoving:
+#incbin "Dmp/Deserter (M) Lance Moving {Alusq}.dmp"
+
+ALIGN 4
+F_SoldierStanding:
+#incbin "Dmp/Soldier (F) Shield {Rexacuse, Peerless, Alusq, WarPath}stand.dmp"
+ALIGN 4
+F_SoldierMoving:
+#incbin "Dmp/Soldier (F) Shield {Rexacuse, Peerless, Alusq, WarPath}move.dmp"
+
+
+ALIGN 4
+HunterMMoving:
+#incbin "Dmp/Hunter(M)Moving(MeatOfJustice).dmp"
+ALIGN 4
+HunterMStanding:
+#incbin "Dmp/Hunter(M)Standing(MeatOfJustice).dmp"
+
+ALIGN 4
+HunterFMoving:
+#incbin "Dmp/Hunter (F) Moving {MeatOfJustice}.dmp"
+ALIGN 4
+HunterFStanding:
+#incbin "Dmp/Hunter (F) Standing {MeatOfJustice}.dmp"
+
+ALIGN 4
+BallisticianMoving:
+#incbin "Dmp/BallisticianMoving(flasuban, DerTheVaporeon).dmp"
+ALIGN 4
+BallisticianStanding:
+#incbin "Dmp/BallisticianStanding(flasuban, DerTheVaporeon).dmp"
+
+ALIGN 4
+MageFighterMoving:
+#incbin "Dmp/Great Lord (M) Hector {IS}-move.dmp"
+ALIGN 4
+MageFighterStanding:
+#incbin "Dmp/Great Lord (M) Hector {IS}-stand.dmp"
+

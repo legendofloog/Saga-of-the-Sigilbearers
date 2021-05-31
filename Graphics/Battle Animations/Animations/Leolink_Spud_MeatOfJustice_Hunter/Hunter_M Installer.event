@@ -1,0 +1,9 @@
+ALIGN 4
+
+#include "Hunter_M Bows Installer.event"
+#include "Hunter_M Unarmed Installer.event"
+
+Hunter_M_Anim:
+BowAnim(0x8B)
+UnarmedAnim(0x8C)
+WORD 0x0

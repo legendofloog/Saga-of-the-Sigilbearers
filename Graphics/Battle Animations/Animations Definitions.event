@@ -1,0 +1,278 @@
+#ifndef ClassAnimTable
+  #ifdef _FE8_
+    #define ClassAnimTable (0xc00008-0x20)
+  #endif
+  #ifdef _FE7_
+    #define ClassAnimTable (0xe00008-0x20)
+  #endif
+#endif
+
+#define AnimTableEntry(index) "ORG ClassAnimTable + (index * 0x20)"
+
+//////////////Installed animations go here:
+#define SwordAnim(Animation) "BYTE Swords 0x01 ; SHORT Animation"
+#define SpearAnim(Animation) "BYTE Spears 0x01 ; SHORT Animation"
+#define AxeAnim(Animation) "BYTE Axes 0x01 ; SHORT Animation"
+#define HandAxeAnim(Animation) "BYTE HandAxe 0x00 ; SHORT Animation ; BYTE Tomahawk 0x00 ; SHORT Animation ; BYTE Hatchet 0x00 ; SHORT Animation"
+#define BowAnim(Animation) "BYTE Bows 0x01 ; SHORT Animation"
+#define StaffAnim(Animation) "BYTE Staves 0x01 ; SHORT Animation"
+#define AnimaAnim(Animation) "BYTE Anima 0x01 ; SHORT Animation"
+#define LightAnim(Animation) "BYTE Light 0x01 ; SHORT Animation"
+#define DarkAnim(Animation) "BYTE Dark 0x01 ; SHORT Animation"
+#define UnarmedAnim(Animation) "BYTE Disarmed 0x01 ; SHORT Animation"
+#define SpecialAnim(Animation,Weapon) "BYTE Weapon 0x00 ; SHORT Animation"
+#define EndAnim "WORD 0x0"
+#define Unarmed Disarmed
+#define Spears Lances
+
+#define AsgeirLanceAnim 0x01
+#define AsgeirUnarmedAnim 0x02
+
+#define RuneAxeAnim 0x03
+#define RuneHandaxeAnim 0x04
+#define RuneUnarmedAnim 0x05
+
+#define RagnaMagicAnim 0x08
+
+#define MercenaryF_SwordAnim 0x09
+#define MercenaryF_UnarmedAnim 0x0A
+
+#define MercenarySwordAnim 0x0B
+
+#define Myrmidon_M_SwordAnim 0x11
+#define Myrmidon_M_UnarmedAnim 0x12
+#define Myrmidon_F_SwordAnim 0x13
+#define Myrmidon_F_UnarmedAnim 0x14
+
+#define MercenaryAxeAnim 0x19
+#define MercenaryHandaxeAnim 0x1A
+#define MercenaryUnarmedAnim 0x1B
+
+#define WarriorAxeAnim 0x1C 
+#define WarriorBowAnim 0x1D
+#define WarriorHandaxeAnim 0x1E
+#define WarriorMagicAnim 0x1F
+
+#define CavSwordAnim 0x32
+#define CavAxeAnim 0x33
+#define CavHandaxeAnim 0x34
+#define CavLanceAnim 0x35
+#define CavUnarmedAnim 0x36
+
+#define ArmorSwordAnim 0x40
+#define ArmorAxeAnim 0x41
+#define ArmorHandaxeAnim 0x42
+#define ArmorLanceAnim 0x43
+#define ArmorUnarmedAnim 0x44
+#define ArmorBowAnim 0x45
+
+#define F_HeroSwordAnim 0x54
+#define F_HeroAxeAnim 0x55
+#define F_HeroHandaxeAnim 0x56
+#define F_HeroUnarmedAnim 0x57
+
+#define WyvernAxeAnim 0x58
+#define WyvernHandaxeAnim 0x59
+#define WyvernBowAnim 0x5A
+#define WyvernUnarmedAnim 0x5B
+
+#define DeserterLanceAnim 0x61
+#define DeserterUnarmedAnim 0x62
+
+#define F_SoldierLanceAnim 0x63
+#define F_SoldierUnarmedAnim 0x64
+
+#define MonkRepaletteMagicAnim 0x7E
+
+#define HunterBowAnim 0x8B
+#define HunterUnarmedAnim 0x8C
+
+#define HunterFBowAnim 0x8D
+#define HunterFUnarmedAnim 0x8E
+
+#define Thief_M_RepaletteKnifeAnim 0x88
+#define Thief_M_RepaletteSwordAnim 0x89
+#define Thief_M_RepaletteUnarmedAnim 0x8A
+
+#define M_SoldierSpearAnim 0x98
+#define M_SoldierUnarmedAnim 0x99
+
+#define BallisticianBowAnim 0x26
+#define BallisticianBallistaAnim 0x9F
+
+ALIGN 4
+AsgeirAnims:
+SpearAnim(AsgeirLanceAnim)
+UnarmedAnim(AsgeirUnarmedAnim)
+EndAnim
+
+ALIGN 4
+RuneAnims:
+AxeAnim(RuneAxeAnim)
+HandAxeAnim(RuneHandaxeAnim)
+UnarmedAnim(RuneUnarmedAnim)
+EndAnim
+
+ALIGN 4
+RagnaAnims:
+AnimaAnim(RagnaMagicAnim)
+DarkAnim(RagnaMagicAnim)
+UnarmedAnim(RagnaMagicAnim)
+EndAnim
+
+ALIGN 4
+FMercenaryAnims:
+SwordAnim(MercenaryF_SwordAnim)
+UnarmedAnim(MercenaryF_UnarmedAnim)
+EndAnim
+
+ALIGN 4
+SwordFighterAnims:
+SwordAnim(MercenarySwordAnim)
+UnarmedAnim(MercenaryUnarmedAnim)
+EndAnim
+
+ALIGN 4
+M_MyrmidonAnims:
+SwordAnim(Myrmidon_M_SwordAnim)
+UnarmedAnim(Myrmidon_M_UnarmedAnim)
+EndAnim
+
+ALIGN 4
+F_MyrmidonAnims:
+SwordAnim(Myrmidon_F_SwordAnim)
+UnarmedAnim(Myrmidon_F_UnarmedAnim)
+EndAnim
+
+ALIGN 4
+AxeFighterAnims:
+AxeAnim(MercenaryAxeAnim)
+HandAxeAnim(MercenaryHandaxeAnim)
+UnarmedAnim(MercenaryUnarmedAnim)
+EndAnim
+
+ALIGN 4
+WarriorAnims:
+AxeAnim(WarriorAxeAnim)
+BowAnim(WarriorBowAnim)
+HandAxeAnim(WarriorHandaxeAnim)
+UnarmedAnim(WarriorMagicAnim)
+AnimaAnim(WarriorMagicAnim)
+EndAnim
+
+ALIGN 4
+SwordCavAnims:
+SwordAnim(CavSwordAnim)
+UnarmedAnim(CavUnarmedAnim)
+EndAnim
+
+ALIGN 4
+AxeCavAnims:
+AxeAnim(CavAxeAnim)
+HandAxeAnim(CavHandaxeAnim)
+UnarmedAnim(CavUnarmedAnim)
+EndAnim
+
+ALIGN 4
+LanceCavAnims:
+SpearAnim(CavLanceAnim)
+UnarmedAnim(CavUnarmedAnim)
+EndAnim
+
+ALIGN 4
+SwordArmorAnims:
+SwordAnim(ArmorSwordAnim)
+UnarmedAnim(ArmorUnarmedAnim)
+EndAnim
+
+ALIGN 4
+LanceArmorAnims:
+SpearAnim(ArmorLanceAnim)
+UnarmedAnim(ArmorUnarmedAnim)
+EndAnim
+
+ALIGN 4
+AxeArmorAnims:
+AxeAnim(ArmorAxeAnim)
+HandAxeAnim(ArmorHandaxeAnim)
+UnarmedAnim(ArmorUnarmedAnim)
+EndAnim
+
+ALIGN 4
+BowArmorAnims:
+BowAnim(ArmorBowAnim)
+UnarmedAnim(ArmorUnarmedAnim)
+EndAnim
+
+ALIGN 4
+FHeroAnims:
+SwordAnim(F_HeroSwordAnim)
+AxeAnim(F_HeroAxeAnim)
+HandAxeAnim(F_HeroHandaxeAnim)
+UnarmedAnim(F_HeroUnarmedAnim)
+EndAnim
+
+ALIGN 4
+AxeWyvernAnims:
+AxeAnim(WyvernAxeAnim)
+HandAxeAnim(WyvernHandaxeAnim)
+UnarmedAnim(WyvernUnarmedAnim)
+EndAnim
+
+ALIGN 4
+BowWyvernAnims:
+BowAnim(WyvernBowAnim)
+UnarmedAnim(WyvernUnarmedAnim)
+EndAnim
+
+ALIGN 4
+DeserterAnims:
+SpearAnim(DeserterLanceAnim)
+UnarmedAnim(DeserterUnarmedAnim)
+EndAnim
+
+ALIGN 4
+F_SoldierAnims:
+SpearAnim(F_SoldierLanceAnim)
+UnarmedAnim(F_SoldierUnarmedAnim)
+EndAnim
+
+ALIGN 4
+MonkAnims:
+LightAnim(MonkRepaletteMagicAnim)
+StaffAnim(MonkRepaletteMagicAnim)
+UnarmedAnim(MonkRepaletteMagicAnim)
+EndAnim
+
+ALIGN 4
+HunterAnims:
+BowAnim(HunterBowAnim)
+UnarmedAnim(HunterUnarmedAnim)
+EndAnim
+
+ALIGN 4
+HunterFAnims:
+BowAnim(HunterFBowAnim)
+UnarmedAnim(HunterFUnarmedAnim)
+EndAnim
+
+ALIGN 4 
+ThiefAnims:
+// KnifeAnim(Thief_M_RepaletteKnifeAnim)
+SwordAnim(Thief_M_RepaletteSwordAnim)
+UnarmedAnim(Thief_M_RepaletteUnarmedAnim)
+EndAnim
+
+ALIGN 4
+M_SoldierAnims:
+SpearAnim(M_SoldierSpearAnim)
+UnarmedAnim(M_SoldierUnarmedAnim)
+EndAnim
+
+ALIGN 4
+BallisticianAnims:
+BowAnim(BallisticianBowAnim)
+SpecialAnim(BallisticianBallistaAnim,Ballista)
+SpecialAnim(BallisticianBallistaAnim,IronBallista)
+SpecialAnim(BallisticianBallistaAnim,KillerBallista)
+EndAnim

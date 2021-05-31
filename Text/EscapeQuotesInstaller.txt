@@ -1,0 +1,51 @@
+## RuneEscapeText
+[....v.][LoadRune]
+Guess it's time to make my exit.[NL]
+The rest of you, get a move on![A][X]
+
+## AsgeirEscapeText
+[....v.][LoadAsgeir]
+An opening... I'll be taking my leave![NL]
+Everyone, please don't fall here![A][X]
+
+## BrynjaEscapeText
+[....v.][LoadBrynja]
+It seems my duties have come to an end,[NL]
+for now. Lord Asgeir, stay safe.[A][X]
+
+## RagnaEscapeText
+[....v.][LoadRagna]
+Hmph, a simple matter. Foes of this[NL]
+caliber could never stop me![A][X]
+
+## EimundEscapeText
+[....v.][LoadEimund]
+I'm not a fan of tactical retreats...[NL]
+but I'm going on ahead! Follow me![A][X]
+
+## UlfrEscapeText
+[....v.][LoadUlfr]
+Woulda rather beat 'em all up instead,[NL]
+but whatever. See ya later, chumps![A][X]
+
+## IvarrEscapeText
+[....v.][LoadIvarr]
+I should be the last to leave...[NL]
+Sorry, but please cover my escape![A][X]
+
+## CarysEscapeText
+[....v.][LoadCarys][OneLineBox]
+Seems I've lived to see another day...[A][X]
+
+## EindrideEscapeText
+[....v.][LoadEindride]
+Heck, looks like I've got a way out![NL]
+Come on, Hook! Let's skedaddle![A][X]
+
+## KleosEscapeText
+[MidRight][LoadKleos][OneLineBox]
+Finally... I thought I was gonna die![A][X]
+
+
+
+

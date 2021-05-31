@@ -1,0 +1,32 @@
+#include "Fixes/MasterFixesInstaller.event"
+#include "FixedAutolevels.event"
+#include "ASMCCheckSuite/ASMC Check Installer.event"
+#include "1RNMode/Installer.event"
+#incbin "ChangeWeaponRanksASMC/ChangeWeaponRankASMC.dmp"
+#include "GetBlueUnitCountASMC.lyn.event"
+#include "ModularMinimugBox-master/Installers/MMBInstallerSagaOfTheSigilbearers.event"
+#include "TrapRework/TrapRework/TrapRework.event"
+#include "DSFE avoid/DSFEavoid.event"
+#include "ToggleDeploymentSwapping/ToggleDeploymentSwappingInstaller.event"
+#include "MultipleTileMarker(7743)/MultiTileMarker_Install.event"
+#include "Music/MusicASMInstaller.event"
+#include "FE8-Text_Engine_Rework/_FE8-Text_Engine_Rework_EA.event"
+#include "AiPerformExtension/AiScrDefinitions.event"
+#include "AiPerformExtension/AiPerformExt.event"
+#include "FerryAi/FerryAi.event"
+#include "TalkAi/TalkAi.event"
+#include "NPC_Uragiri/NPC_uragiri.event"
+#include "PortraitHeight/PortraitShiftTable(installthisone).event"
+#include "FE8-Set Condition/FE8-Set Condition.event"
+#include "ReworkForPrepScreenRightTopImage/Installer.event"
+
+ALIGN 4
+ASMC_GetRescuedUnit:
+	#incbin "EVENTSCRIPT_GetCaptureUnitID_20210109/ASMC_Who_are_rescued_from.dmp"
+
+ALIGN 4
+ASMC_GetRescuerUnit:
+	#incbin "EVENTSCRIPT_GetCaptureUnitID_20210109/ASMC_Who_is_rescued.dmp"
+//#incbin "EVENTSCRIPT_GetKillerUnitID/ASMC_GetKillerUnitID.dmp"
+//#incbin "trade_fix/TradeabilityChanges.event"
+//#include "Fatigue/Fatigue.event"

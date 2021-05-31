@@ -1,0 +1,17 @@
+ALIGN 4
+#include "wyvern_axe_installer{Mikey Seregon, Alfred Kamon}.event"
+#include "wyvern_handaxe_installer{Mikey Seregon, Alfred Kamon}.event"
+
+AxeDragonriderAnim:
+AxeAnim(0x58)
+HandAxeAnim(0x59)
+UnarmedAnim(0x5B)
+WORD 0x0
+
+ALIGN 4
+#include "wyvern_bow_Installer{PrincessKilvas, Spud, Blue Druid}.event"
+
+BowDragonriderAnim:
+BowAnim(0x5A)
+UnarmedAnim(0x5B)
+WORD 0x0

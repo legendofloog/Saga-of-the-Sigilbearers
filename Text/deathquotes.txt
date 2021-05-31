@@ -1,0 +1,78 @@
+## RuneDeathText
+[....v.][LoadRune]
+These wounds... I'm done for.[NL]
+Ragna, Asgeir, I'm sorry.[ANL]
+In the end, I'm the same[NL]
+as him, after all...[A][X]
+
+## AsgeirDeathText
+[....v.][LoadAsgeir]
+No... I can't fall here! I still[NL]
+have so much to accomplish...[ANL]
+Why... is everything fading?[A][X]
+
+## BrynjaDeathText
+[....v.][LoadBrynja]
+I suppose after all this time,[NL]
+this was but a certainty...[ANL]
+Lord Asgeir, please live...[A][X]
+
+## RagnaDeathText
+[....v.][LoadRagna]
+Father, I'm sorry. I failed[NL]
+to carry on your legacy...[ANL]
+Please, forgive me...[A][X]
+
+## EimundDeathText
+[....v.][LoadEimund]
+Gah, I was careless... [NL]
+But I can't die here.[ANL]
+I still need to fulfill[NL]
+our promise, Magni...[A][X]
+
+## UlfrDeathText
+[....v.][LoadUlfr]
+What is this, blood?[NL]
+Guess it's all over.[ANL]
+Mom, Dad, see you soon...[A][X]
+
+## IvarrDeathText
+[....v.][LoadIvarr]
+I can't draw my bowstring...[NL]
+Is this the end for me?[ANL]
+Survive, Lady Ragna, please...[A][X]
+
+## CarysDeathText
+[....v.][LoadCarys]
+Seems this is my last breath...[NL]
+Is this the path I sought?[ANL]
+Yet, it feels so empty...[A][X]
+
+## EindrideDeathText
+[....v.][LoadEindride]
+Heh... guess I shoulda stayed a[NL]
+fisher. Hallen, Liv,  I'm sorry.[ANL]
+Papa couldn't make it home...[A][X]
+
+## SigneDeathText
+[....v.][LoadSigne]
+I can't die, not now, not here![NL]
+Hell... Gramps, I'm sorry...[ANL]
+I'm not gonna make it...[A][X]
+
+## FridaDeathText
+[....v.][LoadFrida]
+Always knew it'd end this way...[NL]
+Still, it was a good life...[A][X]
+
+## SolveigFirstRetreatText
+[....v.][LoadSolveig]
+Damn, my arm! I can't move it.[NL]
+I'm no use to anyone like this...[ANL]
+I'll have to retreat for now![A][X]
+
+## HartnerDeathText
+[....v.][LoadHartner]
+Crap, am I gonna die here?[NL]
+Mom, you were right...[ANL]
+I wasn't cut out for this...[A][X]

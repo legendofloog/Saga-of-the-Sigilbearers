@@ -1,0 +1,96 @@
+
+{
+#include "Animations/EphraimLord_Repalette_Nuramon/Lance Installer.event"
+#include "Animations/EphraimLord_Repalette_Nuramon/Unarmed Installer.event"
+}
+
+{
+#include "Animations/MK404_Tellius_Fighter_Glenwing/Outcast Axe Installer.event"
+#include "Animations/MK404_Tellius_Fighter_Glenwing/Outcast Handaxe Installer.event"
+#include "Animations/MK404_Tellius_Fighter_Glenwing/Outcast Unarmed Installer.event"
+}
+{
+#include "Animations/Gaiden_F_Mage_Ponytail(HyperGammaSpaces, Raulster)/Magic Installer.event"
+}
+{
+#include "Animations/Salvaged_F_Mercenary(JeyTheCount,Pushwall)/F!MercenarySword.event"
+#include "Animations/Salvaged_F_Mercenary(JeyTheCount,Pushwall)/F!MercenaryUnarmed.event"
+}
+{
+#include "Animations/Salvaged_M_Mercenary/Fighter Sword Installer.event"
+#include "Animations/Salvaged_M_Mercenary/Fighter Axe Installer.event"
+#include "Animations/Salvaged_M_Mercenary/Fighter Handaxe Installer.event"
+#include "Animations/Salvaged_M_Mercenary/Fighter Unarmed Installer.event"
+}
+{
+#include "Animations/Myrmidon_M_Leo_Link/Sword Installer.event"
+#include "Animations/Myrmidon_M_Leo_Link/Unarmed Installer.event"
+}
+{
+#include "Animations/Myrmidon_F_Leo_Link/Sword Installer.event"
+#include "Animations/Myrmidon_F_Leo_Link/Unarmed Installer.event"
+}
+{
+#include "Animations/M_Soldier (Nuramon, leo_link, flasuban)/Lance Installer.event"
+#include "Animations/M_Soldier (Nuramon, leo_link, flasuban)/Unarmed Installer.event"
+}
+
+{
+#include "Animations/Warrior_With_Magic/Axe Installer.event"
+#include "Animations/Warrior_With_Magic/Bow Installer.event"
+#include "Animations/Warrior_With_Magic/Handaxe Installer.event"
+#include "Animations/Warrior_With_Magic/Magic Installer.event"
+}
+{
+#include "Animations/Salvaged_M_Cavalier/Sword Installer.event"
+#include "Animations/Salvaged_M_Cavalier/Axe Installer.event"
+#include "Animations/Salvaged_M_Cavalier/Handaxe Installer.event"
+#include "Animations/Salvaged_M_Cavalier/Lance Installer.event"
+#include "Animations/Salvaged_M_Cavalier/Unarmed Installer.event"
+}
+{
+#include "Animations/Salvaged_Armor/Armor Sword Installer.event"
+#include "Animations/Salvaged_Armor/Armor Axe Installer.event"
+#include "Animations/Salvaged_Armor/Armor Handaxe Installer.event"
+#include "Animations/Salvaged_Armor/Armor Lance Installer.event"
+#include "Animations/Salvaged_Armor/Armor Unarmed Installer.event"
+#include "Animations/Salvaged_Armor/Armor Bow Installer.event"
+}
+{
+#include "Animations/(Echidna Repallete - Nancy)[F]{WarPath, Red Bean}/Sword Installer.event"
+#include "Animations/(Echidna Repallete - Nancy)[F]{WarPath, Red Bean}/Axe Installer.event"
+#include "Animations/(Echidna Repallete - Nancy)[F]{WarPath, Red Bean}/Handaxe Installer.event"
+#include "Animations/(Echidna Repallete - Nancy)[F]{WarPath, Red Bean}/Unarmed Installer.event"
+}
+{
+#include "Animations/Wyvern(Vanilla+Weapons)/wyvern_axe_installer{Mikey Seregon, Alfred Kamon}.event"
+#include "Animations/Wyvern(Vanilla+Weapons)/wyvern_handaxe_installer{Mikey Seregon, Alfred Kamon}.event"
+#include "Animations/Wyvern(Vanilla+Weapons)/wyvern_bow_Installer{PrincessKilvas, Spud, Blue Druid}.event"
+#include "Animations/Wyvern(Vanilla+Weapons)/wyvern_unarmed Installer.event"
+}
+{
+#include "Animations/(Deserter)[M]{Alusq}/Lance Installer.event"
+#include "Animations/(Deserter)[M]{Alusq}/Unarmed Installer.event"
+}
+
+{
+#include "Animations/F_Soldier_Improved(Alusq, JeytheCount, Maiser6)/Lance Installer.event"
+#include "Animations/F_Soldier_Improved(Alusq, JeytheCount, Maiser6)/Unarmed Installer.event"
+}
+{
+#include "Animations/Leolink_Spud_MeatOfJustice_Hunter/Hunter_M Bows Installer.event"
+#include "Animations/Leolink_Spud_MeatOfJustice_Hunter/Hunter_M Unarmed Installer.event"
+}
+{
+#include "Animations/Monk_Repalette_EldritchAbomination/Magic Installer.event"
+}
+
+{
+#include "Animations/Thief Repalette + Knife/Knife Installer.event"
+#include "Animations/Thief Repalette + Knife/Sword Installer.event"
+#include "Animations/Thief Repalette + Knife/Unarmed Installer.event"
+}
+{
+#include "Animations/Leolink_Spud_MeatOfJustice_Hunter_F/Hunter_F_Bows_Installer.event"
+#include "Animations/Leolink_Spud_MeatOfJustice_Hunter_F/Hunter_F_Unarmed_Installer.event"
+}
