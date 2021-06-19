@@ -18,6 +18,7 @@
 #define KleosMug 0x18
 #define HjordisMug 0x19
 #define FredrikMug 0x1A
+#define ViskardMug 0x1b
 
 ALIGN 16
 RuneMugData:
@@ -130,3 +131,11 @@ KleosMugData:
 #incbin "Dmp/Kleos/KleosTake2_palette.dmp"
 #incbin "Dmp/Kleos/KleosTake2_minimug.dmp"
 setMugEntry(KleosMug, KleosMugData, 3, 5, 3, 3)
+
+ALIGN 16
+ViskardMugData:
+#incbin "Dmp/Viskard/Viskard_(RandomWizard)_mug.dmp"
+#incbin "Dmp/Viskard/Viskard_(RandomWizard)_frames.dmp"
+#incbin "Dmp/Viskard/Viskard_(RandomWizard)_palette.dmp"
+#incbin "Dmp/Viskard/Viskard_(RandomWizard)_minimug.dmp"
+setMugEntry(ViskardMug, ViskardMugData, 2, 4, 2, 2)

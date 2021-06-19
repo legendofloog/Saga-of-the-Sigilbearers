@@ -258,7 +258,7 @@ EndAnim
 
 ALIGN 4 
 ThiefAnims:
-// KnifeAnim(Thief_M_RepaletteKnifeAnim)
+SpecialAnim(Thief_M_RepaletteKnifeAnim, FiletKnife)
 SwordAnim(Thief_M_RepaletteSwordAnim)
 UnarmedAnim(Thief_M_RepaletteUnarmedAnim)
 EndAnim
@@ -275,4 +275,9 @@ BowAnim(BallisticianBowAnim)
 SpecialAnim(BallisticianBallistaAnim,Ballista)
 SpecialAnim(BallisticianBallistaAnim,IronBallista)
 SpecialAnim(BallisticianBallistaAnim,KillerBallista)
+EndAnim
+
+ALIGN 4
+FishAnims:
+UnarmedAnim(Myrmidon_F_UnarmedAnim)
 EndAnim

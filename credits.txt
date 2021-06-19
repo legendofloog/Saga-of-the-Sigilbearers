@@ -1,1 +1,26 @@
-Animations - Pikmin1211, Maiser6, Skitty, GabrielKnight
+Portraits: MournfulRelic, Citrus, Devisio for specific mugs in the hack. Lenh + ObsidianDaddy for FE6 portraits with blink frames, Blade for skin tones sheet
+
+Battle Animations: Alusq, Nuramon, JeytheCount, Maiser6, WarPath, Red Bean, HyperGammaSpaces, Raulster, MeatOfJustice, leo_link, flasuban, MK404, Glenwing, EldritchAbomination, Team SALVAGED, Pushwall, Mikey Seregon, Alfred Kamon, PrincessKilvas, Spud, Blue Druid, Pikmin1211, Skitty, GabrielKnight
+
+Battle Animation Palettes: sdaht
+
+Map Palettes: pandan
+
+Class Cards: Aruka, Yggdra, N426, Rasdel
+
+Map Sprites: Team SALVAGED, flasuban, DerTheVaporeon, Alusq, L95, MeatOfJustice, Leif, Agro, Rexacuse, Peerless, WarPath
+
+Tilesets: Flasuban, ZoramineFae
+
+Music: Saxor_the_Nobody, Alusq, Sme, SurfingKyogre, Pikmin1211, MrGreen3339, pandan, RSFlame
+
+SkillSystem: Circleseverywhere
+Colorz for debuffs, freeze, and dragon veins 
+Monkeybard & Black Mage for most of the skill icons; Blaze for Stances skill icons; vlak for Drive skill icons; Pikmin1211 for miscellaneous icons; Zaim for Indoor March icon; Reds for Quick Riposte icon
+Tequila, Rossendale, StanH, Leonarth, 2WB, Teraspark, Darrman, SD9k, Kao, blademaster, Snakey1, Zeta, Kirb, Sme, Ganzap for skills, 7743 for various bugfixes
+Primefusion for the test map
+Str/Mag Split based off of Kirb's FE8 version which is based off of Tequila's FE7 version. RobertFPY, Pikmin1211, and Snakey1 for finalization
+
+ASM Hacks: Pikmin1211, Tequila, StanH, Sme, GratedShtick, 7743, aera, Zane, 2WB, AuraWolf, HyperGammaSpaces, Vennobennu, Snek
+
+Event Assembler: Nintenlord, Crazycolorz5, Vennobennu, Gryz, Circleseverywhere, Camdar, Zahlman

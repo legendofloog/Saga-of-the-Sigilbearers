@@ -13,19 +13,21 @@ POIN $0 $0 $0
 POIN BeginningScene EndingScene
 
 TurnBasedEvents:
-Survive(Ch4xxDoneFishing,7)
+Survive(Ch4xxDoneFishing,8)
 TurnEventPlayer(19,SecondFishSpawn,3)
 END_MAIN
 
 ALIGN 32
 CharacterBasedEvents:
+CharacterEvent(9,ViskardRecruit,0x00,Viskard)
 END_MAIN
 
 LocationBasedEvents:
-House(0,HartnerHouse,10,2)
-House(0,LeftHouse,6,4)
-House(0,RightHouse,12,5)
-House(0,EindrideHouse,9,8)
+House(0,HartnerHouse,6,2)
+House(0,TopRightHouse,12,3)
+House(0,LeftHouse,7,6)
+House(0,RightHouse,13,7)
+House(0,EindrideHouse,9,10)
 END_MAIN
 
 MiscBasedEvents:
@@ -46,14 +48,16 @@ END_MAIN
 
 Units1:
 
-UNIT Rune Outcast Rune Level(2,Ally,False) [8,5] 0x0 0x0 0x0 0x1 [IronAxe,HandAxe,Vulnerary] NoAI
-UNIT Asgeir AsgeirLord Rune Level(1,Ally,False) [10,5] 0x0 0x0 0x0 0x1 [Reginleif,IronLance,Vulnerary] NoAI
-UNIT Ragna Shaman_F Rune Level(1,Ally,False) [9,5] 0x0 0x0 0x0 0x1 [Thunder,Flux,Vulnerary] NoAI
+UNIT Rune Outcast Rune Level(2,Ally,False) [10,8] 0x0 0x0 0x0 0x1 [IronAxe,HandAxe,Vulnerary] NoAI
+UNIT Asgeir AsgeirLord Rune Level(1,Ally,False) [9,7] 0x0 0x0 0x0 0x1 [Reginleif,IronLance,Vulnerary] NoAI
+UNIT Ragna Shaman_F Rune Level(1,Ally,False) [11,7] 0x0 0x0 0x0 0x1 [Thunder,Flux,Vulnerary] NoAI
+UNIT Eimund Warrior Rune Level(1,Ally,False) [12,8] 0x0 0x0 0x0 0x1 [BraveAxe,Thunder,Vulnerary] NoAI
+UNIT Ulfr Fighter Rune Level(2,Ally,False) [10,6] 0x0 0x0 0x0 0x1 [IronAxe,Vulnerary] NoAI
+UNIT Ivarr Hunter Rune Level(2,Ally,False) [9,5] 0x0 0x0 0x0 0x1 [IronBow,Vulnerary] NoAI
+UNIT Brynja SwordKnight Rune Level(9,Ally,False) [11,5] 0x0 0x0 0x0 0x1 [SilverSword,IronSword,Vulnerary] NoAI
+UNIT Eimund Myrmidon_F Rune Level(2, Ally, False) [12,4] 0x00 0x00 0x00 0x01 [Shamshir,IronSword,Vulnerary] NoAI
 UNIT Eimund Warrior Rune Level(1,Ally,False) [8,4] 0x0 0x0 0x0 0x1 [BraveAxe,Thunder,Vulnerary] NoAI
-UNIT Ulfr Fighter Rune Level(2,Ally,False) [9,4] 0x0 0x0 0x0 0x1 [IronAxe,Vulnerary] NoAI
-UNIT Ivarr Hunter Rune Level(2,Ally,False) [10,4] 0x0 0x0 0x0 0x1 [IronBow,Vulnerary] NoAI
-UNIT Brynja SwordKnight Rune Level(9,Ally,False) [8,6] 0x0 0x0 0x0 0x1 [SilverSword,IronSword,Vulnerary] NoAI
-UNIT Eimund Myrmidon_F Rune Level(2, Ally, False) [10,6] 0x00 0x00 0x00 0x01 [Shamshir,IronSword,Vulnerary] NoAI
+UNIT Eimund Warrior Rune Level(1,Ally,False) [8,8] 0x0 0x0 0x0 0x1 [BraveAxe,Thunder,Vulnerary] NoAI
 UNIT
 
 EnemyUnits:
@@ -67,17 +71,24 @@ UNIT 0x70 Hunter 0x00 Level(4,Enemy,True) [3,14] 0x00 0x00 0x0 0x00 [Longbow] At
 UNIT 0x70 SwordCav 0x00 Level(4,Enemy,True) [7,13] 0x00 0x00 0x0 0x00 [IronSword] AttackInRangeAI
 UNIT 0x70 Pirate 0x00 Level(4,Enemy,True) [4,11] 0x00 0x00 0x0 0x00 [IronAxe] PursueWithoutHeedAI
 UNIT 0x70 Pirate 0x00 Level(4,Enemy,True) [12,13] 0x00 0x00 0x0 0x00 [IronAxe] PursueWithoutHeedAI
+UNIT Viskard Pirate 0x00 Level(5,Enemy,False) [16,0] 0x00 0x00 0x00 0x00 [SteelAxe, Vulnerary] AttackInRangeAI 
 UNIT
 
 FishGroup1:
-UNIT 0x7A Fish 0x00 Level(1,NPC,True) [2,0] 0x00 0x00 0x0 0x00 [0x0] EscapeOnlyAI
-UNIT 0x7B Fish 0x00 Level(1,NPC,True) [17,2] 0x00 0x00 0x0 0x00 [0x0] EscapeOnlyAI
+UNIT 0x79 Fish 0x00 Level(1,NPC,True) [1,0] 0x00 0x00 0x0 0x00 [0x0] EscapeOnlyAI
+UNIT 0x7A Fish 0x00 Level(1,NPC,True) [19,5] 0x00 0x00 0x0 0x00 [0x0] EscapeOnlyAI
 UNIT
 
 FishGroup2:
-UNIT 0x7C Fish 0x00 Level(1,NPC,True) [2,0] 0x00 0x00 0x0 0x00 [0x0] EscapeOnlyAI
-UNIT 0x7D Fish 0x00 Level(1,NPC,True) [17,2] 0x00 0x00 0x0 0x00 [0x0] EscapeOnlyAI
+UNIT 0x7B Fish 0x00 Level(1,NPC,True) [1,0] 0x00 0x00 0x0 0x00 [0x0] EscapeOnlyAI
+UNIT 0x7C Fish 0x00 Level(1,NPC,True) [19,5] 0x00 0x00 0x0 0x00 [0x0] EscapeOnlyAI
 UNIT
+
+FishGroup3:
+UNIT 0x7D Fish 0x00 Level(1,NPC,True) [1,0] 0x00 0x00 0x0 0x00 [0x0] EscapeOnlyAI
+UNIT 0x7E Fish 0x00 Level(1,NPC,True) [19,5] 0x00 0x00 0x0 0x00 [0x0] EscapeOnlyAI
+UNIT
+
 
 Traps1:
 ENDTRAP
@@ -134,9 +145,9 @@ ENDA
 SecondFishSpawn:
 LOAD1 1 FishGroup2
 ENUN
-CAMERA 0x7C
+CAMERA 0x7B
 STAL 30
-CAMERA 0x7D
+CAMERA 0x7C
 STAL 30
 NoFade
 ENDA
@@ -146,33 +157,50 @@ CALL EndingScene
 NoFade
 ENDA
 
+ViskardRecruit:
+CUSA Viskard
+NoFade
+ENDA
+
 HartnerHouse:
 CHECK_ACTIVEID Hartner
 BEQ 11 s0 sC
 	CALL CheckIfFishEvent
 	BEQ 12 s0 sC
-		ENUT 7
-		TILECHANGE 1
 		CALL RemoveFishEvent
 		CHECK_EVENTID 11 // checks if hartner visited his house and got prf
 		BNE 17 s0 sC // skips past this if so
-			Text(Chapter4xScene1)  // hartner visits house first time with fish
 			ENUT 11
+			SetBackground(House2)
+			Text(Ch4xxHartnerHouse_HartnerFishFirstTimeText)  // hartner visits house first time with fish
+			CALL $9EE2C4
+			SVAL s3 FiletKnife
+			GIVEITEM Hartner
+			TILECHANGE 1
 			NoFade
 			ENDB
 		LABEL 17
-		Text(Chapter4xScene1) // hartner visits house some other time with fish
+		SetBackground(House2)
+		Text(Ch4xxHartnerHouse_HartnerFishSecondTimeText) // hartner visits house some other time with fish
+		CALL $9EE2C4
+		TILECHANGE 1
 		NoFade
 		ENDB
 	LABEL 12
 	CHECK_EVENTID 11
 	BNE 18 s0 sC
-		Text(Chapter4xScene1) // if hartner visits without fish once
 		ENUT 11
+		SetBackground(House2)
+		Text(Ch4xxHartnerHouse_HartnerNoFishFirstTimeText) // if hartner visits without fish once
+		CALL $9EE2C4
+		SVAL s3 FiletKnife
+		GIVEITEM Hartner
 		NoFade
 		ENDB
 	LABEL 18
-	Text(Chapter4xScene1) // if hartner visits without fish again
+	SetBackground(House2)
+	Text(Ch4xxHartnerHouse_HartnerNoFishSecondTimeText) // if hartner visits without fish again
+	CALL $9EE2C4
 	NoFade
 	ENDB
 LABEL 11
@@ -180,55 +208,84 @@ CHECK_ACTIVEID Eindride
 BEQ 19 s0 sC
 	CALL CheckIfFishEvent
 	BEQ 20 s0 sC
-		ENUT 7
-		TILECHANGE 1
 		CALL RemoveFishEvent
-		Text(Chapter4xScene1)
+		SetBackground(House2)
+		Text(Ch4xHartnerHouse_EindrideFishText)
+		CALL $9EE2C4
+		TILECHANGE 1
 		NoFade
 		ENDB
 	LABEL 20
-	Text(Chapter4xScene1)
+	SetBackground(House2)
+	Text(Ch4xxHartnerHouse_EindrideNoFishText)
+	CALL $9EE2C4
 	NoFade
 	ENDB
 LABEL 19
 CALL CheckIfFishEvent
 BEQ 13 s0 sC
-	ENUT 7
-	TILECHANGE 1
 	CALL RemoveFishEvent
-	Text(Chapter4xScene1)
+	SetBackground(House2)
+	Text(Ch4xxHartnerHouseFishText)
+	CALL $9EE2C4
+	TILECHANGE 1
 	NoFade
 	ENDB
 LABEL 13
-Text(Chapter4xScene1)
+SetBackground(House2)
+Text(Ch4xxHartnerHouseNoFishText)
+CALL $9EE2C4
+NoFade
+ENDA
+
+TopRightHouse:
+CALL CheckIfFishEvent
+BEQ 1 s0 sC
+	CALL RemoveFishEvent
+	SetBackground(House1)
+	Text(Ch4xxLeftHouseFishText)
+	CALL $9EE2C4
+	TILECHANGE 3
+	NoFade
+	ENDB
+LABEL 1
+SetBackground(House1)
+Text(Ch4xxLeftHouseNoFishText)
+CALL $9EE2C4
 NoFade
 ENDA
 
 LeftHouse:
 CALL CheckIfFishEvent
 BEQ 1 s0 sC
-	ENUT 8
-	TILECHANGE 3
 	CALL RemoveFishEvent
-	Text(Chapter4xScene1)
+	SetBackground(House1)
+	Text(Ch4xxLeftHouseFishText)
+	CALL $9EE2C4
+	TILECHANGE 5
 	NoFade
 	ENDB
 LABEL 1
-Text(Chapter4xScene1)
+SetBackground(House1)
+Text(Ch4xxLeftHouseNoFishText)
+CALL $9EE2C4
 NoFade
 ENDA
 
 RightHouse:
 CALL CheckIfFishEvent
 BEQ 3 s0 sC
-	ENUT 9
-	TILECHANGE 5
 	CALL RemoveFishEvent
-	Text(Chapter4xScene1)
+	SetBackground(House1)
+	Text(Ch4xxRightHouseFishText)
+	CALL $9EE2C4
+	TILECHANGE 7
 	NoFade
 	ENDB
 LABEL 3
-Text(Chapter4xScene1)
+SetBackground(House1)
+Text(Ch4xxRightHouseNoFishText)
+CALL $9EE2C4
 NoFade
 ENDA
 
@@ -238,13 +295,16 @@ BEQ 4 s0 sC
 	CALL CheckIfFishEvent
 	BEQ 2 s0 sC
 		CALL RemoveFishEvent
-		Text(Chapter4xScene1) // event that occurs if eindride brought fish
-		ENUT 10
-		TILECHANGE 7
+		SetBackground(House1)
+		Text(Ch4xxEindrideHouse_EindrideFishText) // event that occurs if eindride brought fish
+		CALL $9EE2C4
+		TILECHANGE 9
 		NoFade
 		ENDB
 	LABEL 2
-	Text(Chapter4xScene1)
+	SetBackground(House1)
+	Text(Ch4xxEindrideHouse_EindrideNoFishText)
+	CALL $9EE2C4
 	NoFade
 	ENDB
 LABEL 4
@@ -253,26 +313,32 @@ BEQ 23 s0 sC
 	CALL CheckIfFishEvent
 	BEQ 24 s0 sC
 		CALL RemoveFishEvent
-		Text(Chapter4xScene1)
-		ENUT 10
-		TILECHANGE 7
+		SetBackground(House1)
+		Text(Ch4xxEindrideHouse_SigneFishText)
+		CALL $9EE2C4
+		TILECHANGE 9
 		NoFade
 		ENDB
 	LABEL 24
-	Text(Chapter4xScene1)
+	SetBackground(House1)
+	Text(Ch4xxEindrideHouse_SigneNoFishText)
+	CALL $9EE2C4
 	NoFade
 	ENDB
 LABEL 23
 CALL CheckIfFishEvent
 BEQ 10 s0 sC
-	ENUT 10
-	TILECHANGE 7
 	CALL RemoveFishEvent // event that occurs if another unit brought fish
-	Text(Chapter4xScene1)
+	SetBackground(House1)
+	Text(Ch4xxEindrideHouseFishText)
+	CALL $9EE2C4
+	TILECHANGE 9
 	NoFade
 	ENDB
 LABEL 10
-Text(Chapter4xScene1)
+SetBackground(House1)
+Text(Ch4xxEindrideHouseNoFishText)
+CALL $9EE2C4
 NoFade
 ENDA
 
@@ -298,6 +364,14 @@ SVAL s1 0x7D
 BNE 5 s1 sC
 	COUNTER_INC 1
 LABEL 5
+SVAL s1 0x7E
+BNE 28 s1 sC
+	COUNTER_INC 1
+LABEL 28
+SVAL s1 0x79
+BNE 29 s1 sC
+	COUNTER_INC 1
+LABEL 29
 COUNTER_CHECK 1 // checks if rescued unit is a fish
 NoFade
 ENDA
@@ -313,18 +387,32 @@ ENDA
 
 EndingScene:
 COUNTER_CHECK 0
-SVAL s1 4 // checks if you got 4 fish
-BLE 14 s1 sC // skips if less than 4 fish
-	Text(Chapter4xScene1) // gives something if you got 4 fish
+CHECK_ALIVE Eindride
+BEQ 25 s0 sC // goes to end if eindride dead
+	SVAL s1 4 // checks if you got 4 fish
+	BLE 14 s1 sC // skips if less than 4 fish
+		Text(Chapter4xScene1) // gives something if you got 4 fish
+		GOTO 16
+	LABEL 14
+	SVAL s1 2
+	BLE 15 s1 sC
+		Text(Chapter4xScene1) // gives something if more than/equal to 2 but less than 4
+		GOTO 16
+	LABEL 15
+	Text(Chapter4xScene1) // gives nothing if you got less than that
 	GOTO 16
-LABEL 14
-SVAL s1 2
-BLE 15 s1 sC
-	Text(Chapter4xScene1)
-	GOTO 16
-LABEL 15
-Text(Chapter4xScene1)
+LABEL 25
+Text(Ch4xxEndingScene1EindrideDeadText)
 LABEL 16
+CHECK_ALIVE Signe
+BEQ 26 s0 sC
+	Text(Ch4xxSigneEndingSceneText)
+LABEL 26
+CHECK_ALIVE Hartner
+BEQ 27 s0 sC
+	Text(Ch4xxHartnerEndingSceneText)
+LABEL 27
+Text(Ch4xxEndingScenePart4Text)
 MNC2 0x05 // goes to chapter 5
 NoFade
 ENDA

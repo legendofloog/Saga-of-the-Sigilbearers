@@ -5,7 +5,7 @@
 #define IronBlade 0x05
 #define SteelBlade 0x06
 #define SilverBlade 0x07
-#define PoisonSword 0x08
+#define FiletKnife 0x08
 #define Rapier 0x09
 #define ManiKatti 0x0A
 #define BraveSword 0x0B

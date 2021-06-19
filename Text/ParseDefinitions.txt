@@ -55,6 +55,7 @@
 [LoadBlondStacheMiddleAgedVillager] = [LoadFace][0x5B][0x1]
 [LoadGenericDudeVillager] = [LoadFace][0x5C][0x1]
 [LoadRedHairedFrecklesVillager] = [LoadFace][0x5D][0x1]
+[LoadLittleBoyVillager] = [LoadFace][0x5E][0x1]
 [LoadOldWomanVillager] = [LoadFace][0x5F][0x1]
 [LoadWomanVillager] = [LoadFace][0x60][0x1]
 [LoadVillagerGirlBraids] = [LoadFace][0x61][0x1]
@@ -82,11 +83,12 @@
 [LoadKatla] = [LoadFace][0x2B][0x1]
 [LoadErlyn] = [LoadFace][0x2C][0x1]
 [LoadRenzer] = [LoadFace][0x46][0x1]
-[LoadWyland] = [LoadFace][0x30][0x1]
+[LoadViskard] = [LoadFace][0x1b][0x1]
 
+
+[LoadWyland] = [LoadFace][0x30][0x1]
 [LoadHilda] = [LoadFace][0x32][0x1]
 [LoadDai] = [LoadFace][0x33][0x1]
-
 [LoadYanus] = [LoadFace][0x36][0x1]
 
 [LoadSoldier] = [LoadFace][0x6B][0x1]

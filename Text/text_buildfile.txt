@@ -96,6 +96,9 @@ Hjordis[X]
 #0x224 FredrikName
 Fredrik[X]
 
+#0x225 ViskardName
+Viskard[X]
+
 #0x233 ErlynName
 Erlyn[X]
 
@@ -182,6 +185,10 @@ Grado. She is honest and sincere.[.][X]
 # 0x280 FredrikDesc
 A young monk from Renais. He is a[.][NL]
 very forthright and pious man.[X]
+
+# 0x281 ViskardDesc
+A veteran of the seas. Wishes to make[NL]
+amends for his fish thieving ways.[X]
 
 # 0x28E ErlynDesc
 Leader of the Quicksilver Mercenaries.[NL]
@@ -325,8 +332,14 @@ attack from up close or afar.[X]
 Well-balanced practicioners of[NL]
 the spear with powerful thrusts.[X]
 
+# 0x35b FiletKnifeName
+Filet Knife[X]
+
 # 0x374
 Glaive[.][X]
+
+# 0x40b FiletKnifeDesc
+Used for cleaning fish. Negates DEF.[X]
 
 # 0x494 VulneraryDesc
 A medicinal solution that heals[NL]
