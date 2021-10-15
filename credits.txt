@@ -1,4 +1,4 @@
-Portraits: MournfulRelic, Citrus, Devisio for specific mugs in the hack. Lenh + ObsidianDaddy for FE6 portraits with blink frames, Blade for skin tones sheet
+-Portraits: MournfulRelic, Citrus, Devisio for specific mugs in the hack. Lenh + ObsidianDaddy for FE6 portraits with blink frames, Blade for skin tones sheet
 
 Battle Animations: Alusq, Nuramon, JeytheCount, Maiser6, WarPath, Red Bean, HyperGammaSpaces, Raulster, MeatOfJustice, leo_link, flasuban, MK404, Glenwing, EldritchAbomination, Team SALVAGED, Pushwall, Mikey Seregon, Alfred Kamon, PrincessKilvas, Spud, Blue Druid, Pikmin1211, Skitty, GabrielKnight
 
@@ -24,3 +24,4 @@ Str/Mag Split based off of Kirb's FE8 version which is based off of Tequila's FE
 ASM Hacks: Pikmin1211, Tequila, StanH, Sme, GratedShtick, 7743, aera, Zane, 2WB, AuraWolf, HyperGammaSpaces, Vennobennu, Snek
 
 Event Assembler: Nintenlord, Crazycolorz5, Vennobennu, Gryz, Circleseverywhere, Camdar, Zahlman
+Animations - Pikmin1211, Maiser6, Skitty, GabrielKnight

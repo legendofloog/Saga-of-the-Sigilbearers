@@ -201,6 +201,7 @@ V3.4
 
 \****************************************************************/
 
+#include "EAStandardLibrary/FE8 Definitions.txt"
 
 #include "EAStandardLibrary/Boolean Logic.txt"
 

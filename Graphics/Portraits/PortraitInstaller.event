@@ -20,122 +20,174 @@
 #define FredrikMug 0x1A
 #define ViskardMug 0x1b
 
+#define WaylandMug 0x30
+#define DaiMug 0x33
+#define YanusMug 0x4B
+
 ALIGN 16
 RuneMugData:
-#incbin "Dmp/Rune/RuneSpriteTake1_mug.dmp"
-#incbin "Dmp/Rune/RuneSpriteTake1_frames.dmp"
-#incbin "Dmp/Rune/RuneSpriteTake1_palette.dmp"
-#incbin "Dmp/Rune/RuneSpriteTake1_minimug.dmp"
+#incbin "Dmp/Ally/Rune/RuneSpriteTake1_mug.dmp"
+#incbin "Dmp/Ally/Rune/RuneSpriteTake1_frames.dmp"
+#incbin "Dmp/Ally/Rune/RuneSpriteTake1_palette.dmp"
+#incbin "Dmp/Ally/Rune/RuneSpriteTake1_minimug.dmp"
 setMugEntry(RuneMug, RuneMugData, 3, 5, 3, 3)
 
 ALIGN 16
+BrynjaMugData:
+#incbin "Dmp/Ally/Brynja/Brynja_mug.dmp"
+#incbin "Dmp/Ally/Brynja/Brynja_frames.dmp"
+#incbin "Dmp/Ally/Brynja/Brynja_palette.dmp"
+#incbin "Dmp/Ally/Brynja/Brynja_minimug.dmp"
+setMugEntry(BrynjaMug, BrynjaMugData, 3, 6, 3, 4)
+
+ALIGN 16
 RagnaMugData:
-#incbin "Dmp/Ragna/Ragna(MournfulRelic)_mug.dmp"
-#incbin "Dmp/Ragna/Ragna(MournfulRelic)_frames.dmp"
-#incbin "Dmp/Ragna/Ragna(MournfulRelic)_palette.dmp"
-#incbin "Dmp/Ragna/Ragna(MournfulRelic)_minimug.dmp"
+#incbin "Dmp/Ally/Ragna/Ragna(MournfulRelic)_mug.dmp"
+#incbin "Dmp/Ally/Ragna/Ragna(MournfulRelic)_frames.dmp"
+#incbin "Dmp/Ally/Ragna/Ragna(MournfulRelic)_palette.dmp"
+#incbin "Dmp/Ally/Ragna/Ragna(MournfulRelic)_minimug.dmp"
 setMugEntry(RagnaMug, RagnaMugData, 3, 6, 3, 4)
 
 ALIGN 16
+EimundMugData:
+#incbin "Dmp/Ally/Eimund/Eimund_mug.dmp"
+#incbin "Dmp/Ally/Eimund/Eimund_frames.dmp"
+#incbin "Dmp/Ally/Eimund/Eimund_palette.dmp"
+#incbin "Dmp/Ally/Eimund/Eimund_minimug.dmp"
+setMugEntry(EimundMug, EimundMugData, 3, 4, 3, 2)
+
+ALIGN 16
 UlfrMugData:
-#incbin "Dmp/Ulfr/UlfrMug_Mournful_Relic_mug.dmp"
-#incbin "Dmp/Ulfr/UlfrMug_Mournful_Relic_frames.dmp"
-#incbin "Dmp/Ulfr/UlfrMug_Mournful_Relic_palette.dmp"
-#incbin "Dmp/Ulfr/UlfrMug_Mournful_Relic_minimug.dmp"
+#incbin "Dmp/Ally/Ulfr/UlfrMug_Mournful_Relic_mug.dmp"
+#incbin "Dmp/Ally/Ulfr/UlfrMug_Mournful_Relic_frames.dmp"
+#incbin "Dmp/Ally/Ulfr/UlfrMug_Mournful_Relic_palette.dmp"
+#incbin "Dmp/Ally/Ulfr/UlfrMug_Mournful_Relic_minimug.dmp"
 setMugEntry(UlfrMug, UlfrMugData, 3, 6, 3, 4)
 
 ALIGN 16
 IvarrMugData:
-#incbin "Dmp/Ivarr/IvarrMug_Mournful_Relic_mug.dmp"
-#incbin "Dmp/Ivarr/IvarrMug_Mournful_Relic_frames.dmp"
-#incbin "Dmp/Ivarr/IvarrMug_Mournful_Relic_palette.dmp"
-#incbin "Dmp/Ivarr/IvarrMug_Mournful_Relic_minimug.dmp"
+#incbin "Dmp/Ally/Ivarr/IvarrMug_Mournful_Relic_mug.dmp"
+#incbin "Dmp/Ally/Ivarr/IvarrMug_Mournful_Relic_frames.dmp"
+#incbin "Dmp/Ally/Ivarr/IvarrMug_Mournful_Relic_palette.dmp"
+#incbin "Dmp/Ally/Ivarr/IvarrMug_Mournful_Relic_minimug.dmp"
 setMugEntry(IvarrMug, IvarrMugData, 2, 6, 3, 4)
 
 ALIGN 16
 CarysMugData:
-#incbin "Dmp/Carys/Carys_Mug(MournfulRelic)_mug.dmp"
-#incbin "Dmp/Carys/Carys_Mug(MournfulRelic)_frames.dmp"
-#incbin "Dmp/Carys/Carys_Mug(MournfulRelic)_palette.dmp"
-#incbin "Dmp/Carys/Carys_Mug(MournfulRelic)_minimug.dmp"
+#incbin "Dmp/Ally/Carys/Carys_Mug(MournfulRelic)_mug.dmp"
+#incbin "Dmp/Ally/Carys/Carys_Mug(MournfulRelic)_frames.dmp"
+#incbin "Dmp/Ally/Carys/Carys_Mug(MournfulRelic)_palette.dmp"
+#incbin "Dmp/Ally/Carys/Carys_Mug(MournfulRelic)_minimug.dmp"
 setMugEntry(CarysMug, CarysMugData, 2, 6, 3, 4)
 
 ALIGN 16
 EindrideMugData:
-#incbin "Dmp/Eindride/EindrideTake1_mug.dmp"
-#incbin "Dmp/Eindride/EindrideTake1_frames.dmp"
-#incbin "Dmp/Eindride/EindrideTake1_palette.dmp"
-#incbin "Dmp/Eindride/EindrideTake1_minimug.dmp"
+#incbin "Dmp/Ally/Eindride/EindrideTake1_mug.dmp"
+#incbin "Dmp/Ally/Eindride/EindrideTake1_frames.dmp"
+#incbin "Dmp/Ally/Eindride/EindrideTake1_palette.dmp"
+#incbin "Dmp/Ally/Eindride/EindrideTake1_minimug.dmp"
 setMugEntry(EindrideMug, EindrideMugData, 3, 5, 3, 3)
 
 ALIGN 16
 SigneMugData:
-#incbin "Dmp/Signe/Signe_mug.dmp"
-#incbin "Dmp/Signe/Signe_frames.dmp"
-#incbin "Dmp/Signe/Signe_palette.dmp"
-#incbin "Dmp/Signe/Signe_minimug.dmp"
+#incbin "Dmp/Ally/Signe/Signe_mug.dmp"
+#incbin "Dmp/Ally/Signe/Signe_frames.dmp"
+#incbin "Dmp/Ally/Signe/Signe_palette.dmp"
+#incbin "Dmp/Ally/Signe/Signe_minimug.dmp"
 setMugEntry(SigneMug, SigneMugData, 3, 5, 3, 3)
 
 ALIGN 16
 FridaMugData:
-#incbin "Dmp/Frida/frida(citrus,devisio)_mug.dmp"
-#incbin "Dmp/Frida/frida(citrus,devisio)_frames.dmp"
-#incbin "Dmp/Frida/frida(citrus,devisio)_palette.dmp"
-#incbin "Dmp/Frida/frida(citrus,devisio)_minimug.dmp"
+#incbin "Dmp/Ally/Frida/frida(citrus,devisio)_mug.dmp"
+#incbin "Dmp/Ally/Frida/frida(citrus,devisio)_frames.dmp"
+#incbin "Dmp/Ally/Frida/frida(citrus,devisio)_palette.dmp"
+#incbin "Dmp/Ally/Frida/frida(citrus,devisio)_minimug.dmp"
 setMugEntry(FridaMug, FridaMugData, 3, 6, 3, 4)
 
 ALIGN 16
 SolveigMugData:
-#incbin "Dmp/Solveig/Solveig_mug.dmp"
-#incbin "Dmp/Solveig/Solveig_frames.dmp"
-#incbin "Dmp/Solveig/Solveig_palette.dmp"
-#incbin "Dmp/Solveig/Solveig_minimug.dmp"
+#incbin "Dmp/Ally/Solveig/Solveig_mug.dmp"
+#incbin "Dmp/Ally/Solveig/Solveig_frames.dmp"
+#incbin "Dmp/Ally/Solveig/Solveig_palette.dmp"
+#incbin "Dmp/Ally/Solveig/Solveig_minimug.dmp"
 setMugEntry(SolveigMug, SolveigMugData, 3, 5, 3, 3)
 
 ALIGN 16
 HartnerMugData:
-#incbin "Dmp/Hartner/HartnerMug_MournfulRelic_mug.dmp"
-#incbin "Dmp/Hartner/HartnerMug_MournfulRelic_frames.dmp"
-#incbin "Dmp/Hartner/HartnerMug_MournfulRelic_palette.dmp"
-#incbin "Dmp/Hartner/HartnerMug_MournfulRelic_minimug.dmp"
+#incbin "Dmp/Ally/Hartner/HartnerMug_MournfulRelic_mug.dmp"
+#incbin "Dmp/Ally/Hartner/HartnerMug_MournfulRelic_frames.dmp"
+#incbin "Dmp/Ally/Hartner/HartnerMug_MournfulRelic_palette.dmp"
+#incbin "Dmp/Ally/Hartner/HartnerMug_MournfulRelic_minimug.dmp"
 setMugEntry(HartnerMug, HartnerMugData, 3, 6, 3, 4)
 
 ALIGN 16
 LysandraMugData:
-#incbin "Dmp/Lysandra/LysandraMug(MournfulRelic)_mug.dmp"
-#incbin "Dmp/Lysandra/LysandraMug(MournfulRelic)_frames.dmp"
-#incbin "Dmp/Lysandra/LysandraMug(MournfulRelic)_palette.dmp"
-#incbin "Dmp/Lysandra/LysandraMug(MournfulRelic)_minimug.dmp"
+#incbin "Dmp/Ally/Lysandra/LysandraMug(MournfulRelic)_mug.dmp"
+#incbin "Dmp/Ally/Lysandra/LysandraMug(MournfulRelic)_frames.dmp"
+#incbin "Dmp/Ally/Lysandra/LysandraMug(MournfulRelic)_palette.dmp"
+#incbin "Dmp/Ally/Lysandra/LysandraMug(MournfulRelic)_minimug.dmp"
 setMugEntry(LysandraMug, LysandraMugData, 2, 6, 3, 4)
 
 ALIGN 16
 AsgeirMugData:
-#incbin "Dmp/Asgeir/AsgeirFrames_mug.dmp"
-#incbin "Dmp/Asgeir/AsgeirFrames_frames.dmp"
-#incbin "Dmp/Asgeir/AsgeirFrames_palette.dmp"
-#incbin "Dmp/Asgeir/AsgeirFrames_minimug.dmp"
+#incbin "Dmp/Ally/Asgeir/AsgeirFrames_mug.dmp"
+#incbin "Dmp/Ally/Asgeir/AsgeirFrames_frames.dmp"
+#incbin "Dmp/Ally/Asgeir/AsgeirFrames_palette.dmp"
+#incbin "Dmp/Ally/Asgeir/AsgeirFrames_minimug.dmp"
 setMugEntry(AsgeirMug, AsgeirMugData, 3, 5, 3, 3)
 
 ALIGN 16
 SahnMugData:
-#incbin "Dmp/Sahn/SahnMug_mug.dmp"
-#incbin "Dmp/Sahn/SahnMug_frames.dmp"
-#incbin "Dmp/Sahn/SahnMug_palette.dmp"
-#incbin "Dmp/Sahn/SahnMug_minimug.dmp"
+#incbin "Dmp/Ally/Sahn/SahnMug_mug.dmp"
+#incbin "Dmp/Ally/Sahn/SahnMug_frames.dmp"
+#incbin "Dmp/Ally/Sahn/SahnMug_palette.dmp"
+#incbin "Dmp/Ally/Sahn/SahnMug_minimug.dmp"
 setMugEntry(SahnMug,SahnMugData, 3, 5, 3, 3)
 
 ALIGN 16
 KleosMugData:
-#incbin "Dmp/Kleos/KleosTake2_mug.dmp"
-#incbin "Dmp/Kleos/KleosTake2_frames.dmp"
-#incbin "Dmp/Kleos/KleosTake2_palette.dmp"
-#incbin "Dmp/Kleos/KleosTake2_minimug.dmp"
+#incbin "Dmp/Ally/Kleos/KleosTake2_mug.dmp"
+#incbin "Dmp/Ally/Kleos/KleosTake2_frames.dmp"
+#incbin "Dmp/Ally/Kleos/KleosTake2_palette.dmp"
+#incbin "Dmp/Ally/Kleos/KleosTake2_minimug.dmp"
 setMugEntry(KleosMug, KleosMugData, 3, 5, 3, 3)
 
 ALIGN 16
 ViskardMugData:
-#incbin "Dmp/Viskard/Viskard_(RandomWizard)_mug.dmp"
-#incbin "Dmp/Viskard/Viskard_(RandomWizard)_frames.dmp"
-#incbin "Dmp/Viskard/Viskard_(RandomWizard)_palette.dmp"
-#incbin "Dmp/Viskard/Viskard_(RandomWizard)_minimug.dmp"
+#incbin "Dmp/Ally/Viskard/Viskard_(RandomWizard)_mug.dmp"
+#incbin "Dmp/Ally/Viskard/Viskard_(RandomWizard)_frames.dmp"
+#incbin "Dmp/Ally/Viskard/Viskard_(RandomWizard)_palette.dmp"
+#incbin "Dmp/Ally/Viskard/Viskard_(RandomWizard)_minimug.dmp"
 setMugEntry(ViskardMug, ViskardMugData, 2, 4, 2, 2)
+
+ALIGN 16
+HjordisMugData:
+#incbin "Dmp/Ally/Hjordis/Hjordis_mug.dmp"
+#incbin "Dmp/Ally/Hjordis/Hjordis_frames.dmp"
+#incbin "Dmp/Ally/Hjordis/Hjordis_palette.dmp"
+#incbin "Dmp/Ally/Hjordis/Hjordis_minimug.dmp"
+setMugEntry(HjordisMug, HjordisMugData, 3, 6, 3, 4)
+
+ALIGN 16
+WaylandMugData:
+#incbin "Dmp/Enemy/Wayland/Wayland (Laurent_Lacroix)_mug.dmp"
+#incbin "Dmp/Enemy/Wayland/Wayland (Laurent_Lacroix)_frames.dmp"
+#incbin "Dmp/Enemy/Wayland/Wayland (Laurent_Lacroix)_palette.dmp"
+#incbin "Dmp/Enemy/Wayland/Wayland (Laurent_Lacroix)_minimug.dmp"
+setMugEntry(WaylandMug, WaylandMugData, 3, 5, 3, 3)
+
+ALIGN 16
+DaiMugData:
+#incbin "Dmp/Enemy/Dai/Dai (Laurent_Lacroix)_mug.dmp"
+#incbin "Dmp/Enemy/Dai/Dai (Laurent_Lacroix)_frames.dmp"
+#incbin "Dmp/Enemy/Dai/Dai (Laurent_Lacroix)_palette.dmp"
+#incbin "Dmp/Enemy/Dai/Dai (Laurent_Lacroix)_minimug.dmp"
+setMugEntry(DaiMug, DaiMugData, 3, 5, 3, 3)
+
+ALIGN 16
+YanusMugData:
+#incbin "Dmp/Enemy/Yanus/Yanus (Laurent_Lacroix)_mug.dmp"
+#incbin "Dmp/Enemy/Yanus/Yanus (Laurent_Lacroix)_frames.dmp"
+#incbin "Dmp/Enemy/Yanus/Yanus (Laurent_Lacroix)_palette.dmp"
+#incbin "Dmp/Enemy/Yanus/Yanus (Laurent_Lacroix)_minimug.dmp"
+setMugEntry(YanusMug, YanusMugData, 3, 5, 3, 3)

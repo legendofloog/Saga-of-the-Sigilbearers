@@ -1,0 +1,427 @@
+EventPointerTable(0x1E,PointerList) //7 is the ID for prologue events in vanilla FE8
+
+PointerList:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno1 Dunno2 Dunno3 Tutorial
+POIN Traps1 Traps2
+POIN Units1 Units1
+POIN $0 $0 $0 
+POIN $0 $0 $0
+POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+Survive(Ch5HoldTheLine,11)
+TurnEventPlayer(17,Ch5Turn3ReinforcementsSpawn,3)
+TurnEventPlayer(18,Ch5Turn5ReinforcementsSpawn,5)
+TurnEventPlayer(19,Ch5Turn7ReinforcementsSpawn,7)
+TurnEventPlayer(20,Ch5Turn9ReinforcementsSpawn,9)
+END_MAIN
+
+ALIGN 32
+CharacterBasedEvents:
+END_MAIN
+
+LocationBasedEvents:
+Village(9,LysandraVillage,22,1)
+Village(10,KillerAxeVillage,2,2)
+Village(11,VillagerHouse1,18,9)
+Village(12,VillagerHouse2,7,16)
+Village(13,VillagerHouse3,20,16)
+END_MAIN
+
+MiscBasedEvents:
+AREA 7 LeftTrap [5,16] [5,16]
+AREA 8 RightTrap [22,16] [22,16]
+AREA 14 EndZone [9,8] [13,11]
+AFEV 15 DeadVillagerCounterIncrement 16
+DefeatBoss(EndingScene)
+CauseGameOverIfLordDies
+END_MAIN 
+
+Dunno1:
+END_MAIN
+
+Dunno2:
+END_MAIN 
+
+Dunno3:
+END_MAIN 
+
+Tutorial:
+END_MAIN
+
+Units1:
+
+UNIT Rune Outcast Rune Level(2,Ally,False) [11,7] 0x0 0x0 0x0 0x1 [IronAxe,HandAxe,Vulnerary] NoAI
+UNIT Asgeir AsgeirLord Rune Level(1,Ally,False) [11,13] 0x0 0x0 0x0 0x1 [Glaive,IronLance,Vulnerary] NoAI
+UNIT Ragna RagnaLord Rune Level(1,Ally,False) [10,8] 0x0 0x0 0x0 0x1 [Thunder,Flux,Vulnerary] NoAI
+UNIT Eimund Warrior Rune Level(1,Ally,False) [12,8] 0x0 0x0 0x0 0x1 [BraveAxe,Thunder,Vulnerary] NoAI
+UNIT Ulfr Fighter Rune Level(2,Ally,False) [11,8] 0x0 0x0 0x0 0x1 [IronAxe,Vulnerary] NoAI
+UNIT Ivarr Hunter Rune Level(2,Ally,False) [10,11] 0x0 0x0 0x0 0x1 [IronBow,Vulnerary] NoAI
+UNIT Brynja SwordKnight Rune Level(9,Ally,False) [11,11] 0x0 0x0 0x0 0x1 [SilverSword,IronSword,Vulnerary] NoAI
+UNIT Eimund Myrmidon_F Rune Level(2, Ally, False) [12,11] 0x00 0x00 0x00 0x01 [Shamshir,IronSword,Vulnerary] NoAI
+UNIT Eimund LanceCav Rune Level(2, Ally, False) [10,7] 0x00 0x00 0x0 0x01 [IronLance, Vulnerary] NoAI
+UNIT Signe Soldier_F Rune Level(2,Ally,False) [12,7] 0x00 0x00 0x0 0x01 [IronLance,Vulnerary] NoAI
+UNIT Eimund Mercenary_F Rune Level(4,Ally,False) [10,12] 0x00 0x00 0x0 0x01 [IronBlade, Vulnerary] NoAI
+UNIT Solveig Bow_Dragonrider Rune Level(4,Ally,False) [12,12] 0x00 0x00 0x0 0x01 [IronBow,IronLongbow,Vulnerary] NoAI
+UNIT Eimund Thief Rune Level(1, Ally, False) [11,12] 0x00 0x00 0x0 0x00 [IronSword,Lockpick,Vulnerary] NoAI
+UNIT
+
+EnemyUnits:
+UNIT Yanus WindMage Yanus Level(3,Enemy,True) [1,21] 0x00 0x00 0x0 0x00 [Wind] AttackInRangeAI
+UNIT 0x71 Ballistician Yanus Level(1,Enemy,True) [6,20] 0x00 0x00 0x0 0x00 [Ballista] NeverMoveAI
+UNIT 0x73 Ballistician Yanus Level(1,Enemy,True) [21,20] 0x00 0x00 0x0 0x00 [Ballista] NeverMoveAI
+UNIT 0x70 Fighter Yanus Level(5,Enemy,True) [2,15] 0x00 0x00 0x0 0x00 [IronAxe] AttackThenEscapeAI
+UNIT 0x70 Brigand Yanus Level(5,Enemy,True) [1,12] 0x00 0x00 0x0 0x00 [IronAxe] AttackThenLootAI
+UNIT 0x70 Brigand Yanus Level(5,Enemy,True) [13,0] 0x00 0x00 0x0 0x00 [IronAxe] AttackThenLootAI
+UNIT 0x70 Hunter Yanus Level(5,Enemy,True) [5,0] 0x00 0x00 0x0 0x00 [IronBow] AttackInRangeAI
+UNIT 0x70 Mercenary Yanus Level(5,Enemy,True) [1,8] 0x00 0x00 0x0 0x00 [IronSword] AttackInTwoMovementsAI
+UNIT 0x70 Fighter Yanus Level(5,Enemy,True) [6,2] 0x00 0x00 0x0 0x00 [IronAxe,Halberd] AttackInRangeAI
+UNIT 0x70 SwordCav Yanus Level(5,Enemy,True) [13,22] 0x00 0x00 0x0 0x00 [IronSword] AttackThenEscapeAI
+UNIT 0x70 LanceCav Yanus Level(5,Enemy,True) [14,22] 0x00 0x00 0x0 0x00 [IronLance] AttackThenEscapeAI
+UNIT 0x70 Mercenary Yanus Level(8,Enemy,True) [24,21] 0x00 0x00 0x0 0x00 [KillingEdge] AttackInRangeAI
+UNIT 0x70 Fighter Yanus Level(5,Enemy,True) [25,18] 0x00 0x00 0x0 0x00 [IronAxe] AttackInTwoMovementsAI
+UNIT 0x70 Hunter Yanus Level(5,Enemy,True) [25,22] 0x00 0x00 0x0 0x00 [IronBow] AttackInTwoMovementsAI
+UNIT 0x70 Hunter Yanus Level(5,Enemy,True) [24,7] 0x00 0x00 0x0 0x00 [IronBow] AttackInRangeAI
+UNIT 0x70 Lancer Yanus Level(5,Enemy,True) [22,11] 0x00 0x00 0x0 0x00 [IronLance] AttackInRangeAI
+UNIT 0x70 Myrmidon Yanus Level(5,Enemy,True) [24,15] 0x00 0x00 0x0 0x00 [IronSword] AttackInTwoMovementsAI
+UNIT 0x70 Soldier Yanus Level(5,Enemy,True) [9,5] 0x00 0x00 0x0 0x00 [IronLance] AttackThenEscapeAI
+UNIT 0x70 Myrmidon Yanus Level(5,Enemy,True) [15,4] 0x00 0x00 0x0 0x00 [IronSword] AttackInTwoMovementsAI
+UNIT 0x70 SwordCav Yanus Level(5,Enemy,True) [6,14] 0x00 0x00 0x0 0x00 [IronSword] AttackInTwoMovementsAI
+UNIT
+
+LysandraRecruit:
+UNIT Lysandra Bishop Rune Level(1,Ally,False) [22,1] 0x00 0x00 0x0 0x00 [Elixir] NoAI
+UNIT
+
+Villager1UnitGroup:
+UNIT 0x79 Civilian 0x0 Level(1,NPC,False) [18,10] 0x00 0x00 0x0 0x00 [0x00] EscapeOnlyAI
+UNIT
+
+Villager2UnitGroup:
+UNIT 0x7A Civilian_F 0x0 Level(1,NPC,False) [7,17] 0x00 0x00 0x0 0x00 [0x00] EscapeOnlyAI
+UNIT
+
+Villager3UnitGroup:
+UNIT 0x7B Civilian_3 0x0 Level(1,NPC,False) [20,17] 0x00 0x00 0x0 0x00 [0x00] EscapeOnlyAI
+UNIT
+
+Ch5Turn3ReinforcementsUnits:
+UNIT 0x70 SwordCav Yanus Level(5,Enemy,True) [13,22] 0x00 0x00 0x0 0x00 [IronSword] AttackThenEscapeAI
+UNIT 0x70 AxeCav Yanus Level(5,Enemy,True) [14,22] 0x00 0x00 0x0 0x00 [IronAxe] AttackThenEscapeAI
+UNIT
+
+Ch5Turn5ReinforcementsUnits:
+UNIT 0x70 LanceCav Yanus Level(5,Enemy,True) [13,22] 0x00 0x00 0x0 0x00 [IronLance] AttackThenEscapeAI
+UNIT 0x70 AxeCav Yanus Level(5,Enemy,True) [14,22] 0x00 0x00 0x0 0x00 [IronAxe] AttackThenEscapeAI
+UNIT 0x70 PegasusKnight Yanus Level(5,Enemy,True) [10,0] 0x00 0x00 0x0 0x00 [IronLance] AttackThenEscapeAI
+UNIT 0x70 PegasusKnight Yanus Level(5,Enemy,True) [9,0] 0x00 0x00 0x0 0x00 [IronLance] AttackThenEscapeAI
+UNIT 0x70 Mercenary Yanus Level(5,Enemy,True) [0,15] 0x00 0x00 0x0 0x00 [IronSword] AttackThenEscapeAI
+UNIT 
+
+Ch5Turn7ReinforcementsUnits:
+UNIT 0x70 LanceCav Yanus Level(5,Enemy,True) [13,22] 0x00 0x00 0x0 0x00 [IronLance] AttackThenEscapeAI
+UNIT 0x70 SwordCav Yanus Level(5,Enemy,True) [14,22] 0x00 0x00 0x0 0x00 [IronSword] AttackThenEscapeAI
+UNIT 0x70 PegasusKnight Yanus Level(5,Enemy,True) [10,0] 0x00 0x00 0x0 0x00 [IronLance] AttackThenEscapeAI
+UNIT 0x70 PegasusKnight Yanus Level(5,Enemy,True) [9,0] 0x00 0x00 0x0 0x00 [IronLance] AttackThenEscapeAI
+UNIT 0x70 Fighter Yanus Level(5,Enemy,True) [0,15] 0x00 0x00 0x0 0x00 [IronAxe] AttackThenEscapeAI
+UNIT 
+
+Ch5Turn9ReinforcementsUnits:
+UNIT 0x70 PegasusKnight Yanus Level(5,Enemy,True) [10,0] 0x00 0x00 0x0 0x00 [IronLance] AttackThenEscapeAI
+UNIT 0x70 PegasusKnight Yanus Level(5,Enemy,True) [9,0] 0x00 0x00 0x0 0x00 [IronLance] AttackThenEscapeAI
+UNIT 0x70 Brigand Yanus Level(5,Enemy,True) [0,15] 0x00 0x00 0x0 0x00 [SteelAxe] AttackThenEscapeAI
+UNIT 
+
+Traps1:
+BlueSigil(8,9)
+BlueSigil(8,10)
+BlueSigil(14,9)
+BlueSigil(14,10)
+BlueSigil(10,7)
+BlueSigil(11,7)
+BlueSigil(12,7)
+BlueSigil(10,12)
+BlueSigil(11,12)
+BlueSigil(12,12)
+ENDTRAP
+ALIGN 4
+
+Traps2:
+ENDTRAP
+ALIGN 4
+
+BeginningScene:
+RECLASS Solveig Bow_Dragonrider
+RECLASS Eindride LanceCav
+SVAL s1 ShoveID
+SVAL s2 Eindride
+ASMC (ASMC_ForgetSkill|1)
+SVAL s2 Solveig
+ASMC (ASMC_ForgetSkill|1)
+SVAL s1 CantoPlusID
+SVAL s2 Eindride
+ASMC (ASMC_LearnNewSkill|1)
+SVAL s2 Solveig
+ASMC (ASMC_LearnNewSkill|1)
+SetBackground(CastleExterior)
+Text(Ch5OpeningScene1Visited4x)
+SetBackground(CastleInterior)
+Text(Ch5OpeningScene2)
+SetBackground(CastleHallway)
+Text(Ch5PreBattleScene1)
+SetBackground(VillageRoad)
+Text(Ch5PreBattleScene2) 
+SetBackground(House2)
+Text(Ch5PreBattleScene3)
+CALL $9EE2C4
+SHOWUNIT Asgeir
+LOAD1 0 Units1
+LOAD1 1 EnemyUnits
+CALL $9EE2C4
+CAMERA [3,8]
+STAL 30
+CAMERA [21,9]
+STAL 30
+CAMERA [11,10]
+TEXTSTART
+TEXTSHOW Ch5PreBattleScene4
+TEXTEND
+CAMERA [5,17]
+STAL 30
+CAMERA [22,17]
+STAL 30
+CAMERA [11,10]
+TEXTCONT
+TEXTEND
+REMA
+CAMERA [22,1]
+CAMERA Yanus
+Text(YanusIntroText)
+CHECK_EVENTID 0x78
+BEQ 6 s0 sC //checks if kids were saved in 4x, branches if they weren't
+	SetBackground(House2)
+	Text(Ch5RuneHintText)
+	CALL $9EE2C4
+	GOTO 17
+LABEL 6
+TILECHANGE 0x01
+ENUT 9
+LABEL 17
+CAMERA [24,21]
+Text(KillingEdgeMercenaryIntroText)
+ENUN
+PREP
+ENDA
+
+Ch5HoldTheLine:
+ENUT 3
+CALL EndingScene
+NoFade
+ENDA
+
+DeadVillagerCounterIncrement:
+COUNTER_INC 2
+ENUF 15
+ENUF 16
+NoFade
+ENDA
+
+EndZone:
+CHECK_ALLEGIANCE -1
+SVAL s1 2
+BNE 12 s1 sC
+	Text(Ch5EnemyMakesItToElderHouse)
+	GameOver
+LABEL 12
+ENUF 14
+LABEL 18
+NoFade
+ENDA
+
+Ch5Turn3ReinforcementsSpawn:
+CAMERA [13,20]
+LOAD1 1 Ch5Turn3ReinforcementsUnits
+ENUN
+STAL 60
+NoFade
+ENDA
+
+Ch5Turn5ReinforcementsSpawn:
+CAMERA [13,20]
+LOAD1 1 Ch5Turn5ReinforcementsUnits
+ENUN
+STAL 60
+CAMERA [9,0]
+STAL 60
+CAMERA [0,15]
+STAL 60
+NoFade
+ENDA
+
+Ch5Turn7ReinforcementsSpawn:
+CAMERA [13,20]
+LOAD1 1 Ch5Turn7ReinforcementsUnits
+ENUN
+STAL 60
+CAMERA [9,0]
+STAL 60
+CAMERA [0,15]
+STAL 60
+NoFade
+ENDA
+
+Ch5Turn9ReinforcementsSpawn:
+CAMERA [9,0]
+LOAD1 1 Ch5Turn9ReinforcementsUnits
+ENUN
+STAL 60
+CAMERA [0,15]
+STAL 60
+NoFade
+ENDA
+
+LeftTrap:
+TILECHANGE 0x05
+TILECHANGE 0x06
+TILECHANGE 0x07
+CHECK_INAREA 0x71 [6, 20] [6, 20]
+BEQ 1 s0 sC // checks if ballista is still there
+	CAMERA 0x71
+	KILL 0x71
+	AWAIT_KILL 0x71 //kills it if so
+LABEL 1
+TILECHANGE 0x08
+CHECK_EVENTID 12
+BNE 8 s0 sC //branches if the flag is true
+	COUNTER_INC 2
+	ENUT 12
+	COUNTER_INC 1
+	COUNTER_CHECK 1
+	SVAL s1 1
+	CAMERA Asgeir
+	BNE 9 s1 sC
+		Text(Ch5DestroyingFirstHouse)
+		GOTO 8
+	LABEL 9
+	Text(Ch5DestroyingSecondHouse)
+LABEL 8
+NoFade
+ENDA
+
+RightTrap:
+TILECHANGE 0x09
+TILECHANGE 0x0A
+TILECHANGE 0x0B
+CHECK_INAREA 0x73 [21, 20] [21, 20]
+BEQ 2 s0 sC // checks if ballista is still there
+	CAMERA 0x73
+	KILL 0x73
+	AWAIT_KILL 0x73 //kills it if so
+LABEL 2
+TILECHANGE 0x0C
+CHECK_EVENTID 13
+BNE 10 s0 sC //branches if the flag is true
+	COUNTER_INC 2
+	ENUT 13
+	COUNTER_INC 1
+	COUNTER_CHECK 1
+	SVAL s1 1
+	CAMERA Asgeir
+	BNE 11 s1 sC
+		Text(Ch5DestroyingFirstHouse)
+		GOTO 10
+	LABEL 11
+	Text(Ch5DestroyingSecondHouse)
+LABEL 10
+NoFade
+ENDA
+
+LysandraVillage:
+CHECK_ACTIVE
+SVAL s1 Rune
+BNE 3 s1 sC //checks if Rune is visiting
+	SetBackground(House2)
+	Text(LysandraJoinsText)
+	CALL $9EE2C4
+	LOAD1 1 LysandraRecruit //Lysandra joins your army if so
+	ENUN
+	NoFade
+	ENDA
+LABEL 3
+	VillageEventItem(LysandraGivesVulneraryText, House2, Vulnerary) // gives an item if so
+
+KillerAxeVillage:
+CHECK_EVENTID 0x79
+BEQ 7 s0 sC
+	VillageEventItem(Ch5KillerAxeVillageText, House1, KillerAxe)
+LABEL 7
+	VillageEventItem(Ch5KillerAxeNoAxeText, House1, Vulnerary)
+
+
+VillagerHouse1:
+SetBackground(House1)
+Text(Ch5SavingVillager1)
+CALL $9EE2C4
+LOAD1 1 Villager1UnitGroup
+ENUN
+COUNTER_INC 0
+NoFade
+ENDA
+
+VillagerHouse2:
+SetBackground(House1)
+Text(Ch5SavingVillager2)
+CALL $9EE2C4
+LOAD1 1 Villager2UnitGroup
+ENUN
+COUNTER_INC 0
+NoFade
+ENDA
+
+VillagerHouse3:
+SetBackground(House1)
+Text(Ch5SavingVillager3)
+CALL $9EE2C4
+LOAD1 1 Villager3UnitGroup
+ENUN
+COUNTER_INC 0
+NoFade
+ENDA
+
+EndingScene:
+MUSC 0x7FFF
+COUNTER_CHECK 2
+BEQ 13 s0 sC
+	CAMERA Asgeir
+	Text(Ch5EndingScene1Casualties)
+	GOTO 14
+LABEL 13
+COUNTER_CHECK 0
+SVAL s1 3
+BNE 14 s1 sC
+	CHECK_EVENTID 7
+	BEQ 15 s0 sC
+		Text(Ch5EndingScene1NoCasualtiesTraps)
+		SVAL s3 SecretBook
+		GIVEITEM Asgeir
+		GOTO 14
+	LABEL 15
+	CHECK_EVENTID 8
+	BEQ 16 s0 sC
+		Text(Ch5EndingScene1NoCasualtiesTraps)
+		SVAL s3 SecretBook
+		GIVEITEM Asgeir
+		GOTO 14
+	LABEL 16
+	Text(Ch5EndingScene1NoCasualtiesNoTraps)
+	SVAL s3 EnergyRing
+	GIVEITEM Asgeir
+LABEL 14
+Text(Ch5EndingScene2)
+MNC2 0x06 //goto Chapter 6 
+NoFade
+ENDA

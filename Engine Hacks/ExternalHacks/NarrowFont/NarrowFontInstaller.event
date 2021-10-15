@@ -6,17 +6,6 @@
 
 #ifdef NARROW_FONT
 
-#ifdef _FE8_
-
-	
-	#ifndef FreeSpace
-		#define FreeSpace 0xBABD00 //Switch to any unused address
-		ORG FreeSpace
-	#endif
-	
-	#include EAstdlib.event
-	#include "Extensions/Hack Installation.txt"
-
 	#ifndef menuGlyphTable //ASCII Pointer Table start point
 		#define menuGlyphTable 0x58C7EC
 		#endif
@@ -33,11 +22,5 @@
 	#include "SerifUppercase/UppercaseSerif.txt"
 	#include "MenuLowercase/LowercaseMenu.txt"
 	#include "MenuUppercase/UppercaseMenu.txt"	
-		
-		
-		
-#else
-	ERROR "Set EA to FE8 events!"
-#endif
 
 #endif

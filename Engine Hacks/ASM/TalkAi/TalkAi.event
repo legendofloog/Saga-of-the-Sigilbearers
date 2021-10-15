@@ -23,7 +23,7 @@ The AiTryTalkToCharacter(aCharacter) macro is equivalent to:
 	AiMoveUntilAdjacentTo(aCharacter)
 	AiGotoIfNE(0, 2)
 
-	/* moved adjacent */
+	 moved adjacent 
 	AiFunc(AiTransformMoveIntoTalk, TalkAiCharacterParam)
 
 	AiRestart
@@ -33,7 +33,6 @@ TalkAiCharacterParam:
 }
 
 If you need more complex ai behavior from your unit, you can instead of using the macro edit this above to fit your needs.
-
 */
 
 #include "Src/TalkAi.lyn.event"

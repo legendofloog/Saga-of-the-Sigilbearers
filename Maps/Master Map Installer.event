@@ -19,6 +19,9 @@
 #include "ch3lesslong.event"
 }
 {
+#include "ch4xx_first_draft.event"
+}
+{
 #include "ch4xx_take2.event"
 }
 {

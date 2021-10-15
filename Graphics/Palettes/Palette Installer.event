@@ -33,3 +33,18 @@ SolveigScaleshot:
 UlfrFighter:
 	#incbin "./_palettes/UlfrFighter.lzpal" 
 
+RuneDisciple:
+	#incbin "./_palettes/RuneDisciple.lzpal" 
+
+EimundMageFighter:
+	#incbin "./_palettes/EimundMageFighter.lzpal" 
+
+CarysMyrmidon:
+	#incbin "./_palettes/CarysMyrmidon.lzpal" 
+
+BrynjaSwordArmor:
+	#incbin "./_palettes/BrynjaSwordArmor.lzpal" 
+
+WaylandFighter:
+	#incbin "./_palettes/WaylandFighter.lzpal" 
+

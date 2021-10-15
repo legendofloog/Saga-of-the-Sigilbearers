@@ -1,0 +1,113 @@
+## SkyrenderName
+Skyrender[X]
+
+## SkyrenderDesc
+Effective against fliers.[X]
+
+## WoDaoName
+Wo Dao[X]
+
+## WoDaoDesc
+A sword that kills all it touches.[X]
+
+## MagebaneName
+Magebane[X]
+
+## MagebaneDesc
+Effective against magic users.[X]
+
+## ThunderSwordName
+Thunder Sword[X]
+
+## ThunderSwordDesc
+A magic sword imbued with lightning.[X]
+
+## IceSwordName
+Ice Sword[X]
+
+## IceSwordDesc
+A magic sword imbued with frost.[X]
+
+## FireSwordName
+Fire Sword[X]
+
+## FireSwordDesc
+A magic sword imbued with flame.[X]
+
+## HarpoonName
+Harpoon[X]
+
+## HarpoonDesc
+A throwing spear that is uncounterable.[X]
+
+## SteelPoleaxeName
+Stl Poleaxe[X]
+
+## EmptyDesc
+[X]
+
+## ShortAxeName
+Short Axe[X]
+
+## ShortAxeDesc
+A throwing axe with flexible range.[X]
+
+## HandAxeName
+Hand Axe[X]
+
+## IronPoleaxeName
+Iron Poleaxe[X]
+
+## StlLongbowName
+Stl Longbow[X]
+
+## LongbowDesc
+A bow with extended range.[X]
+
+## SlvLongbowName
+Slv Longbow[X]
+
+## IronLongbowName
+Iron Longbow[X]
+
+## TornadoName
+Tornado[X]
+
+## FiletKnifeName
+Filet Knife[X]
+
+## HeavyHarpoonName
+[_H][_e][_a][_v][_y] [_H][_a][_r][_p][_o][_o][_n][X]
+
+## GlaiveName
+Glaive[.][X]
+
+## FiletKnifeDesc
+Used for cleaning fish. Negates DEF.[X]
+
+## VulneraryDesc
+A medicinal solution that heals[NL]
+minor wounds. Restores 15 HP.[.][X]
+
+## HeavyHarpoonDesc
+Spears fish and man with great force.[X]
+
+## GoldGemDesc
+A valuable gemstone worth[.][NL]
+20,000 gold.[X]
+
+## BlackGemDesc
+A valuable gemstone worth[.][NL]
+10,000 gold.[X]
+
+## WhiteGemDesc
+A valuable gemstone worth[.][NL]
+5,000 gold.[X]
+
+## BlueGemDesc
+A rare gemstone worth[.][NL]
+2,500 gold.[.][X]
+
+## RedGemDesc
+An uncommon gemstone[NL]
+worth 1,000 gold.[.][X]

@@ -538,7 +538,7 @@ then I won't hold back.[NL]
 Get ready, Hartner![A][CloseSpeechSlow][ClearFace][X]
 
 ## Ch4MyrmidonIntroText
-[MidLeft][LoadWyland]
+[MidLeft][LoadChapter4Myrm]
 What do we have here? The boss didn't[NL]
 say anything about a little village.[A]
 [MidRight][LoadStorchDad][OneLineBox]
@@ -560,7 +560,7 @@ Our only hope now is that Lady Solveig[NL]
 reaches us before he changes his mind.[A][X]
 
 ## Ch4MyrmidonWarningText
-[MidLeft][LoadWyland][ThreeLineBox]
+[MidLeft][LoadChapter4Myrm][ThreeLineBox]
 The rest of our group is struggling[Beat][NL]
 I can't fool around here any longer.[NL]
 I must rid myself of these villagers,[ANL]

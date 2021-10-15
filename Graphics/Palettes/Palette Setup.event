@@ -43,3 +43,23 @@
 // UlfrFighter
 	setPalette(10,UlfrFighter)
 	setCBSP(10,Ulfr, 1, Fighter)
+
+// RuneDisciple
+	setPalette(11,RuneDisciple)
+	setCBSP(11,Rune, 1, Outcast)
+
+// EimundMageFighter
+	setPalette(12,EimundMageFighter)
+	setCBSP(12,Eimund, 3, MageFighter)
+
+// CarysMyrmidon
+	setPalette(13,CarysMyrmidon)
+	setCBSP(13,Carys, 1, Myrmidon_F)
+
+// BrynjaSwordArmor
+	setPalette(14,BrynjaSwordArmor)
+	setCBSP(14,Brynja, 1, SwordKnight)
+
+// WaylandFighter
+	setPalette(15,WaylandFighter)
+	setCBSP(15,Wayland, 1, Fighter)

@@ -1,0 +1,121 @@
+## RagnaLordName
+Lord[X]
+
+## RagnaLordDesc
+The inheritor of House Agilas.[NL]
+A prodigy of the arcane arts.[X]
+
+## SwordArmorName
+Sword Armor[X]
+
+## MageFighterDesc
+Stalwart warriors experienced[NL]
+in battle, proficient with both[NL]
+physical and magical weapons.[X]
+
+## MageFighterName
+Mage Fighter[X]
+
+## HunterName
+Hunter[X]
+
+## LancerName
+Lancer[X]
+
+## DiscipleName
+Disciple[X]
+
+## LanceArmorName
+Lance Armor[X]
+
+## AxeArmorName
+Axe Armor[X]
+
+## DarkMageName
+Dark Mage[X]
+
+## BallisticianName
+Ballistician[X]
+
+## BallisticianDesc
+Utilizing mechanical contraptions,[NL]
+they attack from far out of reach.[X]
+
+## LancerDesc
+For-hire wanderers who prefer[NL]
+using the spear. Fast, but frail.[X]
+
+## LightMageName
+Light Mage[X]
+
+## LightMageDesc
+Skilled magi devoted to the path of[NL]
+Elphis. Proficient at recovery magic.[X]
+
+## SoldierName
+Soldier[X]
+
+## CavalierDesc
+Mounted knights who use their mobility[NL]
+to dart about the battlefield.[X]
+
+## ArmorDesc
+Sentinels of steel with poor[NL]
+speed but good durability.[X]
+
+## MercenaryDesc
+Professionals that ply their trade on[NL]
+the battlefield. Skilled with blades.[X]
+
+## MyrmidonDesc
+Those who live only for the sword,[NL]
+with speed that deceives their enemies.[X]
+
+## HunterDesc
+Knowledgeable denizens of the forest[NL]
+experienced with hunting beasts.[X]
+
+## DiscipleDesc
+A skilled warrior-in-training,[NL]
+currently under Eimund's tutelage.[X]
+
+## AxeCavName
+Axe Cav[X]
+
+## SwordCavName
+Swd. Cav[X]
+
+## LanceCavName
+Lnc. Cav[X]
+
+## ScaleshotName
+Scaleshot[X]
+
+## WyvernRiderDesc
+Mighty warriors of the sky who descend[NL]
+to strike opponents with their axe.[X]
+
+## ArcherDesc
+Well-trained marksmen who nock each[NL]
+arrow with speed and precision.[X]
+
+## ScaleshotDesc
+A skilled wyvern rider, honoring her[NL]
+family by raining arrows from above.[X]
+
+## FighterDesc
+Balanced attackers who favor the axe.[NL]
+Fight for reasons known only to them.[X]
+
+## BrigandDesc
+Brutish individuals who make a[NL]
+living tormenting the weak.[X]
+
+## WarriorDesc
+Mighty opponents who specialize[NL]
+in delivering death, whether they[NL]
+attack from up close or afar.[X]
+
+## SoldierDesc
+Well-balanced practicioners of[NL]
+the spear with powerful thrusts.[X]

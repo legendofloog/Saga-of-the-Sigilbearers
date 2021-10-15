@@ -1,0 +1,329 @@
+EventPointerTable(0x14,PointerList) //7 is the ID for prologue events in vanilla FE8
+
+PointerList:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno1 Dunno2 Dunno3 Tutorial
+POIN Traps1 Traps2
+POIN Units1 Units1
+POIN $0 $0 $0 
+POIN $0 $0 $0
+POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+TurnEventPlayer(7,Ch4OpeningTurn,1)
+TurnEventPlayer(8,VillageDestructionWarning,5)
+TurnEventEnemy(9,VillageDestruction,6)
+TurnEventPlayer(10,ReinforcementsWarning,4)
+TurnEventPlayer(11,ReinforcementWave1Event,5)
+TurnEventPlayer(12,HartnerExitWarning,3)
+TurnEventPlayer(13,HartnerLeaves,4)
+TurnEventPlayer(20,DaiChargeWarning,6)
+TurnEventPlayer(21,DaiCharge,7)
+END_MAIN
+
+ALIGN 32
+CharacterBasedEvents:
+END_MAIN
+
+LocationBasedEvents:
+Village(14,RivaldVillage,18,14)
+END_MAIN
+
+MiscBasedEvents:
+AREA 15 HartnerEscape [0, 0] [0, 2]
+AFEV 17 HartnerCaptureCheck 16
+CauseGameOverIfLordDies
+DefeatBoss(EndingScene)
+END_MAIN 
+
+Dunno1:
+END_MAIN 
+
+Dunno2:
+END_MAIN 
+
+Dunno3:
+END_MAIN 
+
+Tutorial:
+END_MAIN
+
+Units1:
+
+UNIT Rune Outcast Rune Level(2,Ally,False) [7,2] 0x0 0x0 0x0 0x1 [IronAxe,HandAxe,Vulnerary] NoAI
+UNIT Asgeir AsgeirLord Rune Level(1,Ally,False) [6,3] 0x0 0x0 0x0 0x1 [Glaive,IronLance,Vulnerary] NoAI
+UNIT Ragna RagnaLord Rune Level(1,Ally,False) [7,4] 0x0 0x0 0x0 0x1 [Thunder,Flux,Vulnerary] NoAI
+UNIT Eimund Warrior Rune Level(1,Ally,False) [8,5] 0x0 0x0 0x0 0x1 [BraveAxe,Thunder,Vulnerary] NoAI
+UNIT Ulfr Fighter Rune Level(2,Ally,False) [9,4] 0x0 0x0 0x0 0x1 [IronAxe,Vulnerary] NoAI
+UNIT Ivarr Hunter Rune Level(2,Ally,False) [9,6] 0x0 0x0 0x0 0x1 [IronBow,Vulnerary] NoAI
+UNIT Brynja SwordKnight Rune Level(9,Ally,False) [10,5] 0x0 0x0 0x0 0x1 [SilverSword,IronSword,Vulnerary] NoAI
+UNIT Eimund Myrmidon_F Rune Level(2, Ally, False) [11,4] 0x00 0x00 0x00 0x01 [Shamshir,IronSword,Vulnerary] NoAI
+UNIT Eimund LanceCav Rune Level(2, Ally, False) [12,3] 0x00 0x00 0x0 0x01 [IronLance, Vulnerary] NoAI
+UNIT Signe Soldier_F Rune Level(2,Ally,False) [11,2] 0x00 0x00 0x0 0x01 [IronLance,Vulnerary] NoAI
+UNIT Eimund Mercenary_F Rune Level(4,Ally,False) [11,6] 0x00 0x00 0x0 0x01 [IronBlade, Vulnerary] NoAI
+UNIT Solveig Bow_Dragonrider Rune Level(4,Ally,False) [9,3] 0x00 0x00 0x0 0x01 [IronBow,IronLongbow,Vulnerary] NoAI
+UNIT Eimund Warrior Rune Level(1,Ally,False) [12,5] 0x0 0x0 0x0 0x1 [BraveAxe,Thunder,Vulnerary] NoAI
+UNIT
+
+EnemyUnits:
+
+UNIT Dai Mercenary Dai Level(10,Enemy,False) [1,14] 0x00 0x00 0x0 0x00 [SteelSword,KillingEdge,Vulnerary] AttackInRangeAI
+UNIT Hartner Thief Dai Level(1, Enemy, False) [1,1] 0x00 0x00 0x0 0x00 [IronSword] [0x06,0x03,0x04,0x20]//NeverMoveAI but doesn't attack
+UNIT 0x70 LanceCav Dai Level(4, Enemy, True) [2,0] 0x00 0x00 0x0 0x00 [IronLance] AttackInRangeAI
+UNIT 0x70 Hunter Dai Level(4, Enemy, True) [0,0] 0x00 0x00 0x0 0x00 [IronBow] AttackInTwoMovementsAI
+UNIT 0x70 Fighter Dai Level(4, Enemy, True) [15,1] 0x00 0x00 0x0 0x00 [IronAxe] AttackInRangeAI
+UNIT 0x70 Mercenary Dai Level(4, Enemy, True) [5,6] 0x00 0x00 0x0 0x00 [IronSword] AttackInRangeAI
+UNIT 0x70 Mercenary Dai Level(4, Enemy, True) [16,3] 0x00 0x00 0x0 0x00 [IronSword] AttackInRangeAI
+UNIT 0x70 Soldier Dai Level(4, Enemy, True) [19,5] 0x00 0x00 0x0 0x00 [IronLance,Horseslayer] AttackInRangeAI
+UNIT 0x70 Soldier Dai Level(4, Enemy, True) [1,7] 0x00 0x00 0x0 0x00 [IronLance] AttackInRangeAI
+UNIT 0x70 Axe_Dragonrider Dai Level(4, Enemy, True) [10,15] 0x00 0x00 0x0 0x00 [IronAxe] PursueWithoutHeedAI
+UNIT 0x70 Fighter Dai Level(4, Enemy, True) [14,8] 0x00 0x00 0x0 0x00 [IronAxe] PursueWithoutHeedAI
+UNIT 0x70 Archer Dai Level(4, Enemy, True) [18,10] 0x00 0x00 0x0 0x00 [IronBow] AttackInRangeAI
+UNIT 0x70 Brigand Dai Level(4,Enemy,True) [17,12] 0x00 0x00 0x0 0x00 [IronAxe,SecretBook] EscapeOnlyAI
+UNIT 0x70 Fighter Dai Level(4, Enemy, True) [7,9] 0x00 0x00 0x0 0x00 [IronAxe] AttackInRangeAI
+UNIT 0x70 Hunter Dai Level(4, Enemy, True) [3,11] 0x00 0x00 0x0 0x00 [IronBow] AttackInTwoMovementsAI
+UNIT 0x70 Hunter Dai Level(4, Enemy, True) [11,16] 0x00 0x00 0x0 0x00 [IronBow] AttackInRangeAI
+UNIT 0x70 Lancer Dai Level(4,Enemy,True) [11,11] 0x00 0x00 0x00 0x00 [IronLance] PursueWithoutHeedAI
+UNIT 0x70 Axe_Dragonrider Dai Level(4, Enemy, True) [0,16] 0x00 0x00 0x0 0x00 [IronAxe] PursueWithoutHeedAI
+UNIT 0x70 Mercenary Dai Level(4, Enemy, True) [19,12] 0x00 0x00 0x0 0x00 [SteelSword] AttackInRangeAI
+UNIT 0x71 Myrmidon Dai Level(7, Enemy, True) [18,14] 0x00 0x00 0x0 0x00 [Shamshir,Torch] AttackInPlaceAI
+UNIT 0x70 Fighter Dai Level(4, Enemy, True) [13,16] 0x00 0x00 0x0 0x00 [IronAxe] AttackInTwoMovementsAI
+UNIT 0x70 Axe_Dragonrider Dai Level(4, Enemy, True) [19,16] 0x00 0x00 0x0 0x00 [IronAxe] PursueWithoutHeedAI
+UNIT 0x70 Hunter Dai Level(4, Enemy, True) [17,16] 0x00 0x00 0x0 0x00 [SteelBow] AttackInRangeAI
+UNIT 0x70 SwordCav Dai Level(4, Enemy, True) [1,11] 0x00 0x00 0x0 0x00 [IronSword] AttackInTwoMovementsAI
+UNIT 0x70 Lancer Dai Level(4, Enemy, True) [3,15] 0x00 0x00 0x0 0x00 [IronLance] AttackInRangeAI
+UNIT
+
+ReinforcementWave1:
+UNIT 0x70 Mercenary Dai Level(4, Enemy, True) [18,9] 0x00 0x00 0x0 0x00 [IronSword] PursueWithoutHeedAI
+UNIT 0x70 Fighter Dai Level(4, Enemy, True) [3,9] 0x00 0x00 0x0 0x00 [IronAxe] PursueWithoutHeedAI
+UNIT 0x70 AxeCav Dai Level(4, Enemy, True) [1,12] 0x00 0x00 0x0 0x00 [IronAxe] PursueWithoutHeedAI
+UNIT 0x70 LanceCav Dai Level(4, Enemy, True) [1,16] 0x00 0x00 0x0 0x00 [SteelLance,Vulnerary] PursueWithoutHeedAI
+UNIT
+
+Traps1:
+ENDTRAP
+ALIGN 4
+
+Traps2:
+ENDTRAP
+ALIGN 4
+
+BeginningScene:
+SetBackground(0x11)
+MUSC Rovers
+CAMERA [9,3]
+Text(Ch4Scene1)
+MUSC 0x7FFF
+SetBackground(0x0A)
+Text(Ch4Scene2)
+CALL $9EE2C4
+LOAD1 1 EnemyUnits
+CAMERA Dai
+Text(Ch4DaiIntroText)
+LOAD1 0 Units1
+ENUN
+PREP
+ENDA
+
+Ch4OpeningTurn:
+MUSC FE11_Onset
+CAMERA Asgeir
+Text(Ch4EimundAsgeirCaptureText)
+CAMERA Hartner
+CURSOR_FLASHING Hartner
+STAL 60
+REMOVE_CURSORS
+Text(Ch4HartnerIntroText)
+CHECK_DEPLOYED Eindride
+BEQ 10 s0 sC
+	CAMERA Eindride
+	CURSOR_FLASHING Eindride
+	STAL 60
+	REMOVE_CURSORS
+	Text(EindrideHartnerHintText)
+LABEL 10
+CAMERA [18,14]
+CURSOR_FLASHING [18,14]
+STAL 60
+REMOVE_CURSORS
+SetBackground(0x02)
+Text(Ch4MyrmidonIntroText)
+CALL $9EE2C4
+NoFade
+ENDA
+
+VillageDestructionWarning:
+CHECK_AT [18, 14]
+SVAL s1 0x71
+BNE 1 s1 sC
+	CAMERA [18,14]
+	CURSOR_FLASHING [18,14]
+	STAL 60
+	REMOVE_CURSORS
+	Text(Ch4MyrmidonWarningText)
+LABEL 1
+NoFade
+ENDA
+
+VillageDestruction:
+CHECK_AT [18, 14]
+SVAL s1 0x71
+BNE 2 s1 sC
+	CAMERA [18,14]
+	TILECHANGE 0
+	MOVE 10 0x71 [18,17]
+	ENUN
+	REMOVEUNIT 0x71
+	ENUT 14
+LABEL 2
+NoFade
+ENDA
+
+RivaldVillage:
+	ENUT 8
+	ENUT 9
+	CHECK_ACTIVE 
+	SVAL s1 Solveig
+	BNE 3 s1 sC
+		VillageEventItem(Ch4VillageSolveigText, Village1, KillerBow)
+	LABEL 3
+		VillageEventItem(Ch4VillageGenericText, Village1, Javelin)
+
+ReinforcementsWarning:
+CAMERA Dai
+Text(Ch4DaiReinforcementText)
+NoFade
+ENDA
+
+ReinforcementWave1Event:
+LOAD1 1 ReinforcementWave1
+ENUN
+CAMERA [3,9]
+STAL 30
+CAMERA [18,9]
+STAL 30
+CAMERA [1,14]
+STAL 30
+NoFade
+ENDA
+
+HartnerExitWarning:
+CAMERA Hartner
+Text(Ch4HartnerWarningText)
+NoFade
+ENDA
+
+HartnerLeaves:
+SVAL s1 0x00040C06
+CHAI Hartner
+NoFade
+ENDA
+
+HartnerCaptureCheck:
+CHECK_EXISTS Hartner
+BEQ 7 s0 sC
+	CHECK_ACTIVEID Eindride
+	BEQ 9 s0 sC
+		MUSC FE11_Preparations
+		TEXTSTART
+		TEXTSHOW HartnerSparedByEindrideText
+		TEXTEND
+		MUSC FE11_TogetherWeRide
+		TEXTCONT
+		TEXTEND
+		REMA
+		ENUT 22
+		GOTO 8
+	LABEL 9
+	ENUT 22
+	MUSC FE11_Preparations
+	Text(HartnerCapturedText)
+	GOTO 8
+LABEL 7
+CHECK_ACTIVEID Eindride
+BEQ 10 s0 sC
+	MUSC FE11_Preparations
+	TEXTSTART
+	TEXTSHOW HartnerSparedByEindrideText
+	TEXTEND
+	MUSC FE11_TogetherWeRide
+	TEXTCONT
+	TEXTEND
+	REMA
+	ENUT 22
+	GOTO 8
+Text(HartnerDeathText4x)
+LABEL 8
+NoFade
+ENDA
+
+HartnerEscape:
+CHECK_CLASS -1
+SVAL s1 Thief
+BNE 4 s1 sC
+	Text(Ch4HartnerExitText)
+	GOTO 19
+LABEL 4
+ENUF 15
+LABEL 19
+NoFade
+ENDA
+
+DaiChargeWarning:
+CAMERA Dai
+CURSOR_FLASHING Dai
+STAL 60
+REMOVE_CURSORS
+Text(DaiChargeWarningText)
+NoFade
+ENDA
+
+DaiCharge:
+CAMERA Dai
+CURSOR_FLASHING Dai
+STAL 60
+REMOVE_CURSORS
+Text(DaiChargeText)
+SVAL s1 0x00000000
+CHAI Dai
+NoFade
+ENDA
+
+EndingScene:
+MUSC 0x7FFF
+CHECK_EVENTID 22
+BEQ 5 s0 sC //if not set goto LABEL 0x14
+	SetBackground(0x15)
+	MUSC 0x2B
+	Text(Ch4EndingSceneGaidenGet1)
+	EVBIT_MODIFY 1
+	//CenterTutorialTextBox
+	//TUTORIALTEXTBOXSTART
+	//TEXTSHOW Ch4GaidenChoiceText
+	//TEXTEND
+	//REMA
+	SVAL s1 1
+	BNE 11 s1 sC
+		EVBIT_MODIFY 0
+		//Text(Ch4GaidenChoiceYesText)
+		MNC2 0x04
+		NoFade
+		ENDB
+	LABEL 11
+	EVBIT_MODIFY 0
+	//Text(Ch4GaidenChoiceNoText)
+	MNC2 0x05
+	NoFade
+	ENDB
+LABEL 5
+SetBackground(0x15)
+MUSC 0x2B
+Text(Ch4EndingSceneGaidenNotGet1)
+MNC2 0x05 //goto titlescreen
+LABEL 6
+NoFade
+ENDA

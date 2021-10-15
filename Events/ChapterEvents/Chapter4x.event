@@ -1,0 +1,400 @@
+EventPointerTable(0x17,PointerList) //7 is the ID for prologue events in vanilla FE8
+
+PointerList:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno1 Dunno2 Dunno3 Tutorial
+POIN Traps1 Traps2
+POIN Units1 Units1
+POIN $0 $0 $0 
+POIN $0 $0 $0
+POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+TurnEventPlayer(14,ErlynLeaveEvent,7)
+END_MAIN
+
+ALIGN 32
+CharacterBasedEvents:
+END_MAIN
+
+LocationBasedEvents:
+Door(17,3)
+Door(3,9)
+Chest(Mend,2,11)
+Chest(SteelAxe,4,11)
+Arrive(22,3)
+LOCA 7 Civilians1 [6,21] 0x12
+Door(11,21)
+LOCA 8 Civilians2 [17,21] 0x12
+END_MAIN
+
+MiscBasedEvents:
+AREA 9 CiviliansCounter [0, 24] [2, 24]
+AREA 10 TopSwitch [17,1] [17,1]
+AREA 11 BottomSwitch [11,23] [11,23]
+AFEV 13 SahnCaptureCheck 12
+CauseGameOverIfLordDies
+END_MAIN 
+
+Dunno1:
+END_MAIN
+
+Dunno2:
+END_MAIN 
+
+Dunno3:
+END_MAIN 
+
+Tutorial:
+END_MAIN
+
+Units1:
+UNIT Rune Outcast Rune Level(2,Ally,False) [22,20] 0x0 0x0 0x0 0x1 [IronAxe,HandAxe,Vulnerary] NoAI
+UNIT Asgeir AsgeirLord Rune Level(1,Ally,False) [3,2] 0x0 0x0 0x0 0x1 [Glaive,IronLance,Vulnerary] NoAI
+UNIT Hartner Thief Rune Level(1, Ally, False) [2,3] 0x00 0x00 0x0 0x00 [IronSword,Vulnerary] NoAI
+UNIT Ragna RagnaLord Rune Level(1,Ally,False) [1,2] 0x0 0x0 0x0 0x1 [Thunder,Flux,Vulnerary] NoAI
+UNIT Eimund Warrior Rune Level(1,Ally,False) [2,1] 0x0 0x0 0x0 0x1 [BraveAxe,Thunder,Vulnerary] NoAI
+UNIT Ulfr Fighter Rune Level(2,Ally,False) [3,0] 0x0 0x0 0x0 0x1 [IronAxe,Vulnerary] NoAI
+UNIT Ivarr Hunter Rune Level(2,Ally,False) [21,22] 0x0 0x0 0x0 0x1 [IronBow,Vulnerary] NoAI
+UNIT Brynja SwordKnight Rune Level(9,Ally,False) [4,1] 0x0 0x0 0x0 0x1 [SilverSword,IronSword,Vulnerary] NoAI
+UNIT Eimund Myrmidon_F Rune Level(2, Ally, False) [23,21] 0x00 0x00 0x00 0x01 [Shamshir,IronSword,Vulnerary] NoAI
+UNIT Eimund LanceCav Rune Level(2, Ally, False) [22,22] 0x00 0x00 0x0 0x01 [IronLance, Vulnerary] NoAI
+UNIT Signe Soldier_F Rune Level(2,Ally,False) [5,0] 0x00 0x00 0x0 0x01 [IronLance,Vulnerary] NoAI
+UNIT Eimund Mercenary_F Rune Level(4,Ally,False) [23,22] 0x00 0x00 0x0 0x01 [IronBlade, Vulnerary] NoAI
+UNIT Solveig Bow_Dragonrider Rune Level(4,Ally,False) [21,21] 0x00 0x00 0x0 0x01 [IronBow,IronLongbow,Vulnerary] NoAI
+UNIT Eimund Warrior Rune Level(1,Ally,False) [22,21] 0x0 0x0 0x0 0x1 [BraveAxe,Thunder,Vulnerary] NoAI
+UNIT
+
+EnemyUnits:
+UNIT Erlyn Hero_F Erlyn Level(3,Enemy,True) [22,4] 0x00 0x00 0x0 0x00 [SilverAxe,KillingEdge] NeverMoveAI
+UNIT Sahn WindMage Erlyn Level(8, Enemy,True) [22,3] 0x00 0x00 0x0 0x00 [Wind] NeverMoveAI
+UNIT 0x70 Archer_F Erlyn Level(4, Enemy, True) [14,15] 0x00 0x00 0x0 0x00 [IronBow,IronLongbow] AttackInRangeAI
+UNIT 0x70 Archer_F Erlyn Level(4, Enemy, True) [19,15] 0x00 0x00 0x0 0x00 [IronBow,IronLongbow] AttackInRangeAI
+UNIT 0x70 Archer_F Erlyn Level(4, Enemy, True) [24,15] 0x00 0x00 0x0 0x00 [IronBow,IronLongbow] AttackInRangeAI
+UNIT 0x70 Archer_F Erlyn Level(4, Enemy, True) [9,15] 0x00 0x00 0x0 0x00 [IronBow,IronLongbow] AttackInRangeAI
+UNIT 0x70 Archer_F Erlyn Level(4, Enemy, True) [0,15] 0x00 0x00 0x0 0x00 [IronBow,IronLongbow] AttackInRangeAI
+UNIT 0x70 Archer_F Erlyn Level(4, Enemy, True) [5,15] 0x00 0x00 0x0 0x00 [IronBow,IronLongbow] AttackInRangeAI
+UNIT 0x70 Soldier Erlyn Level(4, Enemy, True) [17,20] 0x00 0x00 0x0 0x00 [IronLance,DoorKey] NeverMoveAI
+UNIT 0x70 Archer Erlyn Level(4, Enemy, True) [5,4] 0x00 0x00 0x0 0x00 [IronBow,IronLongbow] AttackInRangeAI
+UNIT 0x70 Archer Erlyn Level(4, Enemy, True) [10,4] 0x00 0x00 0x0 0x00 [IronBow,IronLongbow] AttackInRangeAI
+UNIT 0x70 Archer Erlyn Level(4, Enemy, True) [14,9] 0x00 0x00 0x0 0x00 [IronBow,IronLongbow] AttackInRangeAI
+UNIT 0x70 Soldier Erlyn Level(4, Enemy, True) [6,20] 0x00 0x00 0x0 0x00 [IronLance,DoorKey] NeverMoveAI
+UNIT 0x70 Soldier Erlyn Level(4, Enemy, True) [11,20] 0x00 0x00 0x0 0x00 [IronLance,DoorKey] NeverMoveAI
+UNIT 0x70 Fighter Erlyn Level(4, Enemy, True) [20,19] 0x00 0x00 0x0 0x00 [IronAxe] AttackInRangeAI
+UNIT 0x70 Myrmidon Erlyn Level(4, Enemy, True) [12,19] 0x00 0x00 0x0 0x00 [IronSword] AttackInRangeAI
+UNIT 0x70 Mercenary Erlyn Level(4, Enemy, True) [7,18] 0x00 0x00 0x0 0x00 [SteelSword] AttackInRangeAI
+UNIT 0x70 Pirate Erlyn Level(5, Enemy, True) [0,20] 0x00 0x00 0x0 0x00 [IronAxe,RedGem] AttackInRangeAI
+UNIT 0x70 Mercenary Erlyn Level(4, Enemy, True) [2,5] 0x00 0x00 0x0 0x00 [IronSword] AttackInRangeAI
+UNIT 0x70 Pirate Erlyn Level(4, Enemy, True) [7,2] 0x00 0x00 0x0 0x00 [IronAxe] AttackInRangeAI
+UNIT 0x70 Fighter Erlyn Level(4, Enemy, True) [13,1] 0x00 0x00 0x0 0x00 [IronAxe,Vulnerary] AttackInRangeAI
+UNIT 0x70 Fighter Erlyn Level(4, Enemy, True) [17,4] 0x00 0x00 0x0 0x00 [IronAxe,DoorKey] NeverMoveAI
+UNIT 0x70 Soldier Erlyn Level(4, Enemy, True) [3,8] 0x00 0x00 0x0 0x00 [IronLance,DoorKey] NeverMoveAI
+UNIT 0x70 Myrmidon Erlyn Level(4, Enemy, True) [8,9] 0x00 0x00 0x0 0x00 [IronSword] AttackInRangeAI
+UNIT 0x70 Mercenary Erlyn Level(4, Enemy, True) [13,12] 0x00 0x00 0x0 0x00 [SteelSword] AttackInRangeAI
+UNIT 0x70 Hunter Erlyn Level(4, Enemy, True) [19,10] 0x00 0x00 0x0 0x00 [SteelBow] AttackInRangeAI
+UNIT 0x70 Fighter Erlyn Level(4, Enemy, True) [24,9] 0x00 0x00 0x0 0x00 [IronAxe] AttackInRangeAI
+UNIT 0x70 Myrmidon Erlyn Level(4, Enemy, True) [20,5] 0x00 0x00 0x0 0x00 [IronSword] AttackInRangeAI
+UNIT
+
+Prisoners:
+UNIT 0x7A Civilian_2 0x0 Level(1,NPC,False) [17,23] 0x00 0x00 0x0 0x00 [0x0] EscapeOnlyAI
+UNIT 0x79 Civilian 0x0 Level(1,NPC,False) [5,23] 0x00 0x00 0x0 0x00 [0x0] EscapeOnlyAI
+UNIT 0x7B Civilian_F_2 0x0 Level(1,NPC,False) [7,23] 0x00 0x00 0x0 0x00 [0x0] EscapeOnlyAI
+UNIT 
+
+RenzerGroup:
+UNIT Renzer Warrior Erlyn Level(2, Enemy, True) [24,6] 0x00 0x00 0x0 0x00 [SilverBow, SilverAxe] EscapeOnlyAI
+UNIT 0x74 Sniper Renzer Level(2, Enemy, True) [24,5] 0x00 0x00 0x0 0x00 [SilverBow] EscapeOnlyAI
+UNIT 0x75 Sniper Renzer Level(2, Enemy, True) [23,6] 0x00 0x00 0x0 0x00 [SilverBow] EscapeOnlyAI
+UNIT
+
+SoldierAttack:
+UNIT 0x72 Lancer Erlyn Level(6, Enemy, True) [22,3] 0x00 0x00 0x0 0x00 [SteelLance] NoAI
+UNIT
+
+RuneCutscene:
+UNIT Rune Outcast Rune Level(2,Ally,False) [23,5] 0x0 0x0 0x0 0x1 [IronAxe,HandAxe,Vulnerary] NoAI
+UNIT Asgeir AsgeirLord Rune Level(1,Ally,False) [21,5] 0x0 0x0 0x0 0x1 [Glaive,IronLance,Vulnerary] NoAI
+UNIT 
+
+Traps1:
+TelliusTorchOn(17,18,2)
+TelliusTorchOn(6,18,2)
+TelliusTorchOn(9,20,2)
+TelliusTorchOn(14,20,2)
+TelliusTorchOn(1,8,2)
+TelliusTorchOn(18,4,2)
+TelliusTorchOn(21,3,2)
+TelliusTorchOn(23,3,2)
+ENDTRAP
+ALIGN 4
+
+Traps2:
+ENDTRAP
+ALIGN 4
+
+BeginningScene:
+RECLASS Solveig Archer_F
+RECLASS Eindride Soldier
+SVAL s1 ShoveID
+SVAL s2 Eindride
+ASMC (ASMC_LearnNewSkill|1)
+SVAL s1 CantoPlusID
+ASMC (ASMC_ForgetSkill|1)
+SVAL s1 ShoveID
+SVAL s2 Solveig
+ASMC (ASMC_LearnNewSkill|1)
+SVAL s1 CantoPlusID
+ASMC (ASMC_ForgetSkill|1)
+SetBackground(0x26)
+Text(Chapter4xScene1)
+CALL $9EE2C4
+LOAD1 1 EnemyUnits
+LOAD1 1 Prisoners
+ENUN
+SPAWN_CUTSCENE_ALLY Rune [-1,0]
+SPAWN_CUTSCENE_ALLY Asgeir [-1,1]
+SPAWN_CUTSCENE_ALLY Hartner [-2,1]
+MOVE 10 Rune [3,0]
+MOVE 10 Asgeir [1,2]
+MOVE 10 Hartner [2,1]
+ENUN
+Text(Chapter4xScene2)
+MOVE 10 Rune [0,0]
+ENUN
+CAMERA Erlyn
+CURSOR_FLASHING Erlyn
+STAL 60
+REMOVE_CURSORS
+REMOVEALL_BLUE
+Text(Ch4xErlynIntro)
+SPAWN_CUTSCENE_ALLY Rune [24,24]
+ENUN
+CAMERA [24,24]
+MOVE 10 Rune [22,24]
+ENUN
+MOVE 10 Rune [22,21]
+ENUN
+Text(Ch4xRunePrelude)
+REMA
+FADI 15
+REMOVEALL_BLUE
+LOAD1 0 Units1
+ENUN
+PREP
+ENDA
+
+ErlynLeaveEvent:
+LOAD1 1 RenzerGroup
+CAMERA Erlyn
+MOVE 10 Renzer [23,4]
+MOVE 10 0x74 [24,4]
+MOVE 10 0x75 [23,5]
+ENUN
+EVBIT_T 5
+TEXTSTART
+TEXTSHOW ErlynLeavesText
+TEXTEND
+MOVE 10 Renzer [24,6]
+MOVE 10 0x74 [24,5]
+MOVE 10 0x75 [23,6]
+ENUN
+REMOVEUNIT Renzer
+REMOVEUNIT 0x74
+REMOVEUNIT 0x75
+MOVE 5 Erlyn [24,6]
+ENUN
+REMOVEUNIT Erlyn
+MOVE 10 Sahn [22,4]
+ENUN
+TEXTCONT
+TEXTEND
+REMA
+NoFade
+ENDA
+
+Civilians1:
+TILECHANGE 0x06
+Text(LeftPrisonCellOpened)
+NoFade
+ENDA
+
+Civilians2:
+TILECHANGE 0x08
+Text(RightPrisonCellOpened)
+NoFade
+ENDA
+
+CiviliansCounter:
+CHECK_CLASS -1
+SVAL s1 Civilian
+BNE 1 s1 sC
+	COUNTER_INC 0
+	GOTO 3
+LABEL 1
+SVAL s1 Civilian_2
+BNE 2 s1 sC
+	COUNTER_INC 1
+	GOTO 3
+LABEL 2
+SVAL s1 Civilian_F_2
+BNE 3 s1 sC
+	COUNTER_INC 0
+LABEL 3
+ENUF 9
+NoFade
+ENDA
+
+TopSwitch:
+CHECK_EVENTID 11
+BEQ 4 s0 sC
+	TILECHANGE 0x05
+	CAMERA [11,17]
+	STAL 30
+	CAMERA Asgeir
+	CURSOR_FLASHING Asgeir
+	STAL 60
+	REMOVE_CURSORS
+	Text(BigDoorAsgeirText)
+LABEL 4
+NoFade
+ENDA
+
+BottomSwitch:
+CHECK_EVENTID 10
+BEQ 5 s0 sC
+	TILECHANGE 0x05
+	CAMERA [11,17]
+	CAMERA Rune
+	CURSOR_FLASHING Rune
+	STAL 60
+	REMOVE_CURSORS
+	Text(BigDoorRuneText)
+LABEL 5
+NoFade
+ENDA
+
+SahnCaptureCheck:
+CHECK_EXISTS Sahn
+BEQ 8 s0 sC
+	ENUT 0x7A
+	Text(SahnCapturedText)
+	GOTO 9
+LABEL 8
+Text(SahnDeathText4x)
+LABEL 9
+NoFade
+ENDA
+
+EndingScene:
+MUSC 0x7FFF
+FADI 15
+REMOVEALL_BLUE
+REMOVEALL_RED
+LOAD1 1 RuneCutscene
+FADU 5
+COUNTER_CHECK 0
+SVAL s1 2
+BNE 6 s1 sC
+	ENUT 0x78
+LABEL 6
+COUNTER_CHECK 1
+SVAL s1 1
+BNE 7 s1 sC
+	ENUT 0x79
+LABEL 7
+CAMERA [22,2]
+MUSC 0x07
+Text(Ch4xEndingScene1)
+MOVE 10 Asgeir [22,3]
+ENUN
+HIDEUNIT Asgeir
+MOVE 10 Rune [22,3]
+ENUN
+CHECK_EVENTID 0x7A
+BEQ 10 s0 sC
+	SetBackground(0x26)
+	Text(Ch4xEndingScene2SahnAlive)
+	CALL $9EE2C4
+	GOTO 11
+LABEL 10
+SetBackground(0x26)
+Text(Ch4xEndingScene2)
+CALL $9EE2C4
+LABEL 11
+EVBIT_T 5
+MOVE 10 Rune [23,0]
+STAL 120
+SPAWN_CUTSCENE_ALLY Ragna [22, 3]
+MOVE 10 Ragna [21, 0]
+ENUN
+TEXTSTART
+TEXTSHOW Ch4xEndingScene3
+TEXTEND
+MUSC 0x26
+LOAD1 1 SoldierAttack
+MOVE 10 0x72 [20, 0]
+ENUN
+TEXTCONT
+TEXTEND
+MOVE 15 Ragna [24,0]
+ENUN
+TEXTCONT
+TEXTEND
+REMA
+MOVE 15 0x72 [22,0]
+ENUN
+CheckMaxHP(Rune)
+SADD s1 sC s0
+SET_HP Rune
+StartBattle
+NormalDamage(0,10)
+MissedAttack(1,15)
+EndAttack
+MUSC 0x7FFF
+FIGHT 0x72 Rune SteelLance 0
+Text(Ch4xSceneAfterTheFirstFight)
+StartBattle
+CriticalHit(0,35)
+EndAttack
+FIGHT Rune 0x72 IronAxe 0
+KILL 0x72
+AWAIT_KILL 0x72
+MUSC 0x28
+EVBIT_F 5
+Text(Ch4xSceneAfterTheSecondFight)
+CHECK_ALIVE Hartner
+BEQ 12 s0 sC
+	CHECK_ALIVE Eindride
+	BEQ 12 s0 sC
+		CURSOR_FLASHING [22,3]
+		STAL 60
+		REMOVE_CURSORS
+		SetBackground(House2)
+		Text(Ch4xGaidenUnlockText)
+		EVBIT_MODIFY 1
+		CenterTutorialTextBox
+		TUTORIALTEXTBOXSTART
+		TEXTSHOW Ch4xxGaidenChoiceText
+		TEXTEND
+		REMA
+		SVAL s1 1
+		BNE 13 s1 sC
+			EVBIT_MODIFY 0
+			Text(Ch4xxGaidenChoiceYesText)
+			MNC2 0x06
+			NoFade
+			ENDA
+		LABEL 13
+		EVBIT_MODIFY 0
+		Text(Ch4xxGaidenChoiceNoText)
+		MNC2 0x05
+		NoFade
+		ENDA
+LABEL 12
+MNC2 0x05
+NoFade
+ENDA

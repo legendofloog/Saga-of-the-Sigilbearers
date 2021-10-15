@@ -1,0 +1,174 @@
+## RuneName
+Rune[X]
+
+## BrynjaName
+Brynja[X]
+
+## RagnaName
+Ragna[X]
+
+## EimundName
+Eimund[.][X]
+
+## UlfrName
+Ulfr[X]
+
+## IvarrName
+Ivarr[X]
+
+## CarysName
+Carys[X]
+
+## EindrideName
+Eindride[X]
+
+## SigneName
+Signe[X]
+
+## FridaName
+Frida[.][X]
+
+## SolveigName
+Solveig[X]
+
+## HartnerName
+Hartner[X]
+
+## LysandraName
+Lysandra[X]
+
+## AsgeirName
+Asgeir[X]
+
+## SahnName
+Sahn[X]
+
+## KleosName
+Kleos[X]
+
+## HjordisName
+Hjordis[X]
+
+## FredrikName
+Fredrik[X]
+
+## ViskardName
+Viskard[X]
+
+## ErlynName
+Erlyn[X]
+
+## RenzerName
+Renzer[X]
+
+## HildaName
+Hilda[X]
+
+## DaiName
+Dai[X]
+
+## WaylandName
+Wayland[X]
+
+## RuneDesc
+A pragmatic warrior of Luxean origin.[NL]
+Cynical, but loyal to his friends.[.][X]
+
+## BrynjaDesc
+Asgeir's retainer and a staunch knight.[NL]
+Devoted, yet exasperated by her liege.[X]
+
+## RagnaDesc
+The ambitious heir of House Agilas.[NL]
+Seeks to restore Norsaber's strength.[.][X]
+
+## EimundDesc
+A renowned hero and devoted teacher.[NL]
+Carries on the will of his former king.[.][X]
+
+## UlfrDesc
+A brash new recruit of the Hrafnmund.[NL]
+Despises Luxeans with all his heart.[.][X]
+
+## IvarrDesc
+Calm and stoic, unlike his brother.[NL]
+Serves the Hrafnmund with his bow.[X]
+
+## CarysDesc
+An enigmatic swordswoman wandering[NL]
+Norsaber. Originally hails from Wyntyn.[X]
+
+## EindrideDesc
+A spearfisher who fights for coin.[NL]
+Rides atop his trusty horse, Hook.[X]
+
+## SigneDesc
+An inexperienced young guard of Alund.[NL]
+Wants to become stronger for her town.[X]
+
+## FridaDesc
+A jovial sellsword who hails from Alund.[NL]
+Becomes reckless when the stakes rise.[X]
+
+## SolveigDesc
+Lord of the disgraced House Rivald.[NL]
+Seeks revenge for her family's deaths.[X]
+
+## HartnerDesc
+A cowardly thief from a quiet fishing[NL]
+village. Runs away from his problems.[X]
+
+## LysandraDesc
+A wyvern knight of Grado. A gentle[NL]
+man, but a ferocious warrior.[.][X]
+
+## AsgeirDesc
+The second son of House Falkr.[NL]
+Possesses a strong sense of justice.[.][X]
+
+## SahnDesc
+A prominent member of the Quicksilver[NL]
+Mercenaries. Cool-headed and loyal.[X]
+
+## KleosDesc
+An unreliable young man adept with[NL]
+sacred arts. Lacks confidence.[X]
+
+## HjordisDesc
+A young girl from a small village in[NL]
+Grado. She is honest and sincere.[.][X]
+
+## FredrikDesc
+A young monk from Renais. He is a[.][NL]
+very forthright and pious man.[X]
+
+## ViskardDesc
+A veteran of the seas. Wishes to make[NL]
+amends for his fish thieving ways.[X]
+
+## ErlynDesc
+Leader of the Quicksilver Mercenaries.[NL]
+Values her comrades above all else.[X]
+
+## RenzerDesc
+The second-in-command of a mercenary[NL]
+troop. Tends to take it easy.[X]
+
+## HildaDesc
+The captain of Alund's town guard.[NL]
+Does not respect House Rivald.[X]
+
+## DaiDesc
+A lieutenant of the mercenary troop[NL]
+pursuing Asgeir. Hotheaded and rude.[X]
+
+## WaylandDesc
+Once fought on the Luxean warfront.[NL]
+Now a mercenary desperate for coin.[X]
+
+## YanusName
+Yanus[X]
+
+## YanusDesc
+A leading member of a mercenary group.[N]
+Highly confident in his arcane prowess.[X]

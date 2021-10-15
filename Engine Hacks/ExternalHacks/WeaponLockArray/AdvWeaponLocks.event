@@ -23,4 +23,9 @@ BYTE HardCharLock
 BYTE Hartner
 BYTE EndLockArray
 
+HeavyHarpoonArray:
+BYTE HardCharLock
+BYTE Eindride
+BYTE EndLockArray
+
 #endif // ADV_WEAPON_LOCKS

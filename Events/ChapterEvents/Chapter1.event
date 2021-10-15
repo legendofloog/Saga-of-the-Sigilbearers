@@ -1,0 +1,222 @@
+EventPointerTable(Chapter1Events,PointerList) //7 is the ID for prologue events in vanilla FE8
+
+PointerList:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno1 Dunno2 Dunno3 Tutorial
+POIN Traps1 Traps2
+POIN Units1 Units1
+POIN $0 $0 $0 
+POIN $0 $0 $0
+POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+TurnEventPlayer(7,BrigandSpawn,2)
+TurnEventPlayer(8,ChargeWayland,7)
+TurnEventPlayer(15,ChargeWaylandWarning,6)
+END_MAIN
+
+ALIGN 32
+CharacterBasedEvents:
+CharacterEventBothWays(10,RuneRagna,Rune,Ragna)
+END_MAIN
+
+LocationBasedEvents:
+Village(13,TopVillage,13,2)
+Village(14,BottomVillage,17,15)
+END_MAIN
+
+MiscBasedEvents:
+CauseGameOverIfLordDies
+DefeatBoss(EndingScene)
+END_MAIN 
+
+Dunno1:
+END_MAIN 
+
+Dunno2:
+END_MAIN 
+
+Dunno3:
+END_MAIN 
+
+Tutorial:
+END_MAIN
+
+Units1:
+
+UNIT Rune Outcast Rune Level(2,Ally,False) [29,2] 0x0 0x0 0x0 0x1 [HandAxe,IronAxe,Vulnerary] NoAI
+UNIT Asgeir AsgeirLord Rune Level(1,Ally,False) [29,2] 0x0 0x0 0x0 0x1 [Glaive,IronLance,Vulnerary] NoAI
+UNIT
+
+Units2:
+
+UNIT Ragna RagnaLord Rune Level(1,Ally,False) [35,18] 0x0 0x0 0x0 0x1 [Vulnerary] NoAI
+UNIT Eimund MageFighter Rune Level(5,Ally,False) [34,18] 0x0 0x0 0x0 0x1 [IronAxe,BraveAxe,IronBow,Vulnerary] NoAI
+UNIT Ulfr Fighter Rune Level(2,Ally,False) [35,17] 0x0 0x0 0x0 0x1 [IronAxe,Vulnerary] NoAI
+UNIT Ivarr Hunter Rune Level(2,Ally,False) [35,19] 0x0 0x0 0x0 0x1 [IronBow,Vulnerary] NoAI
+UNIT
+
+Units3:
+UNIT Brynja SwordKnight Rune Level(9,Ally,False) [29,2] 0x0 0x0 0x0 0x1 [SilverSword,IronSword,Vulnerary] NoAI
+UNIT
+
+EnemyUnits:
+UNIT Wayland Fighter 0x00 Level(4, Enemy, True) [5,7] 0x00 0x00 0x0 0x00 [ShortAxe,SteelAxe] AttackInRangeAI
+UNIT 0x70 Fighter Wayland Level(1, Enemy, True) [20,17] 0x00 0x00 0x0 0x00 [IronAxe] AttackInRangeAI
+UNIT 0x70 Fighter Wayland Level(1, Enemy, True) [17,12] 0x00 0x00 0x0 0x00 [IronAxe] PursueWithoutHeedAI
+UNIT 0x70 Fighter Wayland Level(1, Enemy, True) [17,9] 0x00 0x00 0x0 0x00 [IronAxe] PursueWithoutHeedAI
+UNIT 0x70 Soldier Wayland Level(1, Enemy, True) [24,17] 0x00 0x00 0x0 0x00 [IronLance] AttackInRangeAI
+UNIT 0x70 Lancer Wayland Level(1, Enemy, True) [25,14] 0x00 0x00 0x0 0x00 [IronLance] AttackInRangeAI
+UNIT 0x70 Mercenary Wayland Level(1, Enemy, True) [24,3] 0x00 0x00 0x0 0x00 [IronSword] AttackInRangeAI
+UNIT 0x70 Soldier Wayland Level(1, Enemy, True) [31,7] 0x00 0x00 0x0 0x00 [IronLance] AttackInRangeAI
+UNIT 0x70 SwordKnight Wayland Level(1, Enemy, True) [19,3] 0x00 0x00 0x0 0x00 [SteelSword] NeverMoveAI
+UNIT 0x70 SwordKnight Wayland Level(1, Enemy, True) [19,2] 0x00 0x00 0x0 0x00 [SteelSword] NeverMoveAI
+UNIT 0x70 Fighter Wayland Level(1, Enemy, True) [25,19] 0x00 0x00 0x0 0x00 [IronAxe] AttackInRangeAI
+UNIT 0x70 LanceKnight Wayland Level(1, Enemy, True) [21,18] 0x00 0x00 0x0 0x00 [Javelin,IronLance] NeverMoveAI
+UNIT 0x70 LanceKnight Wayland Level(1, Enemy, True) [21,19] 0x00 0x00 0x0 0x00 [Javelin,IronLance] NeverMoveAI
+UNIT 0x70 LanceCav Wayland Level(1, Enemy, True) [16,17] 0x00 0x00 0x0 0x00 [IronLance] AttackInRangeAI
+UNIT 0x70 Lancer Wayland Level(1, Enemy, True) [15,19] 0x00 0x00 0x0 0x00 [IronLance] AttackInRangeAI
+UNIT 0x70 LanceCav Wayland Level(1, Enemy, True) [11,7] 0x00 0x00 0x0 0x00 [IronLance] AttackInTwoMovementsAI
+UNIT 0x70 Myrmidon Wayland Level(1, Enemy, True) [14,16] 0x00 0x00 0x0 0x00 [IronSword] AttackInTwoMovementsAI
+UNIT 0x70 Fighter Wayland Level(1, Enemy, True) [14,4] 0x00 0x00 0x0 0x00 [IronAxe] AttackInRangeAI
+UNIT 0x70 Soldier Wayland Level(1, Enemy, True) [13,15] 0x00 0x00 0x0 0x00 [IronLance] AttackInRangeAI
+UNIT 0x70 Mercenary Wayland Level(1, Enemy, True) [15,5] 0x00 0x00 0x0 0x00 [SteelSword] AttackInRangeAI
+UNIT 0x70 Mercenary Wayland Level(1, Enemy, True) [10,16] 0x00 0x00 0x0 0x00 [SteelSword] AttackInRangeAI
+UNIT 0x70 Fighter Wayland Level(1, Enemy, True) [10,15] 0x00 0x00 0x0 0x00 [IronAxe,Vulnerary] AttackInRangeAI
+UNIT 0x70 Soldier Wayland Level(1, Enemy, True) [10,11] 0x00 0x00 0x0 0x00 [IronLance,HeavySpear] AttackInRangeAI
+UNIT 0x70 Myrmidon Wayland Level(1, Enemy, True) [10,12] 0x00 0x00 0x0 0x00 [IronSword,Vulnerary] AttackInRangeAI
+UNIT 0x70 Fighter Wayland Level(1, Enemy, True) [16,11] 0x00 0x00 0x0 0x00 [IronAxe] AttackInRangeAI
+UNIT 0x70 SwordCav Wayland Level(1, Enemy, True) [11,10] 0x00 0x00 0x0 0x00 [IronSword] AttackInRangeAI
+UNIT 0x70 AxeCav Wayland Level(1, Enemy, True) [12,13] 0x00 0x00 0x0 0x00 [IronAxe] AttackInRangeAI
+UNIT 0x70 Lancer Wayland Level(1, Enemy, True) [5,10] 0x00 0x00 0x0 0x00 [IronLance] AttackInTwoMovementsAI
+UNIT 0x70 Myrmidon Wayland Level(1, Enemy, True) [7,13] 0x00 0x00 0x0 0x00 [IronSword] AttackInTwoMovementsAI
+UNIT
+
+Brigands:
+UNIT 0x70 Brigand Wayland Level(1, Enemy, True) [7,9] 0x00 0x00 0x0 0x00 [IronAxe] AttackThenLootAI
+UNIT 0x70 Brigand Wayland Level(1, Enemy, True) [7,18] 0x00 0x00 0x0 0x00 [IronAxe] AttackThenLootAI
+UNIT
+
+GreenUnits: 
+UNIT Carys Myrmidon_F 0x00 Level(2, NPC, True) [26,9] 0x00 0x00 0x00 0x00 [Shamshir,IronSword,Vulnerary] AttackInPlaceAI
+UNIT
+
+Traps1:
+ENDTRAP
+ALIGN 4
+
+Traps2:
+ENDTRAP
+ALIGN 4
+
+BeginningScene:
+ENUT 0xEF
+SetBackground(03)
+MUSC RippleIslandEnding
+CAM1 [26,17]
+CenterTutorialTextBox
+TUTORIALTEXTBOXSTART
+TEXTSHOW Ch1Letter
+TEXTEND
+REMA
+Text(Ch1Scene1)
+CALL $9EE2C4
+MUSC 0x7FFF
+CAM1 [26,2]
+CURSOR_FLASHING [29, 2]
+STAL 60
+REMOVE_CURSORS
+SetBackground(09)
+MUSC OneHundredOJ_KaiTheme
+//Text(Ch1Scene2)
+MUSC 0x7FFF
+LOAD1 1 EnemyUnits
+LOAD1 1 GreenUnits
+LOAD1 1 Units1
+CALL $9EE2C4
+MOVE 10 Asgeir [29,4]
+ENUN
+MOVE 10 Rune [30,3]
+ENUN
+MUSC Sortie_Formation
+//TEXTSTART
+//TEXTSHOW Ch1Scene3
+//TEXTEND
+LOAD1 1 Units3
+ENUN
+MOVE 10 Brynja [28,3]
+ENUN
+//TEXTCONT
+//TEXTEND
+CAMERA [27,17]
+LOAD1 1 Units2
+ENUN
+MOVE 10 Eimund [28, 18]
+STAL 30
+MOVE 10 Ulfr [29, 17]
+MOVE 10 Ivarr [29, 19]
+STAL 10
+MOVE 10 Ragna [29, 18]
+ENUN
+STAL 60
+//TEXTCONT
+//TEXTEND
+//REMA
+ENUN
+NoFade
+ENDA
+
+EndingScene:
+MUSC FE11_Onset
+SetBackground(07)
+Text(Ch1EndingScene1)
+CHECK_ALIVE Carys
+BEQ 18 s0 sC
+SetBackground(04)
+MUSC FE11_Preparations
+Text(Ch1EndingSceneCarysConversation)
+LABEL 18
+MNC2 0x01
+NoFade
+ENDA
+
+BrigandSpawn:
+CAM1 Wayland
+Text(WaylandBrigandWarning)
+CAM1 [7,9]
+LOAD1 1 Brigands
+ENUN
+CAM1 [7,18]
+STAL 30
+NoFade
+ENDA
+
+ChargeWaylandWarning:
+CAMERA Wayland
+Text(WaylandChargeWarningText)
+NoFade
+ENDA
+
+ChargeWayland:
+CAM1 Wayland
+Text(WaylandChargeText)
+SVAL s1 0x00040000
+CHAI Wayland
+CHAI 0x70
+NoFade
+ENDA
+
+RuneRagna:
+Text(RuneRagnaChapter1)
+NoFade
+ENDA
+
+TopVillage:
+VillageEventItem(Ch1JavelinVillage, House2, Javelin)	
+
+
+BottomVillage:
+VillageEventItem(Ch1HandAxeVillage, House1, HandAxe)

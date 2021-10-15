@@ -52,20 +52,20 @@ ALIGN 4
 ALIGN 4
 
 ForcedDeploymentList: //Vanilla list at 0x9ED64C
-ForcedDeployment(Rune,LockedPosition,AllModes,LastStand)
-ForcedDeployment(Hartner,LockedPosition,AllModes,LastStand)
-ForcedDeployment(Asgeir,LockedPosition,AllModes,LastStand)
+ForcedDeployment(Rune,LockedPosition,AllModes,Chapter4x)
+ForcedDeployment(Hartner,LockedPosition,AllModes,Chapter4x)
+ForcedDeployment(Asgeir,LockedPosition,AllModes,Chapter4x)
 ForcedDeployment(Rune,UnlockedPosition,AllModes,AllChapters)
-ForcedDeployment(Asgeir,UnlockedPosition,AllModes,ReunionPrologue)
-ForcedDeployment(Asgeir,UnlockedPosition,AllModes,HoltornGrove)
-ForcedDeployment(Asgeir,UnlockedPosition,AllModes,UnexpectedEncounter)
-ForcedDeployment(Asgeir,UnlockedPosition,AllModes,WingsOfRivald)
-ForcedDeployment(Asgeir,UnlockedPosition,AllModes,InDefenseOfHope)
-ForcedDeployment(Asgeir,UnlockedPosition,AllModes,RagingRivers)
-ForcedDeployment(Signe,UnlockedPosition,AllModes,UnexpectedEncounter)
-ForcedDeployment(Solveig,UnlockedPosition,AllModes,WingsOfRivald)
-ForcedDeployment(Hartner,UnlockedPosition,AllModes,RagingRivers)
-ForcedDeployment(Eindride,UnlockedPosition,AllModes,RagingRivers)
+ForcedDeployment(Asgeir,UnlockedPosition,AllModes,Chapter1)
+ForcedDeployment(Asgeir,UnlockedPosition,AllModes,Chapter2)
+ForcedDeployment(Asgeir,UnlockedPosition,AllModes,Chapter3)
+ForcedDeployment(Asgeir,UnlockedPosition,AllModes,Chapter4)
+ForcedDeployment(Asgeir,UnlockedPosition,AllModes,Chapter5)
+ForcedDeployment(Asgeir,UnlockedPosition,AllModes,Chapter4xx)
+ForcedDeployment(Signe,UnlockedPosition,AllModes,Chapter3)
+ForcedDeployment(Solveig,UnlockedPosition,AllModes,Chapter4)
+ForcedDeployment(Hartner,UnlockedPosition,AllModes,Chapter4xx)
+ForcedDeployment(Eindride,UnlockedPosition,AllModes,Chapter4xx)
 EndForcedDeploymentList
 
 DeploymentGroupChapterList:

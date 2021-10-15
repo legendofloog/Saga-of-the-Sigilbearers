@@ -47,9 +47,9 @@ EnemyEscapeTableCh5:
 EscapePointEntry(11,10,EscapeInPlace)
 EscapePointTerminator
 
-SetEnemyEscapePoint(WingsOfRivald,EnemyEscapeTableCh4)
-SetEnemyEscapePoint(LastStand,EnemyEscapeTableCh4x)
-SetNPCEscapePoint(LastStand,NPCEscapeTableCh4x)
-SetNPCEscapePoint(InDefenseOfHope,NPCEscapeTableCh5)
-SetNPCEscapePoint(RagingRivers,NPCEscapeTableCh4xx)
-SetEnemyEscapePoint(InDefenseOfHope,EnemyEscapeTableCh5)
+SetEnemyEscapePoint(Chapter4,EnemyEscapeTableCh4)
+SetEnemyEscapePoint(Chapter4x,EnemyEscapeTableCh4x)
+SetNPCEscapePoint(Chapter4x,NPCEscapeTableCh4x)
+SetNPCEscapePoint(Chapter5,NPCEscapeTableCh5)
+SetNPCEscapePoint(Chapter4xx,NPCEscapeTableCh4xx)
+SetEnemyEscapePoint(Chapter5,EnemyEscapeTableCh5)

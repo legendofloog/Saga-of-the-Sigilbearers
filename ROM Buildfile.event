@@ -3,7 +3,6 @@ PROTECT 0xC00000
     #include "EAstdlib.event"
     #include "Definitions/DefinitionsInstaller.event"
     #include "Custom Definitions.event"
-//PROTECT $BCA57C
     ORG FreeSpace
 
     #include "repointedTextTable.event"

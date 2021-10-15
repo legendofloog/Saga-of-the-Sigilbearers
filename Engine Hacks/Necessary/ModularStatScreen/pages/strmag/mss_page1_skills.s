@@ -105,9 +105,14 @@ draw_aid_icon_at 26, 5
 
 draw_status_text_at 21, 7
 
-draw_textID_at 21, 9, textID=0x4f1 @affin
+ldr r0, =FatigueSSTextID @ moving this stuff to growths side, 21, 7
+ldrh r0, [r0]
+draw_textID_at 21, 9 @aid
 
-draw_affinity_icon_at 24, 9
+ldr r0, =MSSFatigueGetter
+mov r14,r0
+.short 0xF800 
+draw_number_at 25, 9
 
 
 ldr r0,=TalkTextIDLink
