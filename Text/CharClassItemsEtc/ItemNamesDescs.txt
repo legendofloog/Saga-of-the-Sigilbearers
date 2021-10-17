@@ -111,3 +111,12 @@ A rare gemstone worth[.][NL]
 ## RedGemDesc
 An uncommon gemstone[NL]
 worth 1,000 gold.[.][X]
+
+## IronGreatlanceName
+Irn. Grtlance[X]
+
+## SteelGreatlanceName
+Stl. Grtlance[X]
+
+## SilverGreatlanceName
+Slv. Grtlance[X]

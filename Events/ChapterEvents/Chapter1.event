@@ -24,7 +24,7 @@ CharacterEventBothWays(10,RuneRagna,Rune,Ragna)
 END_MAIN
 
 LocationBasedEvents:
-Village(13,TopVillage,13,2)
+Village(13,TopVillage,13,4)
 Village(14,BottomVillage,17,15)
 END_MAIN
 
@@ -54,7 +54,7 @@ UNIT
 Units2:
 
 UNIT Ragna RagnaLord Rune Level(1,Ally,False) [35,18] 0x0 0x0 0x0 0x1 [Vulnerary] NoAI
-UNIT Eimund MageFighter Rune Level(5,Ally,False) [34,18] 0x0 0x0 0x0 0x1 [IronAxe,BraveAxe,IronBow,Vulnerary] NoAI
+UNIT Eimund MageFighter Rune Level(5,Ally,False) [34,18] 0x0 0x0 0x0 0x1 [IronAxe,BraveAxe,Vulnerary] NoAI
 UNIT Ulfr Fighter Rune Level(2,Ally,False) [35,17] 0x0 0x0 0x0 0x1 [IronAxe,Vulnerary] NoAI
 UNIT Ivarr Hunter Rune Level(2,Ally,False) [35,19] 0x0 0x0 0x0 0x1 [IronBow,Vulnerary] NoAI
 UNIT
@@ -65,34 +65,24 @@ UNIT
 
 EnemyUnits:
 UNIT Wayland Fighter 0x00 Level(4, Enemy, True) [5,7] 0x00 0x00 0x0 0x00 [ShortAxe,SteelAxe] AttackInRangeAI
-UNIT 0x70 Fighter Wayland Level(1, Enemy, True) [20,17] 0x00 0x00 0x0 0x00 [IronAxe] AttackInRangeAI
-UNIT 0x70 Fighter Wayland Level(1, Enemy, True) [17,12] 0x00 0x00 0x0 0x00 [IronAxe] PursueWithoutHeedAI
-UNIT 0x70 Fighter Wayland Level(1, Enemy, True) [17,9] 0x00 0x00 0x0 0x00 [IronAxe] PursueWithoutHeedAI
 UNIT 0x70 Soldier Wayland Level(1, Enemy, True) [24,17] 0x00 0x00 0x0 0x00 [IronLance] AttackInRangeAI
-UNIT 0x70 Lancer Wayland Level(1, Enemy, True) [25,14] 0x00 0x00 0x0 0x00 [IronLance] AttackInRangeAI
-UNIT 0x70 Mercenary Wayland Level(1, Enemy, True) [24,3] 0x00 0x00 0x0 0x00 [IronSword] AttackInRangeAI
-UNIT 0x70 Soldier Wayland Level(1, Enemy, True) [31,7] 0x00 0x00 0x0 0x00 [IronLance] AttackInRangeAI
-UNIT 0x70 SwordKnight Wayland Level(1, Enemy, True) [19,3] 0x00 0x00 0x0 0x00 [SteelSword] NeverMoveAI
-UNIT 0x70 SwordKnight Wayland Level(1, Enemy, True) [19,2] 0x00 0x00 0x0 0x00 [SteelSword] NeverMoveAI
+UNIT 0x70 Mercenary Wayland Level(1, Enemy, True) [24,3] 0x00 0x00 0x0 0x00 [IronSword] PursueWithoutHeedAI
+UNIT 0x70 Fighter Wayland Level(1, Enemy, True) [26,1] 0x00 0x00 0x0 0x00 [IronAxe] PursueWithoutHeedAI
+UNIT 0x70 Fighter Wayland Level(1, Enemy, True) [20,17] 0x00 0x00 0x0 0x00 [IronAxe] PursueWithoutHeedAI
 UNIT 0x70 Fighter Wayland Level(1, Enemy, True) [25,19] 0x00 0x00 0x0 0x00 [IronAxe] AttackInRangeAI
-UNIT 0x70 LanceKnight Wayland Level(1, Enemy, True) [21,18] 0x00 0x00 0x0 0x00 [Javelin,IronLance] NeverMoveAI
-UNIT 0x70 LanceKnight Wayland Level(1, Enemy, True) [21,19] 0x00 0x00 0x0 0x00 [Javelin,IronLance] NeverMoveAI
-UNIT 0x70 LanceCav Wayland Level(1, Enemy, True) [16,17] 0x00 0x00 0x0 0x00 [IronLance] AttackInRangeAI
-UNIT 0x70 Lancer Wayland Level(1, Enemy, True) [15,19] 0x00 0x00 0x0 0x00 [IronLance] AttackInRangeAI
-UNIT 0x70 LanceCav Wayland Level(1, Enemy, True) [11,7] 0x00 0x00 0x0 0x00 [IronLance] AttackInTwoMovementsAI
-UNIT 0x70 Myrmidon Wayland Level(1, Enemy, True) [14,16] 0x00 0x00 0x0 0x00 [IronSword] AttackInTwoMovementsAI
-UNIT 0x70 Fighter Wayland Level(1, Enemy, True) [14,4] 0x00 0x00 0x0 0x00 [IronAxe] AttackInRangeAI
-UNIT 0x70 Soldier Wayland Level(1, Enemy, True) [13,15] 0x00 0x00 0x0 0x00 [IronLance] AttackInRangeAI
-UNIT 0x70 Mercenary Wayland Level(1, Enemy, True) [15,5] 0x00 0x00 0x0 0x00 [SteelSword] AttackInRangeAI
-UNIT 0x70 Mercenary Wayland Level(1, Enemy, True) [10,16] 0x00 0x00 0x0 0x00 [SteelSword] AttackInRangeAI
-UNIT 0x70 Fighter Wayland Level(1, Enemy, True) [10,15] 0x00 0x00 0x0 0x00 [IronAxe,Vulnerary] AttackInRangeAI
-UNIT 0x70 Soldier Wayland Level(1, Enemy, True) [10,11] 0x00 0x00 0x0 0x00 [IronLance,HeavySpear] AttackInRangeAI
-UNIT 0x70 Myrmidon Wayland Level(1, Enemy, True) [10,12] 0x00 0x00 0x0 0x00 [IronSword,Vulnerary] AttackInRangeAI
+UNIT 0x70 LanceCav Wayland Level(1, Enemy, True) [15,16] 0x00 0x00 0x0 0x00 [IronLance] AttackInRangeAI
+UNIT 0x70 Lancer Wayland Level(1, Enemy, True) [16,19] 0x00 0x00 0x0 0x00 [IronLance] AttackInTwoMovementsAI
+UNIT 0x70 Fighter Wayland Level(1, Enemy, True) [14,1] 0x00 0x00 0x0 0x00 [IronAxe] AttackInRangeAI
+UNIT 0x70 Pirate Wayland Level(1, Enemy, True) [13,15] 0x00 0x00 0x0 0x00 [IronAxe] AttackInRangeAI
+UNIT 0x70 Mercenary Wayland Level(1, Enemy, True) [16,7] 0x00 0x00 0x0 0x00 [SteelSword] AttackInTwoMovementsAI
 UNIT 0x70 Fighter Wayland Level(1, Enemy, True) [16,11] 0x00 0x00 0x0 0x00 [IronAxe] AttackInRangeAI
 UNIT 0x70 SwordCav Wayland Level(1, Enemy, True) [11,10] 0x00 0x00 0x0 0x00 [IronSword] AttackInRangeAI
-UNIT 0x70 AxeCav Wayland Level(1, Enemy, True) [12,13] 0x00 0x00 0x0 0x00 [IronAxe] AttackInRangeAI
 UNIT 0x70 Lancer Wayland Level(1, Enemy, True) [5,10] 0x00 0x00 0x0 0x00 [IronLance] AttackInTwoMovementsAI
-UNIT 0x70 Myrmidon Wayland Level(1, Enemy, True) [7,13] 0x00 0x00 0x0 0x00 [IronSword] AttackInTwoMovementsAI
+UNIT 0x70 Myrmidon Wayland Level(1, Enemy, True) [6,14] 0x00 0x00 0x0 0x00 [IronSword] AttackInTwoMovementsAI
+UNIT 0x70 SwordKnight Wayland Level(1, Enemy, True) [16,3] 0x00 0x00 0x0 0x00 [IronBlade] AttackInTwoMovementsAI
+UNIT 0x70 AxeKnight Wayland Level(1, Enemy, True) [9,16] 0x00 0x00 0x0 0x00 [IronPoleaxe] AttackInRangeAI
+UNIT 0x70 Mercenary Wayland Level(1, Enemy, True) [8,11] 0x00 0x00 0x0 0x00 [Armorslayer] AttackInRangeAI
+UNIT 0x70 Fighter Wayland Level(1, Enemy, True) [4,16] 0x00 0x00 0x0 0x00 [IronAxe, Vulnerary] AttackInRangeAI
 UNIT
 
 Brigands:
@@ -101,7 +91,7 @@ UNIT 0x70 Brigand Wayland Level(1, Enemy, True) [7,18] 0x00 0x00 0x0 0x00 [IronA
 UNIT
 
 GreenUnits: 
-UNIT Carys Myrmidon_F 0x00 Level(2, NPC, True) [26,9] 0x00 0x00 0x00 0x00 [Shamshir,IronSword,Vulnerary] AttackInPlaceAI
+UNIT Carys Myrmidon_F 0x00 Level(2, NPC, False) [29,3] 0x00 0x00 0x00 0x00 [Shamshir,IronSword,Vulnerary] AttackInPlaceAI
 UNIT
 
 Traps1:
@@ -113,7 +103,6 @@ ENDTRAP
 ALIGN 4
 
 BeginningScene:
-ENUT 0xEF
 SetBackground(03)
 MUSC RippleIslandEnding
 CAM1 [26,17]
@@ -139,6 +128,7 @@ LOAD1 1 Units1
 CALL $9EE2C4
 MOVE 10 Asgeir [29,4]
 ENUN
+CUSA Carys
 MOVE 10 Rune [30,3]
 ENUN
 MUSC Sortie_Formation

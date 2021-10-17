@@ -1,4 +1,4 @@
-EventPointerTable(0x0A,PointerList) //7 is the ID for prologue events in vanilla FE8
+EventPointerTable(Chapter2Events,PointerList) //7 is the ID for prologue events in vanilla FE8
 
 PointerList:
 POIN TurnBasedEvents
@@ -64,7 +64,7 @@ UNIT Eimund Myrmidon_F Rune Level(1, Ally, False) [3,4] 0x00 0x00 0x00 0x01 [Sha
 UNIT
 
 KleosUnitGroup:
-UNIT Kleos Priest Rune Level(1,Ally,False) [18,15] 0x0 0x0 0x0 0x1 [Heal,Lightning,Vulnerary] NoAI
+UNIT Kleos Troubadour Rune Level(1,Ally,False) [18,15] 0x0 0x0 0x0 0x1 [Heal,IronSword,Vulnerary] NoAI
 UNIT
 
 EnemyUnits:
@@ -76,16 +76,16 @@ UNIT 0x70 SwordKnight Renzer Level(2, Enemy, True) [11,11] 0x00 0x00 0x0 0x00 [S
 UNIT 0x70 AxeKnight Renzer Level(2, Enemy, True) [12,11] 0x00 0x00 0x0 0x00 [SteelAxe] NeverMoveAI
 UNIT 0x70 Mercenary Renzer Level(2, Enemy, True) [5,10] 0x00 0x00 0x0 0x00 [IronSword] AttackInRangeAI
 UNIT 0x70 Fighter Renzer Level(2, Enemy, True) [1,17] 0x00 0x00 0x0 0x00 [IronAxe] AttackInTwoMovementsAI
-UNIT 0x70 Mercenary Renzer Level(2, Enemy, True) [5,21] 0x00 0x00 0x0 0x00 [Armorslayer] AttackInRangeAI
+UNIT 0x70 Mercenary Renzer Level(2, Enemy, True) [5,21] 0x00 0x00 0x0 0x00 [IronSword] AttackInRangeAI
 UNIT 0x70 LanceCav Renzer Level(2, Enemy, True) [11,15] 0x00 0x00 0x0 0x00 [IronLance] AttackInRangeAI
 UNIT 0x70 Fighter Renzer Level(2, Enemy, True) [15,12] 0x00 0x00 0x0 0x00 [IronAxe] AttackInTwoMovementsAI
-UNIT 0x70 Soldier Renzer Level(2, Enemy, True) [14,17] 0x00 0x00 0x0 0x00 [IronLance, Horseslayer] AttackInRangeAI
+UNIT 0x70 Soldier Renzer Level(2, Enemy, True) [14,17] 0x00 0x00 0x0 0x00 [IronGreatlance] AttackInRangeAI
 UNIT 0x70 Soldier Renzer Level(2, Enemy, True) [8,9] 0x00 0x00 0x0 0x00 [IronLance] AttackInRangeAI
 UNIT 0x70 Soldier Renzer Level(2, Enemy, True) [7,20] 0x00 0x00 0x0 0x00 [IronLance,Vulnerary] AttackInRangeAI
 UNIT 0x70 Hunter Renzer Level(2, Enemy, True) [12,18] 0x00 0x00 0x0 0x00 [SteelBow] AttackInRangeAI
 UNIT 0x70 Hunter Renzer Level(2, Enemy, True) [1,12] 0x00 0x00 0x0 0x00 [IronBow] AttackInRangeAI
 UNIT 0x70 Axe_Dragonrider Renzer Level(2, Enemy, True) [10,17] 0x00 0x00 0x0 0x00 [IronAxe] AttackInRangeAI
-UNIT 0x70 Mercenary Renzer Level(5, Enemy, True) [12,21] 0x00 0x00 0x0 0x00 [Zanbato,IronSword] AttackInRangeAI
+UNIT 0x70 Mercenary Renzer Level(5, Enemy, True) [12,21] 0x00 0x00 0x0 0x00 [Zanbato] AttackInRangeAI
 UNIT 0x70 AxeCav Renzer Level(2,Enemy,True) [19,21] 0x00 0x00 0x0 0x00 [IronAxe] AttackInTwoMovementsAI
 UNIT Eindride LanceCav Renzer Level(3, Ally, False) [3,20] 0x00 0x00 0x0 0x00 [IronLance, Vulnerary] NeverMoveAI
 UNIT 0x70 Hunter Renzer Level(2, Enemy, True) [0,22] 0x00 0x00 0x0 0x00 [IronBow] AttackInTwoMovementsAI
@@ -135,12 +135,14 @@ STAL 60
 SetBackground(0x18)
 Text(Ch2Scene1)
 CALL $9EE2C4
+STAL 10
 MOVE 10 Eimund [11, 13]
 STAL 30
 MOVE 10 Brynja [12,13]
 STAL 30
 MOVE 10 Rune [10,14]
 STAL 30
+CAMERA [19,13]
 MOVE 10 Ragna [11,15]
 STAL 30
 MOVE 10 Asgeir [11,14]
@@ -152,6 +154,7 @@ MOVE 10 Brynja [5,9]
 STAL 30
 MOVE 10 Rune [6,8]
 STAL 30
+CAMERA Eimund
 MOVE 10 Ragna [7,8]
 STAL 30
 MOVE 10 Asgeir [6,9]
@@ -163,6 +166,7 @@ MOVE 10 Brynja [4,3]
 STAL 30
 MOVE 10 Rune [2,2]
 STAL 30
+CAMERA Eimund
 MOVE 10 Ragna [3,1]
 STAL 30
 MOVE 10 Asgeir [3,3]
@@ -202,9 +206,10 @@ STAL 30
 MUSC Trisection
 TEXTCONT
 TEXTEND
+CamOn
 MOVE 10 Brynja [4,3]
 ENUN
-CAMERA Eimund
+CamOff
 TEXTCONT
 TEXTEND
 SHOWUNIT Rune
@@ -220,12 +225,11 @@ EVBIT_F 5
 MUSC 0x7FFF
 CAMERA [19,0]
 FADI 5
-LOAD1 0 Units1
 LOAD1 1 EnemyUnits
 ENUN
 FADU 5
 CUSE Eindride
-PREP
+GotoPrepScreen
 ENDA
 
 SilverBowSnipersWarning:
@@ -320,6 +324,7 @@ EindrideRecruit:
 MUSC FE11_TogetherWeRide
 Text(AsgeirRecruitsEindrideText)
 SVAL s1 0x00000000
+REVEAL Eindride
 CUSA Eindride
 NoFade
 ENDA

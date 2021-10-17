@@ -3,14 +3,14 @@
  <tileset firstgid="1" source="SnowVillageFlasuban.tsx"/>
  <layer id="1" name="Tile Layer 1" width="18" height="15">
   <properties>
-   <property name="Anims1" value="0x54"/>
-   <property name="ChapterID" value="0x06"/>
+   <property name="Anims1" value="FlasubanVillageTileAnimationsID"/>
+   <property name="ChapterID" value="Chapter4xx"/>
    <property name="Main" value=""/>
-   <property name="MapChangesID" value="0x20"/>
-   <property name="MapID" value="0x1f"/>
-   <property name="ObjectType" value="0x50"/>
-   <property name="PaletteID" value="0x51"/>
-   <property name="TileConfig" value="0x52"/>
+   <property name="MapChangesID" value="Chapter7MapChanges"/>
+   <property name="MapID" value="Chapter7Map"/>
+   <property name="ObjectType" value="FlasubanVillageObjectID"/>
+   <property name="PaletteID" value="FlasubanVillageSnowPalette"/>
+   <property name="TileConfig" value="FlasubanVillageMapchipConfigID"/>
   </properties>
   <data encoding="csv">
 193,193,954,955,225,225,225,225,225,225,225,225,225,225,225,420,129,323,

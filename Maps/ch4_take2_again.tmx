@@ -3,14 +3,14 @@
  <tileset firstgid="1" source="snowfields_pandan_updated.tsx"/>
  <layer id="1" name="Tile Layer 1" width="20" height="17">
   <properties>
-   <property name="Anims1" value="0x05"/>
-   <property name="ChapterID" value="3"/>
+   <property name="Anims1" value="FieldsMapAnimations"/>
+   <property name="ChapterID" value="Chapter4"/>
    <property name="Main" value=""/>
-   <property name="MapChangesID" value="0x13"/>
-   <property name="MapID" value="0x11"/>
-   <property name="ObjectType" value="0x01"/>
-   <property name="PaletteID" value="0x5B"/>
-   <property name="TileConfig" value="0x03"/>
+   <property name="MapChangesID" value="Chapter4MapChanges"/>
+   <property name="MapID" value="Chapter4Map"/>
+   <property name="ObjectType" value="FieldsObjectID"/>
+   <property name="PaletteID" value="SnowFieldsPaletteID"/>
+   <property name="TileConfig" value="FieldsConfigID"/>
   </properties>
   <data encoding="csv">
 881,786,99,100,706,818,68,131,785,722,786,68,166,68,100,785,786,99,783,723,

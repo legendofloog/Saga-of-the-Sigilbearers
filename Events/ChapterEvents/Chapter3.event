@@ -1,4 +1,4 @@
-EventPointerTable(0x0D,PointerList) //7 is the ID for prologue events in vanilla FE8
+EventPointerTable(Chapter3Events,PointerList) //7 is the ID for prologue events in vanilla FE8
 
 PointerList:
 POIN TurnBasedEvents

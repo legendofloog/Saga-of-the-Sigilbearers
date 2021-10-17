@@ -4,13 +4,13 @@
  <layer id="1" name="Tile Layer 1" width="25" height="25">
   <properties>
    <property name="Anims1" value="0"/>
-   <property name="ChapterID" value="4"/>
+   <property name="ChapterID" value="Chapter4x"/>
    <property name="Main" value=""/>
-   <property name="MapChangesID" value="0x16"/>
-   <property name="MapID" value="0x15"/>
-   <property name="ObjectType" value="0x5F"/>
-   <property name="PaletteID" value="0x60"/>
-   <property name="TileConfig" value="0x61"/>
+   <property name="MapChangesID" value="Chapter5MapChanges"/>
+   <property name="MapID" value="Chapter5Map"/>
+   <property name="ObjectType" value="ZoraFortObjectID"/>
+   <property name="PaletteID" value="ZoraFortPaletteID"/>
+   <property name="TileConfig" value="ZoraFortConfigID"/>
   </properties>
   <data encoding="csv">
 424,948,948,948,948,948,948,948,948,948,948,948,948,948,948,492,935,936,936,492,70,39,162,162,794,

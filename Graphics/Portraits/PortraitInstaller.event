@@ -19,10 +19,15 @@
 #define HjordisMug 0x19
 #define FredrikMug 0x1A
 #define ViskardMug 0x1b
+#define KatlaMug 0x2b
+#define ErlynMug 0x2c
+#define RenzerMug 0x46
 
 #define WaylandMug 0x30
+#define HildaMug 0x32
 #define DaiMug 0x33
 #define YanusMug 0x4B
+
 
 ALIGN 16
 RuneMugData:
@@ -169,6 +174,38 @@ HjordisMugData:
 setMugEntry(HjordisMug, HjordisMugData, 3, 6, 3, 4)
 
 ALIGN 16
+FredrikMugData:
+#incbin "Dmp/Ally/Fredrik/Fredrik(Laurent_Lacroix)_mug.dmp"
+#incbin "Dmp/Ally/Fredrik/Fredrik(Laurent_Lacroix)_frames.dmp"
+#incbin "Dmp/Ally/Fredrik/Fredrik(Laurent_Lacroix)_palette.dmp"
+#incbin "Dmp/Ally/Fredrik/Fredrik(Laurent_Lacroix)_minimug.dmp"
+setMugEntry(FredrikMug, FredrikMugData, 3, 5, 3, 3)
+
+ALIGN 16
+KatlaMugData:
+#incbin "Dmp/Ally/Katla/Katla (Levin)_mug.dmp"
+#incbin "Dmp/Ally/Katla/Katla (Levin)_frames.dmp"
+#incbin "Dmp/Ally/Katla/Katla (Levin)_palette.dmp"
+#incbin "Dmp/Ally/Katla/Katla (Levin)_minimug.dmp"
+setMugEntry(KatlaMug, KatlaMugData, 3, 5, 3, 3)
+
+ALIGN 16
+ErlynMugData:
+#incbin "Dmp/Ally/Erlyn/Erlyn(CapibaraInSpace)_mug.dmp"
+#incbin "Dmp/Ally/Erlyn/Erlyn(CapibaraInSpace)_frames.dmp"
+#incbin "Dmp/Ally/Erlyn/Erlyn(CapibaraInSpace)_palette.dmp"
+#incbin "Dmp/Ally/Erlyn/Erlyn(CapibaraInSpace)_minimug.dmp"
+setMugEntry(ErlynMug, ErlynMugData, 3, 6, 3, 4)
+
+ALIGN 16
+RenzerMugData:
+#incbin "Dmp/Ally/Renzer/Renzer(CapibaraInSpace)_mug.dmp"
+#incbin "Dmp/Ally/Renzer/Renzer(CapibaraInSpace)_frames.dmp"
+#incbin "Dmp/Ally/Renzer/Renzer(CapibaraInSpace)_palette.dmp"
+#incbin "Dmp/Ally/Renzer/Renzer(CapibaraInSpace)_minimug.dmp"
+setMugEntry(RenzerMug, RenzerMugData, 2, 4, 2, 2)
+
+ALIGN 16
 WaylandMugData:
 #incbin "Dmp/Enemy/Wayland/Wayland (Laurent_Lacroix)_mug.dmp"
 #incbin "Dmp/Enemy/Wayland/Wayland (Laurent_Lacroix)_frames.dmp"
@@ -191,3 +228,11 @@ YanusMugData:
 #incbin "Dmp/Enemy/Yanus/Yanus (Laurent_Lacroix)_palette.dmp"
 #incbin "Dmp/Enemy/Yanus/Yanus (Laurent_Lacroix)_minimug.dmp"
 setMugEntry(YanusMug, YanusMugData, 3, 5, 3, 3)
+
+ALIGN 16
+HildaMugData:
+#incbin "Dmp/Enemy/Hilda/Hilda(CapibaraInSpace)_mug.dmp"
+#incbin "Dmp/Enemy/Hilda/Hilda(CapibaraInSpace)_frames.dmp"
+#incbin "Dmp/Enemy/Hilda/Hilda(CapibaraInSpace)_palette.dmp"
+#incbin "Dmp/Enemy/Hilda/Hilda(CapibaraInSpace)_minimug.dmp"
+setMugEntry(HildaMug, HildaMugData, 3, 5, 3, 3)

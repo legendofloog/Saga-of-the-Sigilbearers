@@ -1,4 +1,4 @@
-EventPointerTable(0x54, SnowVillageAnimation)
+EventPointerTable(FlasubanVillageTileAnimationsID, SnowVillageAnimation)
 #define tilesetAnimation(speed, size, pointer)    "BYTE speed 0; SHORT size; POIN pointer"
 
 ALIGN 4

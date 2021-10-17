@@ -30,7 +30,7 @@
 //item ID for skill scroll
 #define SkillScroll 0xBD
 
-#include "Engine Hacks/SkillSystem/skill_definitions.event"
+#include "EngineHacks/SkillSystem/skill_definitions.event"
 
 //#define __DEBUG__ // Uncomment to get the Debug startup menu :p
 
