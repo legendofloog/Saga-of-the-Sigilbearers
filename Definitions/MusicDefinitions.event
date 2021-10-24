@@ -2,8 +2,7 @@
 #define UnlimitedSaga_BattleThemeEX 0x06
 #define Feldschlact_III 0x07
 #define Lufia_Doom 0x08
-#define Trisection 0x09
-#define DecisiveBattle 0xA
+#define Trisection 0x9
 #define Lament_to_the_Master 0xB
 #define Lufia2_RoS_Battle2 0xC
 #define FE10_March 0xD

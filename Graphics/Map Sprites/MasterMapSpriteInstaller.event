@@ -25,6 +25,7 @@ StandingMapSprite(0x2f,1,BallisticianStanding)
 StandingMapSprite(0x2c,0,F_SoldierStanding)
 StandingMapSprite(0x3f,0,M_SoldierStanding)
 StandingMapSprite(0x44,1,MageFighterStanding)
+StandingMapSprite(0x66,0,ExampleMapSpriteGraphics)
 
 MovingMapSprite(0x2,0x81e4340,DiscipleMoving)
 MovingMapSprite(0x3,0x81D8668,RagnaMoving)

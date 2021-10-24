@@ -40,7 +40,12 @@ END_MAIN
 MiscBasedEvents:
 CauseGameOverIfLordDies
 DefeatBoss(EndingScene)
-END_MAIN 
+END_MAIN
+
+GameOverStart:
+ASMC 0x800D391
+NoFade
+ENDA
 
 Dunno1:
 END_MAIN 
@@ -65,7 +70,6 @@ UNIT Brynja SwordKnight Rune Level(9,Ally,False) [24,4] 0x0 0x0 0x0 0x1 [SilverS
 UNIT Eimund Myrmidon_F Rune Level(2, Ally, False) [24,2] 0x00 0x00 0x00 0x01 [Shamshir,IronSword,Vulnerary] NoAI
 UNIT Eimund LanceCav Rune Level(2, Ally, False) [26,4] 0x00 0x00 0x0 0x01 [IronLance, Vulnerary] NoAI
 UNIT Signe Soldier_F Rune Level(2,Ally,False) [23,4] 0x00 0x00 0x0 0x01 [IronLance,Vulnerary] NoAI
-UNIT Eimund Cleric Rune Level(1,Ally,False) [23,5] 0x0 0x0 0x0 0x1 [Heal,Lightning,Vulnerary] NoAI
 UNIT
 
 EnemyUnits:

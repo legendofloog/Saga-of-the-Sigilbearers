@@ -26,15 +26,22 @@ mov r6, r8
 push { r6, r7 }
 mov r5, r0
 mov r3, r1
-@mov r0, #0x1
-@neg r0, r0
-@cmp r3, r0
-@bne EnemyExists
-	CheckWeaponSlot:
-	mov r0, r5
-	blh GetUnitEquippedWeaponSlot, r1
-	mov r3, r0
+
+CheckWeaponSlot:
+push {r3} 
+@mov r0, r5
+blh GetUnitEquippedWeaponSlot, r1
+pop {r3} 
+cmp r0, #9 
+beq OverwriteR3
+mov r1, #0x1 	@ 
+neg r1, r1  	@ These 4 lines were commented out for some reason by Snek 
+cmp r3, r1		@ but they cause an AI bug where they always use their last inv wep 
+bne EnemyExists @ so I uncommented them - Vesly 	
+OverwriteR3:
+mov r3, r0
 EnemyExists:
+
 ldr r0, [ r5, #0xC ]
 mov r1, #0x80
 lsl r1, r1, #0x4
@@ -99,6 +106,7 @@ mov r8, r4
 mov r4, r2
 ldr r1, =#0x802A84B
 bx r1
+
 .ltorg
 
 .global GaidenActionStaffDoorChestUseItemHack
@@ -129,6 +137,7 @@ ActionFixUsingSpell:
 EndActionFix:
 ldr r1, =#0x0802FC63
 bx r1
+
 .ltorg
 .global GaidenPreActionHack
 .type GaidenPreActionHack, %function
@@ -151,6 +160,7 @@ PreActionFixUsingSpell:
 EndPreActionFix:
 ldr r0, =#0x0801D1E1
 bx r0
+
 .ltorg
 .global GaidenSetupBattleUnitForStaffHack
 .type GaidenSetupBattleUnitForStaffHack, %function
@@ -220,6 +230,7 @@ SetupBattleUnitForStaffUsingSpell:
 EndSetupBattleUnitForStaffFix:
 ldr r0, =#0x0802CB4B
 bx r0
+
 .ltorg
 
 .global GaidenExecStandardHealHack
@@ -246,6 +257,7 @@ ldrb r1, [ r1 ]
 EndExecStandardHeal:
 ldr r0, =#0x0802EBCD
 bx r0
+
 .ltorg
 
 .global GaidenExecFortifyHack
@@ -269,6 +281,7 @@ ldrb r1, [ r1 ]
 EndExecFortify:
 ldr r0, =#0x0802F195
 bx r0
+
 .ltorg
 
 .global GaidenStaffInventoryHack
@@ -298,6 +311,7 @@ bne SkipStaffInventory
 SkipStaffInventory:
 ldr r0, =#0x0802CCB3
 bx r0
+
 .ltorg
 .global GaidenTargetSelectionBPressHack
 .type GaidenTargetSelectionBPressHack, %function
@@ -311,6 +325,7 @@ bl GaidenZeroOutSpellVariables
 mov r0, #0x19
 pop { r1 }
 bx r1
+
 .ltorg
 
 .global GaidenTargetSelectionCamWaitBPressHack
@@ -324,6 +339,7 @@ bl GaidenZeroOutSpellVariables
 mov r0, #0x19
 pop { r1 }
 bx r1
+
 .ltorg
 
 .global GaidenMenuSpellCostHack

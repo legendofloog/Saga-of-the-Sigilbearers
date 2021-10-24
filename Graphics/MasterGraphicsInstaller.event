@@ -9,3 +9,4 @@
 #include "Palettes/Palette Setup.event"
 #include "Class Cards/MasterClassCardInstaller.event"
 #include "TitleScreen/TitleScreen.event"
+#include "ItemIcons/MasterItemIconsInstaller.event"

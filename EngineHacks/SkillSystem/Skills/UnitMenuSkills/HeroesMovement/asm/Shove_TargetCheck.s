@@ -22,6 +22,25 @@ Shove_TargetCheck:
 	
 	cmp r0, #0
 	beq End @ Returns 0 since r0 is 0
+
+	@ Loading active unit
+	ldr r3, =ppActiveUnit
+	ldr r3, [r3]
+
+	ldr r0, [r3, #0x0] @ getting con of the active unit
+	ldrb r0, [r0, #0x13] @unit Con
+	ldr r1, [r3, #0x04]
+	ldrb r1, [r1, #0x11] @class Con
+	add r0, r1
+
+	ldr r1, [r4, #0x0] @ getting con of unit being pushed
+	ldrb r1, [r1, #0x13] @unit Con
+	ldr r2, [r4, #0x04]
+	ldrb r2, [r2, #0x11] @class Con
+	add r1, r2
+
+	cmp r0, r1
+	blt ReturnFalse
 	
 SkipLegalCheck:
 	@ Loading active unit

@@ -1,5 +1,5 @@
 ALIGN 16
-#include "Table Installer.event"
+#include "TableInstaller.event"
 
 ALIGN 4
 DeathQuoteTable:

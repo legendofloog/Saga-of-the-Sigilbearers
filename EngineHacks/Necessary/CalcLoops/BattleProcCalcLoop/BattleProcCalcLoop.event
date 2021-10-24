@@ -87,6 +87,7 @@ POIN Proc_Corrosion //skills that don't affect damage
 
 
 POIN Proc_Counter Proc_CounterMagic	//counters are last
+POIN Proc_FlashyMode
 POIN Proc_Finish 0	//end
 
 //POIN Chargeups, chargeup not working? so I just removed them for now
@@ -109,18 +110,16 @@ Proc_CapDamage:	//actually the same as proc_finish
 #incbin "CapDamage/proc_capdamage.dmp"	//making a different file just in case one of the two needs tweaking
 
 ALIGN 4
+Proc_FlashyMode:
+#incbin "FlashyMode/proc__flashymode.dmp"
+
+ALIGN 4
 Chargeups:
 #incbin "Chargeups/Chargeups.dmp"
 
 PUSH
 ORG $2b3ec
 jumpToHack(ProcLoopParent)
-
-ORG $59064
-jumpToHack(SkillActivationAnims)
-
-ORG $590a8
-jumpToHack(SkillActivationAnims_defensive)
 
 //skip hp substraction if devil effect
 ORG $2B69E

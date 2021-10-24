@@ -238,8 +238,7 @@ difficult to get our own food, so the[NL]
 burden tends to fall on our children,[ANL]
 but Eindride always helps us out when[NL]
 he's here. Our guardian is worthy of[NL]
-the name "Kingfisher", don't you agree?[ANL]
-In any case, thank you so much, really.[A][X]
+the name "Kingfisher", don't you agree?[A][X]
 
 
 ## Ch4xxRightHouseNoFishText
@@ -999,7 +998,7 @@ Thanks, milord. If that's all,[NL]
 I'll see you in the morning.[A]
 [MidRight][OneLineBox]
 Same to you, Signe.[A][CloseSpeechSlow][ClearFace]
-[Event]
+[MidLeft]
 Well, here goes nothing[Beat][A][X]
 
 ## Ch4xxHartnerEndingSceneText
@@ -1016,10 +1015,10 @@ the morning and set out. Until then,[NL]
 you can rest as much as you like.[A]
 [MidLeft][OneLineBox]
 Alright, I'll see you then.[A][ClearFace]
-[MidRight][ClearFace][Event]
-[MidRight][LoadAsgeir]
-[Beat]Hm? What's that sound[Beat] oh no.[A]
-[MidLeft]
+[MidRight][ClearFace]
+[MidRight][LoadHartner]
+[Beat]Hm? What's that sound[Beat] Oh no.[A]
+[MidLeft][LoadLittleBoyVillager]
 Brother!
 [MidRight][TwoLineBox]
 Jeez, watch out Mihael![NL]

@@ -29,8 +29,17 @@ House(0,EindrideHouse,9,8)
 END_MAIN
 
 MiscBasedEvents:
+AREA 8 CheckEnemyDestroyedWestVillage [6,4]
+AREA 9 CheckEnemyDestroyedNorthVillage [6,4]
+AREA 10 CheckEnemyDestroyedSouthVillage [6,4]
+AREA 12 CheckEnemyDestroyedEastVillage [6,4]
 CauseGameOverIfLordDies
-END_MAIN 
+END_MAIN
+
+GameOverStart:
+ASMC 0x800D391
+NoFade
+ENDA
 
 Dunno1:
 END_MAIN
@@ -89,18 +98,8 @@ ALIGN 4
 
 BeginningScene:
 ENUT 0x27
-RECLASS Solveig Bow_Dragonrider
-RECLASS Eindride LanceCav
-SVAL s1 ShoveID
-SVAL s2 Eindride
-ASMC (ASMC_ForgetSkill|1)
-SVAL s2 Solveig
-ASMC (ASMC_ForgetSkill|1)
-SVAL s1 CantoPlusID
-SVAL s2 Eindride
-ASMC (ASMC_LearnNewSkill|1)
-SVAL s2 Solveig
-ASMC (ASMC_LearnNewSkill|1)
+ClearFatigue(Eindride)
+ClearFatigue(Hartner)
 SHOWUNIT Asgeir
 EVBIT_T 5
 TEXTSTART
@@ -151,28 +150,37 @@ CHECK_ACTIVEID Hartner
 BEQ 11 s0 sC
 	CALL CheckIfFishEvent
 	BEQ 12 s0 sC
-		ENUT 7
 		TILECHANGE 1
 		CALL RemoveFishEvent
 		CHECK_EVENTID 11 // checks if hartner visited his house and got prf
 		BNE 17 s0 sC // skips past this if so
-			Text(Chapter4xScene1)  // hartner visits house first time with fish
+			SetBackground(House2)
+			Text(Ch4xxHartnerHouse_HartnerFishFirstTimeText)  // hartner visits house first time with fish
+			CALL $9EE2C4
+			GiveItem(Hartner, FiletKnife)
 			ENUT 11
 			NoFade
 			ENDB
 		LABEL 17
-		Text(Chapter4xScene1) // hartner visits house some other time with fish
+		SetBackground(House2)
+		Text(Ch4xxHartnerHouse_HartnerFishSecondTimeText) // hartner visits house some other time with fish
+		CALL $9EE2C4
 		NoFade
 		ENDB
 	LABEL 12
 	CHECK_EVENTID 11
 	BNE 18 s0 sC
-		Text(Chapter4xScene1) // if hartner visits without fish once
+		SetBackground(House2)
+		Text(Ch4xxHartnerHouse_HartnerNoFishFirstTimeText) // if hartner visits without fish once
+		CALL $9EE2C4
+		GiveItem(Hartner, FiletKnife)
 		ENUT 11
 		NoFade
 		ENDB
 	LABEL 18
-	Text(Chapter4xScene1) // if hartner visits without fish again
+	SetBackground(House2)
+	Text(Ch4xxHartnerHouse_HartnerNoFishSecondTimeText) // if hartner visits without fish again
+	CALL $9EE2C4
 	NoFade
 	ENDB
 LABEL 11
@@ -180,55 +188,67 @@ CHECK_ACTIVEID Eindride
 BEQ 19 s0 sC
 	CALL CheckIfFishEvent
 	BEQ 20 s0 sC
-		ENUT 7
 		TILECHANGE 1
 		CALL RemoveFishEvent
-		Text(Chapter4xScene1)
+		SetBackground(House2)
+		Text(Ch4xHartnerHouse_EindrideFishText)
+		CALL $9EE2C4
 		NoFade
 		ENDB
 	LABEL 20
-	Text(Chapter4xScene1)
+	SetBackground(House2)
+	Text(Ch4xxHartnerHouse_EindrideNoFishText)
+	CALL $9EE2C4
 	NoFade
 	ENDB
 LABEL 19
 CALL CheckIfFishEvent
 BEQ 13 s0 sC
-	ENUT 7
 	TILECHANGE 1
 	CALL RemoveFishEvent
-	Text(Chapter4xScene1)
+	SetBackground(House2)
+	Text(Ch4xxHartnerHouseFishText)
+	CALL $9EE2C4
 	NoFade
 	ENDB
 LABEL 13
-Text(Chapter4xScene1)
+SetBackground(House2
+Text(Ch4xxHartnerHouseNoFishText)
+CALL $9EE2C4
 NoFade
 ENDA
 
 LeftHouse:
 CALL CheckIfFishEvent
 BEQ 1 s0 sC
-	ENUT 8
-	TILECHANGE 3
 	CALL RemoveFishEvent
-	Text(Chapter4xScene1)
+	SetBackground(House1)
+	Text(Ch4xxLeftHouseFishText)
+	CALL $9EE2C4
+	TILECHANGE 3
 	NoFade
 	ENDB
 LABEL 1
-Text(Chapter4xScene1)
+SetBackground(House1)
+Text(Ch4xxLeftHouseNoFishText)
+CALL $9EE2C4
 NoFade
 ENDA
 
 RightHouse:
 CALL CheckIfFishEvent
 BEQ 3 s0 sC
-	ENUT 9
-	TILECHANGE 5
 	CALL RemoveFishEvent
-	Text(Chapter4xScene1)
+	SetBackground(House1)
+	Text(Ch4xxRightHouseFishText)
+	CALL $9EE2C4
+	TILECHANGE 5
 	NoFade
 	ENDB
 LABEL 3
-Text(Chapter4xScene1)
+SetBackground(House1)
+Text(Ch4xxRightHouseNoFishText)
+CALL $9EE2C4
 NoFade
 ENDA
 
@@ -238,13 +258,16 @@ BEQ 4 s0 sC
 	CALL CheckIfFishEvent
 	BEQ 2 s0 sC
 		CALL RemoveFishEvent
-		Text(Chapter4xScene1) // event that occurs if eindride brought fish
-		ENUT 10
+		SetBackground(House2)
+		Text(Ch4xxEindrideHouse_EindrideFishText) // event that occurs if eindride brought fish
+		CALL $9EE2C4 
 		TILECHANGE 7
 		NoFade
 		ENDB
 	LABEL 2
-	Text(Chapter4xScene1)
+	SetBackground(House2)
+	Text(Ch4xxEindrideHouse_EindrideNoFishText)
+	CALL $9EE2C4
 	NoFade
 	ENDB
 LABEL 4
@@ -253,26 +276,32 @@ BEQ 23 s0 sC
 	CALL CheckIfFishEvent
 	BEQ 24 s0 sC
 		CALL RemoveFishEvent
-		Text(Chapter4xScene1)
-		ENUT 10
+		SetBackground(House2)
+		Text(Ch4xxEindrideHouse_SigneFishText)
+		CALL $9EE2C4
 		TILECHANGE 7
 		NoFade
 		ENDB
 	LABEL 24
-	Text(Chapter4xScene1)
+	SetBackground(House2)
+	Text(Ch4xxEindrideHouse_SigneNoFishText)
+	CALL $9EE2C4
 	NoFade
 	ENDB
 LABEL 23
 CALL CheckIfFishEvent
 BEQ 10 s0 sC
-	ENUT 10
 	TILECHANGE 7
 	CALL RemoveFishEvent // event that occurs if another unit brought fish
-	Text(Chapter4xScene1)
+	SetBackground(House2)
+	Text(Ch4xxEindrideHouseFishText)
+	CALL $9EE2C4
 	NoFade
 	ENDB
 LABEL 10
-Text(Chapter4xScene1)
+SetBackground(House2)
+Text(Ch4xxEindrideHouseNoFishText)
+CALL $9EE2C4
 NoFade
 ENDA
 
@@ -312,19 +341,33 @@ NoFade
 ENDA
 
 EndingScene:
+CHECK_ALIVE Eindride
+SetBackground(Village)
+BEQ 16 s0 sC
 COUNTER_CHECK 0
 SVAL s1 4 // checks if you got 4 fish
 BLE 14 s1 sC // skips if less than 4 fish
-	Text(Chapter4xScene1) // gives something if you got 4 fish
+	Text(Ch4xxEndingSceneAllFishPart1Text) // gives something if you got 4 fish
+	GiveItem(HeavyHarpoon, Eindride)
 	GOTO 16
 LABEL 14
 SVAL s1 2
 BLE 15 s1 sC
-	Text(Chapter4xScene1)
+	Text(Ch4xxEndingScenePart1HalfFishText)
+	GiveItem(RedGem, Eindride)
 	GOTO 16
 LABEL 15
-Text(Chapter4xScene1)
+Text(Ch4xxEndingScenePart1_LessThanHalfFishText)
 LABEL 16
+CHECK_ALIVE Signe
+BEQ 25 s0 sC
+	Text(Ch4xxSigneEndingSceneText)
+LABEL 25
+CHECK_ALIVE Hartner
+BEQ 30 s0 sC
+	Text(Ch4xxHartnerEndingSceneText)
+LABEL 30
+Text(Ch4xxEndingScenePart4Text)
 MNC2 0x05 // goes to chapter 5
 NoFade
 ENDA

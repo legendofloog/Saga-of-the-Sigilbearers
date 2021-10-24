@@ -21,9 +21,6 @@ END_MAIN
 ALIGN 32
 CharacterBasedEvents:
 CharacterEventBothWays(9,EindrideRecruit,Asgeir,Eindride)
-//CharacterEventBothWays(10,RuneRagna,Rune,Ragna)
-//CharacterEventBothWays(11,BrynjaEimund,Brynja,Eimund)
-//CharacterEventBothWays(12,AsgeirRagna,Asgeir,Ragna)
 END_MAIN
 
 LocationBasedEvents:
@@ -37,7 +34,12 @@ MiscBasedEvents:
 CauseGameOverIfLordDies
 AREA 8 EindrideRides [4,12] [11,21]
 AFEV 0x0 CheckNoUnits 0x0
-END_MAIN 
+END_MAIN
+
+GameOverStart:
+ASMC 0x800D391
+NoFade
+ENDA
 
 Dunno1:
 END_MAIN 
@@ -106,9 +108,9 @@ UNIT 0x71 Sniper Renzer Level(1, Enemy, True) [19,0] 0x00 0x00 0x0 0x00 [SilverB
 UNIT
 
 Traps1:
-BlueSigil(16,22)
-BlueSigil(17,22)
-BlueSigil(18,22)
+RedSigil(16,22)
+RedSigil(17,22)
+RedSigil(18,22)
 ENDTRAP
 ALIGN 4
 
@@ -339,6 +341,11 @@ NoFade
 ENDA
 
 EndingScene:
+SET_DEPLOYED Brynja
+SET_DEPLOYED Eimund
+SET_DEPLOYED Ulfr
+SET_DEPLOYED Ivarr
+SET_DEPLOYED Carys
 MUSC Rovers
 SetBackground(0x18)
 Text(Ch2SceneEnding)

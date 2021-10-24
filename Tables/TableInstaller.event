@@ -4,8 +4,6 @@
 
 #include "FE8 Nightmare modules\AdvWeaponLocks\WeaponLockArray.event"
 
-#include "FE8 Nightmare modules\Biorhythm\Biorhythm Editor.event"
-
 #include "FE8 Nightmare modules\Chapter data editor\ChapterData.event"
 
 #include "FE8 Nightmare modules\Chapter data editor\Pointer table editor.event"
@@ -22,21 +20,11 @@
 
 #include "FE8 Nightmare modules\Class & Character editors\FE8 Walking Sounds Editor.event"
 
+#include "FE8 Nightmare modules\Class & Character editors\Mag Char Editor.event"
+
+#include "FE8 Nightmare modules\Class & Character editors\Mag Class Editor.event"
+
 #include "FE8 Nightmare modules\Class & Character editors\WalkingSoundEditor.event"
-
-#include "FE8 Nightmare modules\IERevamp\FE8 Effect Anim Association Editor.event"
-
-#include "FE8 Nightmare modules\IERevamp\FE8 Item AI Table.event"
-
-#include "FE8 Nightmare modules\IERevamp\FE8 ItemBox Effect.event"
-
-#include "FE8 Nightmare modules\IERevamp\FE8 Promotion Item Table.event"
-
-#include "FE8 Nightmare modules\IERevamp\FE8 Staff AI Table.event"
-
-#include "FE8 Nightmare modules\IERevamp\FE8_IER_StatboosterText.event"
-
-#include "FE8 Nightmare modules\IERevamp\FE8_Item_Effect_Revamp.event"
 
 #include "FE8 Nightmare modules\Item editors\FE8 Item Editor.event"
 
@@ -44,9 +32,19 @@
 
 #include "FE8 Nightmare modules\Item editors\Gaiden Spell Cost Table.event"
 
-#include "FE8 Nightmare modules\Magic\Mag Char Editor.event"
+#include "FE8 Nightmare modules\ItemEffectRevamp\Effect_Anim_Association_Editor.event"
 
-#include "FE8 Nightmare modules\Magic\Mag Class Editor.event"
+#include "FE8 Nightmare modules\ItemEffectRevamp\IER_StatboosterText.event"
+
+#include "FE8 Nightmare modules\ItemEffectRevamp\ItemBox_Effect.event"
+
+#include "FE8 Nightmare modules\ItemEffectRevamp\Item_AI_Table.event"
+
+#include "FE8 Nightmare modules\ItemEffectRevamp\Item_Effect_Revamp.event"
+
+#include "FE8 Nightmare modules\ItemEffectRevamp\Promotion_Item_Table.event"
+
+#include "FE8 Nightmare modules\ItemEffectRevamp\Staff_AI_Table.event"
 
 #include "FE8 Nightmare modules\Misc\Escape Quote Editor.event"
 

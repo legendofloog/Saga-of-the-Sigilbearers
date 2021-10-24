@@ -35,13 +35,13 @@ POP
 ALIGN 4
 FatigueExemptCharList:
 BYTE Rune
-BYTE Ragna
 BYTE Asgeir
+BYTE Ragna
 BYTE 0
 
 ALIGN 4
 FatigueStartingChapter:
-BYTE Chapter2
+BYTE Chapter1
 BYTE 0
 
 ALIGN 4

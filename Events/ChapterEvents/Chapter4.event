@@ -37,7 +37,12 @@ AREA 15 HartnerEscape [0, 0] [0, 2]
 AFEV 17 HartnerCaptureCheck 16
 CauseGameOverIfLordDies
 DefeatBoss(EndingScene)
-END_MAIN 
+END_MAIN
+
+GameOverStart:
+ASMC 0x800D391
+NoFade
+ENDA
 
 Dunno1:
 END_MAIN 
@@ -65,7 +70,6 @@ UNIT Eimund LanceCav Rune Level(2, Ally, False) [12,3] 0x00 0x00 0x0 0x01 [IronL
 UNIT Signe Soldier_F Rune Level(2,Ally,False) [11,2] 0x00 0x00 0x0 0x01 [IronLance,Vulnerary] NoAI
 UNIT Eimund Mercenary_F Rune Level(4,Ally,False) [11,6] 0x00 0x00 0x0 0x01 [IronBlade, Vulnerary] NoAI
 UNIT Solveig Bow_Dragonrider Rune Level(4,Ally,False) [9,3] 0x00 0x00 0x0 0x01 [IronBow,IronLongbow,Vulnerary] NoAI
-UNIT Eimund Warrior Rune Level(1,Ally,False) [12,5] 0x0 0x0 0x0 0x1 [BraveAxe,Thunder,Vulnerary] NoAI
 UNIT
 
 EnemyUnits:

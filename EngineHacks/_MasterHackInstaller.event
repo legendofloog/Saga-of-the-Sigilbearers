@@ -80,7 +80,7 @@ POP
   #include "Necessary/NegativeStatBoosts/NegativeStatBoosts.event"
 
   //Trap Rework (Dragon Veins & Heal Tiles)
-  //#include "ExternalHacks/TrapRework/TrapRework.event"
+  #include "ExternalHacks/TrapRework/TrapRework.event"
   
   //Proper Range Getters
   #include "ExternalHacks/ProperRangeGetters/ProperRangeGetters/ProperRangeGetters.event"

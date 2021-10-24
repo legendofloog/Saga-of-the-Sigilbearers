@@ -39,7 +39,12 @@ AREA 14 EndZone [9,8] [13,11]
 AFEV 15 DeadVillagerCounterIncrement 16
 DefeatBoss(EndingScene)
 CauseGameOverIfLordDies
-END_MAIN 
+END_MAIN
+
+GameOverStart:
+ASMC 0x800D391
+NoFade
+ENDA
 
 Dunno1:
 END_MAIN
@@ -67,7 +72,6 @@ UNIT Eimund LanceCav Rune Level(2, Ally, False) [10,7] 0x00 0x00 0x0 0x01 [IronL
 UNIT Signe Soldier_F Rune Level(2,Ally,False) [12,7] 0x00 0x00 0x0 0x01 [IronLance,Vulnerary] NoAI
 UNIT Eimund Mercenary_F Rune Level(4,Ally,False) [10,12] 0x00 0x00 0x0 0x01 [IronBlade, Vulnerary] NoAI
 UNIT Solveig Bow_Dragonrider Rune Level(4,Ally,False) [12,12] 0x00 0x00 0x0 0x01 [IronBow,IronLongbow,Vulnerary] NoAI
-UNIT Eimund Thief Rune Level(1, Ally, False) [11,12] 0x00 0x00 0x0 0x00 [IronSword,Lockpick,Vulnerary] NoAI
 UNIT
 
 EnemyUnits:
@@ -155,18 +159,6 @@ ENDTRAP
 ALIGN 4
 
 BeginningScene:
-RECLASS Solveig Bow_Dragonrider
-RECLASS Eindride LanceCav
-SVAL s1 ShoveID
-SVAL s2 Eindride
-ASMC (ASMC_ForgetSkill|1)
-SVAL s2 Solveig
-ASMC (ASMC_ForgetSkill|1)
-SVAL s1 CantoPlusID
-SVAL s2 Eindride
-ASMC (ASMC_LearnNewSkill|1)
-SVAL s2 Solveig
-ASMC (ASMC_LearnNewSkill|1)
 SetBackground(CastleExterior)
 Text(Ch5OpeningScene1Visited4x)
 SetBackground(CastleInterior)
@@ -198,11 +190,11 @@ CAMERA [11,10]
 TEXTCONT
 TEXTEND
 REMA
-CAMERA [22,1]
 CAMERA Yanus
 Text(YanusIntroText)
 CHECK_EVENTID 0x78
 BEQ 6 s0 sC //checks if kids were saved in 4x, branches if they weren't
+	CAMERA [22,1]
 	SetBackground(House2)
 	Text(Ch5RuneHintText)
 	CALL $9EE2C4
@@ -235,7 +227,7 @@ CHECK_ALLEGIANCE -1
 SVAL s1 2
 BNE 12 s1 sC
 	Text(Ch5EnemyMakesItToElderHouse)
-	GameOver
+	CALL GameOverStart
 LABEL 12
 ENUF 14
 LABEL 18

@@ -68,10 +68,7 @@ UnitMenuTable:
   
   MenuCommand(0x67A, 0x6CC, BlueText, $22FDC, $23020)
   // UM_Seize
-  #ifdef ESCAPE_ARRIVE
-    MenuCommand(ArriveName, ArriveDesc, BlueText, ArriveCommandUsability, ArriveCommandEffect)
-    MenuCommand(EscapeName, EscapeDesc, BlueText, EscapeCommandUsability, EscapeCommandEffect)
-  #endif // ESCAPE_ARIVE
+  
   
   #ifdef DRAGON_VEINS
   MenuCommand(UMText_DV, UMText_DVDesc, GreenText, VeinUsability, VeinEffect)
@@ -85,9 +82,7 @@ UnitMenuTable:
 	MenuCommand(UM_GaidenBlackMagic,UM_GaidenMagicDesc,NormalText,GaidenBlackMagicUMUsability,GaidenBlackMagicUMEffect,GaidenBlackMagicUMHover,GaidenMagicUMUnhover)
 	MenuCommand(UM_GaidenWhiteMagic,UM_GaidenMagicDesc,NormalText,GaidenWhiteMagicUMUsability,GaidenWhiteMagicUMEffect,GaidenWhiteMagicUMHover,GaidenMagicUMUnhover)
   #endif // GAIDEN_MAGIC
-  MenuCommand(UM_Capture, UM_CaptureDesc, NormalText, Capture_Usability, Capture_Effect_Func, $22c31, $22c99)
   #ifdef COMBAT_ARTS
-  //Capture
 	MenuCommand(UM_CombatArts, UM_CombatArtsDesc, NormalText, CombatArtsUsability, CombatArtsEffect, $22c31, $22c99)
   #else // COMBAT_ARTS
 	//Lunge
@@ -98,15 +93,33 @@ UnitMenuTable:
 
 	//Gamble
 	MenuCommand(UM_Gamble, UM_GambleDesc, NormalText, GambleUsability, GambleEffect, $22c31, $22c99)
-  #endif // COMBAT_ARTS
 
+	//Capture
+	
+  #endif // COMBAT_ARTS
+  MenuCommand(UM_Capture, UM_CaptureDesc, NormalText, Capture_Usability, Capture_Effect_Func, $22c31, $22c99)
+
+  MenuCommand(UM_Shove,      UM_ShoveDesc,      NormalText, prShoveCommand_Usability,      prShoveCommand_Effect)
+  MenuCommand(UM_Smite,      UM_SmiteDesc,      NormalText, prSmiteCommand_Usability,      prSmiteCommand_Effect)
+  MenuCommand(UM_Pivot,      UM_PivotDesc,      NormalText, prPivotCommand_Usability,      prPivotCommand_Effect)
+  MenuCommand(UM_Reposition, UM_RepositionDesc, NormalText, prRepositionCommand_Usability, prRepositionCommand_Effect)
+  MenuCommand(UM_Swap,       UM_SwapDesc,       NormalText, prSwapCommand_Usability,       prSwapCommand_Effect)
   UM_Staff
   UM_Ride
   UM_Exit
   UM_Play
-  
+  #ifdef ESCAPE_ARRIVE
+    MenuCommand(ArriveName, ArriveDesc, BlueText, ArriveCommandUsability, ArriveCommandEffect)
+    MenuCommand(EscapeName, EscapeDesc, BlueText, EscapeCommandUsability, EscapeCommandEffect)
+  #endif // ESCAPE_ARIVE
   //UM_Dance
   MenuCommand(0x67E,0x6C2,NormalText,NewDanceUsability,0x231D0)
+
+#ifdef INSTALL_AoE
+  MenuCommand(UM_AoEName, UM_AoEDesc, NormalText, AoE_AreAnyUsable, AoE_Effect)
+#endif 
+
+
 
   UM_Steal
   
@@ -151,9 +164,10 @@ UnitMenuTable:
   UM_Vendor
   UM_Secret
   UM_Arena
-  MenuCommand(UM_Shove,      UM_ShoveDesc,      NormalText, prShoveCommand_Usability,      prShoveCommand_Effect)	
+  	
   #ifndef COMBAT_ARTS
 	// Shove & cie
+	MenuCommand(UM_Shove,      UM_ShoveDesc,      NormalText, prShoveCommand_Usability,      prShoveCommand_Effect)
 	MenuCommand(UM_Smite,      UM_SmiteDesc,      NormalText, prSmiteCommand_Usability,      prSmiteCommand_Effect)
 	MenuCommand(UM_Pivot,      UM_PivotDesc,      NormalText, prPivotCommand_Usability,      prPivotCommand_Effect)
 	MenuCommand(UM_Reposition, UM_RepositionDesc, NormalText, prRepositionCommand_Usability, prRepositionCommand_Effect)
@@ -176,7 +190,7 @@ UnitMenuTable:
   UM_Trade
   
   //UM_Supply
-  //MenuCommand(0x68F,0x6D5,GreenText,NewSupplyUsability,0x23FB8)
+  MenuCommand(0x68F,0x6D5,GreenText,NewSupplyUsability,0x23FB8)
   
   UM_Wait
 

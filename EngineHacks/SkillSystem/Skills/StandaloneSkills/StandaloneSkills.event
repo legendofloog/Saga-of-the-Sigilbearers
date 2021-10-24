@@ -9,6 +9,8 @@ ORG $188F6
 BYTE 0x00 0x00
 BYTE 0x00 0x48 0x87 0x46; POIN (Boon|0x1)
 
+
+
 //Live to Serve
 ORG $2EBD4
 jumpToHack(LiveToServe)
@@ -59,13 +61,6 @@ POIN SkillTester
 WORD BoonID
 
 ALIGN 4
-Discipline:
-#incbin "Discipline/Discipline.dmp"
-POIN SkillTester
-WORD DisciplineID
-WORD DisciplinePlusID
-
-ALIGN 4
 LiveToServe:
 #incbin "LiveToServe/LiveToServe.dmp"
 POIN SkillTester
@@ -92,26 +87,26 @@ WORD VantagePlusID
 
 ALIGN 4
 VigorDanceSkill: //set a bit in the debuff table's entry for the refreshed unit
-#incbin "VigorDance/vigordanceskill.dmp"
+#include "VigorDance/vigordanceskill.lyn.event"
 POIN SkillTester
 WORD VigorDanceID
-WORD DebuffTable
+POIN GetDebuffs // WORD DebuffTable
 WORD VigorDanceBit
-WORD 8 //size of a debuff table entry
+// WORD 8 //size of a debuff table entry
 
 ALIGN 4
 VigorDanceCheck: //check if the bit is set and if so give the unit some stats
-#incbin "VigorDance/vigordancecheck.dmp"
-WORD DebuffTable
+#include "VigorDance/vigordancecheck.lyn.event"
+POIN GetDebuffs // WORD DebuffTable
 WORD VigorDanceBit
-WORD 8 //size of a debuff table entry
+// WORD 8 //size of a debuff table entry
 
 ALIGN 4
 VigorDanceReset:
-#incbin "VigorDance/vigordancereset.dmp"
-WORD DebuffTable
+#include "VigorDance/vigordancereset.lyn.event"
+POIN GetDebuffs // WORD DebuffTable
 WORD VigorDanceBit
-WORD 8 //size of a debuff table entry
+// WORD 8 //size of a debuff table entry
 
 #include "TriangleAttack/TriangleAttack.lyn.event"
 ALIGN 4

@@ -14,21 +14,12 @@ FILL 4*0xFF
 ALIGN 4
 RagnaSpellList:
 	BYTE 1 Flux
-	BYTE 10 Luna
-	BYTE 0x81 Bolting
-	BYTE 0x8A Gleipnir
 	BYTE 0 0
+
 ALIGN 4
 EimundSpellList:
 	BYTE 1 Thunder
 	BYTE 0 0
-ALIGN 4
-LysandraSpellList:
-	BYTE 1 Heal
-	BYTE 1 Physic
-	BYTE 1 Lightning
-	BYTE 0 0
 
 GaidenList(Ragna,RagnaSpellList) // This macro writes this entry to the spell list table.
 GaidenList(Eimund,EimundSpellList)
-GaidenList(Lysandra,LysandraSpellList)

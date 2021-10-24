@@ -1,4 +1,9 @@
--Portraits: MournfulRelic, Citrus, Devisio for specific mugs in the hack. Lenh + ObsidianDaddy for FE6 portraits with blink frames, Blade for skin tones sheet
+GRAPHICS
+
+-Portraits: MournfulRelic (Carys, Hartner, Ivarr, Lysandra, Ragna, Ulfr);
+RandomWizard
+Lenh + ObsidianDaddy for FE6 portraits with blink frames, Blade for skin tones sheet
+
 
 Battle Animations: Alusq, Nuramon, JeytheCount, Maiser6, WarPath, Red Bean, HyperGammaSpaces, Raulster, MeatOfJustice, leo_link, flasuban, MK404, Glenwing, EldritchAbomination, Team SALVAGED, Pushwall, Mikey Seregon, Alfred Kamon, PrincessKilvas, Spud, Blue Druid, Pikmin1211, Skitty, GabrielKnight
 

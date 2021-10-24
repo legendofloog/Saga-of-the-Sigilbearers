@@ -16,6 +16,9 @@
 // The amount of attack speed needed to double an opponent.
 #define AS_DOUBLING_THRESHOLD 3
 
+// If true, dropped items will retain their durability.
+#define DROPPED_ITEM_DURABILITY True
+
 
 // ===================================
 // = HACK INSTALLATION CONFIGURATION =
@@ -52,7 +55,7 @@
 
 //If uncommented, will use Trap Rework.
 //This is automatically used if Dragon Veins or Heal Tiles are uncommented.
-//#define TRAP_REWORK
+#define TRAP_REWORK
 
 //If uncommented, will enable Dragon Veins.
 //#define DRAGON_VEINS
@@ -189,7 +192,7 @@
 // #define ENABLE_GBA_LETHALITY
 
 // if set to false, only the skill will work, if set to true both the skill and the ability will work
-#define ENABLE_LEGACY_CANTO False
+#define ENABLE_LEGACY_CANTO True
 
 // if commented, enemies with Steal+ will steal as normal in vanilla (ie, the skill will be pretty much useless
 #define ENABLE_AI_STEAL_PLUS

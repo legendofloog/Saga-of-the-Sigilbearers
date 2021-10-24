@@ -18,14 +18,14 @@ POP
 #define HardClassLock 3
 #define EndLockArray 0
 
-FiletKnifeArray:
-BYTE HardCharLock
-BYTE Hartner
-BYTE EndLockArray
-
 HeavyHarpoonArray:
 BYTE HardCharLock
 BYTE Eindride
+BYTE EndLockArray
+
+FiletKnifeArray:
+BYTE HardCharLock
+BYTE Hartner
 BYTE EndLockArray
 
 #endif // ADV_WEAPON_LOCKS

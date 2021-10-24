@@ -37,7 +37,12 @@ AREA 10 TopSwitch [17,1] [17,1]
 AREA 11 BottomSwitch [11,23] [11,23]
 AFEV 13 SahnCaptureCheck 12
 CauseGameOverIfLordDies
-END_MAIN 
+END_MAIN
+
+GameOverStart:
+ASMC 0x800D391
+NoFade
+ENDA
 
 Dunno1:
 END_MAIN
@@ -56,7 +61,6 @@ UNIT Rune Outcast Rune Level(2,Ally,False) [22,20] 0x0 0x0 0x0 0x1 [IronAxe,Hand
 UNIT Asgeir AsgeirLord Rune Level(1,Ally,False) [3,2] 0x0 0x0 0x0 0x1 [Glaive,IronLance,Vulnerary] NoAI
 UNIT Hartner Thief Rune Level(1, Ally, False) [2,3] 0x00 0x00 0x0 0x00 [IronSword,Vulnerary] NoAI
 UNIT Ragna RagnaLord Rune Level(1,Ally,False) [1,2] 0x0 0x0 0x0 0x1 [Thunder,Flux,Vulnerary] NoAI
-UNIT Eimund Warrior Rune Level(1,Ally,False) [2,1] 0x0 0x0 0x0 0x1 [BraveAxe,Thunder,Vulnerary] NoAI
 UNIT Ulfr Fighter Rune Level(2,Ally,False) [3,0] 0x0 0x0 0x0 0x1 [IronAxe,Vulnerary] NoAI
 UNIT Ivarr Hunter Rune Level(2,Ally,False) [21,22] 0x0 0x0 0x0 0x1 [IronBow,Vulnerary] NoAI
 UNIT Brynja SwordKnight Rune Level(9,Ally,False) [4,1] 0x0 0x0 0x0 0x1 [SilverSword,IronSword,Vulnerary] NoAI
@@ -65,7 +69,6 @@ UNIT Eimund LanceCav Rune Level(2, Ally, False) [22,22] 0x00 0x00 0x0 0x01 [Iron
 UNIT Signe Soldier_F Rune Level(2,Ally,False) [5,0] 0x00 0x00 0x0 0x01 [IronLance,Vulnerary] NoAI
 UNIT Eimund Mercenary_F Rune Level(4,Ally,False) [23,22] 0x00 0x00 0x0 0x01 [IronBlade, Vulnerary] NoAI
 UNIT Solveig Bow_Dragonrider Rune Level(4,Ally,False) [21,21] 0x00 0x00 0x0 0x01 [IronBow,IronLongbow,Vulnerary] NoAI
-UNIT Eimund Warrior Rune Level(1,Ally,False) [22,21] 0x0 0x0 0x0 0x1 [BraveAxe,Thunder,Vulnerary] NoAI
 UNIT
 
 EnemyUnits:
@@ -129,6 +132,7 @@ TelliusTorchOn(1,8,2)
 TelliusTorchOn(18,4,2)
 TelliusTorchOn(21,3,2)
 TelliusTorchOn(23,3,2)
+GreenSigil(22,3)
 ENDTRAP
 ALIGN 4
 
@@ -137,18 +141,6 @@ ENDTRAP
 ALIGN 4
 
 BeginningScene:
-RECLASS Solveig Archer_F
-RECLASS Eindride Soldier
-SVAL s1 ShoveID
-SVAL s2 Eindride
-ASMC (ASMC_LearnNewSkill|1)
-SVAL s1 CantoPlusID
-ASMC (ASMC_ForgetSkill|1)
-SVAL s1 ShoveID
-SVAL s2 Solveig
-ASMC (ASMC_LearnNewSkill|1)
-SVAL s1 CantoPlusID
-ASMC (ASMC_ForgetSkill|1)
 SetBackground(0x26)
 Text(Chapter4xScene1)
 CALL $9EE2C4
@@ -373,7 +365,7 @@ BEQ 12 s0 sC
 		CURSOR_FLASHING [22,3]
 		STAL 60
 		REMOVE_CURSORS
-		SetBackground(House2)
+		SetBackground(0x26)
 		Text(Ch4xGaidenUnlockText)
 		EVBIT_MODIFY 1
 		CenterTutorialTextBox

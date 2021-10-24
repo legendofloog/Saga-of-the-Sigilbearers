@@ -12,7 +12,7 @@
 		All staves have been extensively tested for proper vanilla and Gaiden functionality.
 		The system is designed to work together with vanilla spells. All vanilla spells should function normally without HP costs when casted from inventory.
 		If a defending unit cannot counter with their first equippable weapon in inventory, they will automatically equip their first (attack) Gaiden spell.
-		Any Gaiden spells that miss cost HP.
+		Any Gaiden spells that miss cost no HP.
 		An example usage for stat screen display is in page 4 complete with R-Text.
 		
 		KNOWN ISSUES:

@@ -532,14 +532,18 @@
 
 .macro draw_talk_text_at, tile_x, tile_y, colour=Blue
   draw_textID_at \tile_x, \tile_y, width=9 @ideally you want a diff id.
+  blh 0x8042e98, r4 @CheckLinkArenaBit
   mov r4, r7
   sub r4, #8
+  cmp r0,#1
+  beq DidntFindAPerson
   mov r0, r8
   ldr   r0,[r0]
   ldrb  r0,[r0,#0x4]    @char byte
   bl GetTalkee
   cmp   r0,#0x0
   bne   FoundAPerson
+  DidntFindAPerson:
   ldr   r1,=0x7f7f7f @---[X]
   ldr   r0,=0x202a6ac @text buffer
   str   r1,[r0]
@@ -590,7 +594,7 @@
   cmp r2, #0
   beq NoStatusCount
   ldr r0, =(0x2003ca2+(0x20*2*\tile_y)+(2*\tile_x))
-  lsr r2, #5
+  lsr r2, #4
   mov r1, #0
   blh 0x8004be4
   NoStatusCount:
@@ -844,7 +848,8 @@
 .macro clear_buffers
   blh 0x8003c94
   blh 0x8003578
-  blh 0x8086df0 @clear 2003c00 region
+  @blh 0x8086df0 @clear 2003c00 region
+  blh DontBlinkLeft
   @blh 0x80790a4
   @ ldr r4, =StatScreenStruct
   @ ldr r0, [r4, #0xc]
@@ -1165,26 +1170,27 @@ DrawMaxHP_End:
   mov r8, r0             @r8 contains the current unit's data
   blh 0x8003c94
   blh 0x8003578
-  blh 0x8086df0 @clear 2003c00 region
+  @blh 0x8086df0 @clear 2003c00 region
+  blh DontBlinkLeft
   mov r0, #0
   str r0, [sp]
   mov r0, sp
   ldr r1, =0x6001380
   ldr r2, =0x1000a68
   swi 0xC @clear vram
-  ldr	r7,=#0x2003BFC
-  ldr	r0,=#0x2022CA8	@text buffer probably
-  mov	r8,r0
-  mov	r1,#0
-  blh	0x8001220	@FillBgMap
-  ldr	r4,[r7,#0xC]	@load unit's pointer
-  mov	r0,r4
-  blh	0x8016B58	@get equipped item index?
-  mov	r1,r0
-  lsl	r1,#0x18
-  lsr	r1,#0x18
-  mov	r0,r4
-  blh	0x802A400	@SetupBattleStructFromUnitAndWeapon
+  ldr    r7,=0x2003BFC
+  ldr    r0,=0x2022CA8    @text buffer probably
+  mov    r8,r0
+  mov    r1,#0
+  blh    0x8001220    @FillBgMap
+  ldr    r4,[r7,#0xC]    @load unit's pointer
+  mov    r0,r4
+  blh    0x8016B58    @get equipped item index?
+  mov    r1,r0
+  lsl    r1,#0x18
+  lsr    r1,#0x18
+  mov    r0,r4
+  blh    0x802A400    @SetupBattleStructFromUnitAndWeapon
 .endm
 
 .macro draw_left_affinity_icon_at, tileX, tileY

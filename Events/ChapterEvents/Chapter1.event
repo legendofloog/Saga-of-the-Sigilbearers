@@ -13,25 +13,53 @@ POIN $0 $0 $0
 POIN BeginningScene EndingScene
 
 TurnBasedEvents:
-TurnEventPlayer(7,BrigandSpawn,2)
-TurnEventPlayer(8,ChargeWayland,7)
-TurnEventPlayer(15,ChargeWaylandWarning,6)
+TurnEventPlayer(0,BrigandSpawn,2)
+TurnEventPlayer(0,ChargeWayland,7)
+TurnEventPlayer(0,ChargeWaylandWarning,6)
 END_MAIN
 
 ALIGN 32
 CharacterBasedEvents:
 CharacterEventBothWays(10,RuneRagna,Rune,Ragna)
+CharacterEventBothWays(7,RuneCarysCh1Talk,Rune,Carys)
+CharacterEventBothWays(8,RagnaEimundCh1Talk,Ragna,Eimund)
 END_MAIN
+
+RuneRagna:
+Text(RuneRagnaChapter1)
+NoFade
+ENDA
+
+RuneCarysCh1Talk:
+Text(RuneCarysChapter1Text)
+NoFade
+ENDA
+
+RagnaEimundCh1Talk:
+Text(RagnaEimundChapter1Text)
+NoFade
+ENDA
 
 LocationBasedEvents:
 Village(13,TopVillage,13,4)
 Village(14,BottomVillage,17,15)
 END_MAIN
 
+TopVillage:
+VillageEventItem(Ch1JavelinVillage, House2, Javelin)	
+
+BottomVillage:
+VillageEventItem(Ch1HandAxeVillage, House1, HandAxe)
+
 MiscBasedEvents:
 CauseGameOverIfLordDies
 DefeatBoss(EndingScene)
-END_MAIN 
+END_MAIN
+
+GameOverStart:
+ASMC 0x800D391
+NoFade
+ENDA
 
 Dunno1:
 END_MAIN 
@@ -46,9 +74,9 @@ Tutorial:
 END_MAIN
 
 Units1:
-
-UNIT Rune Outcast Rune Level(2,Ally,False) [29,2] 0x0 0x0 0x0 0x1 [HandAxe,IronAxe,Vulnerary] NoAI
-UNIT Asgeir AsgeirLord Rune Level(1,Ally,False) [29,2] 0x0 0x0 0x0 0x1 [Glaive,IronLance,Vulnerary] NoAI
+UNIT Rune Outcast Rune Level(2,Ally,False) [34,17] 0x0 0x0 0x0 0x1 [HandAxe,IronAxe,Vulnerary] NoAI
+UNIT Asgeir AsgeirLord Rune Level(1,Ally,False) [33,18] 0x0 0x0 0x0 0x1 [Glaive,IronLance,Vulnerary] NoAI
+UNIT Brynja SwordKnight Rune Level(9,Ally,False) [34,19] 0x0 0x0 0x0 0x1 [SilverSword,IronSword,Vulnerary] NoAI
 UNIT
 
 Units2:
@@ -57,10 +85,6 @@ UNIT Ragna RagnaLord Rune Level(1,Ally,False) [35,18] 0x0 0x0 0x0 0x1 [Vulnerary
 UNIT Eimund MageFighter Rune Level(5,Ally,False) [34,18] 0x0 0x0 0x0 0x1 [IronAxe,BraveAxe,Vulnerary] NoAI
 UNIT Ulfr Fighter Rune Level(2,Ally,False) [35,17] 0x0 0x0 0x0 0x1 [IronAxe,Vulnerary] NoAI
 UNIT Ivarr Hunter Rune Level(2,Ally,False) [35,19] 0x0 0x0 0x0 0x1 [IronBow,Vulnerary] NoAI
-UNIT
-
-Units3:
-UNIT Brynja SwordKnight Rune Level(9,Ally,False) [29,2] 0x0 0x0 0x0 0x1 [SilverSword,IronSword,Vulnerary] NoAI
 UNIT
 
 EnemyUnits:
@@ -85,14 +109,25 @@ UNIT 0x70 Mercenary Wayland Level(1, Enemy, True) [8,11] 0x00 0x00 0x0 0x00 [Arm
 UNIT 0x70 Fighter Wayland Level(1, Enemy, True) [4,16] 0x00 0x00 0x0 0x00 [IronAxe, Vulnerary] AttackInRangeAI
 UNIT
 
+OpeningGreenCutsceneGroup:
+UNIT Wayland Fighter 0x00 Level(4, NPC, True) [13,12] 0x00 0x00 0x0 0x00 [ShortAxe,SteelAxe] AttackInRangeAI
+UNIT Carys Soldier Wayland Level(1, NPC, True) [12,13] 0x00 0x00 0x0 0x00 [IronLance] AttackInRangeAI
+UNIT 0x70 Mercenary Wayland Level(1, NPC, True) [14,12] 0x00 0x00 0x0 0x00 [IronSword] PursueWithoutHeedAI
+UNIT 0x70 Fighter Wayland Level(1, NPC, True) [15,13] 0x00 0x00 0x0 0x00 [IronAxe] PursueWithoutHeedAI
+UNIT
+
 Brigands:
 UNIT 0x70 Brigand Wayland Level(1, Enemy, True) [7,9] 0x00 0x00 0x0 0x00 [IronAxe] AttackThenLootAI
 UNIT 0x70 Brigand Wayland Level(1, Enemy, True) [7,18] 0x00 0x00 0x0 0x00 [IronAxe] AttackThenLootAI
 UNIT
 
-GreenUnits: 
-UNIT Carys Myrmidon_F 0x00 Level(2, NPC, False) [29,3] 0x00 0x00 0x00 0x00 [Shamshir,IronSword,Vulnerary] AttackInPlaceAI
+CarysUnitGroup: 
+UNIT Carys Myrmidon_F 0x00 Level(2, NPC, False) [29,2] 0x00 0x00 0x00 0x00 [Shamshir,IronSword,Vulnerary] AttackInPlaceAI
 UNIT
+
+BrynjaSpawn:
+UNIT Brynja SwordKnight Rune Level(9,Ally,False) [29,2] 0x0 0x0 0x0 0x1 [SilverSword,IronSword,Vulnerary] NoAI
+UNIT 
 
 Traps1:
 ENDTRAP
@@ -113,34 +148,63 @@ TEXTEND
 REMA
 Text(Ch1Scene1)
 CALL $9EE2C4
-MUSC 0x7FFF
-CAM1 [26,2]
+LOAD1 1 Units1
+LOAD1 1 OpeningGreenCutsceneGroup
+ENUN
+TEXTSTART
+TEXTSHOW Ch1Scene2Part1
+TEXTEND
+CAMERA Asgeir
 CURSOR_FLASHING [29, 2]
 STAL 60
 REMOVE_CURSORS
-SetBackground(09)
-MUSC OneHundredOJ_KaiTheme
-//Text(Ch1Scene2)
+CAMERA Asgeir
+STAL 10
+TEXTCONT
+TEXTEND
+REMA
+CamOn
+MOVE 15 Asgeir [13,14]
+MOVE 15 Rune [13,15]
+MOVE 15 Brynja [14,14]
+ENUN
+Text(Ch1Scene2Part2)
+CamOff
+MOVE 15 Wayland [12,12]
+MOVE 15 Carys [15,12]
+ENUN
+CamOn
+MOVE 15 Asgeir [29,4]
+MOVE 15 Rune [30,3]
+MOVE 15 Brynja [28,3]
+ENUN
+CamOff
+TEXTSTART
+TEXTSHOW Ch1Scene2Part3
+TEXTEND
+MOVE 15 Brynja [29,2]
+ENUN
+REMOVEUNIT Brynja
+TEXTCONT
+TEXTEND
+REMA
 MUSC 0x7FFF
-LOAD1 1 EnemyUnits
-LOAD1 1 GreenUnits
-LOAD1 1 Units1
-CALL $9EE2C4
-MOVE 10 Asgeir [29,4]
+REMOVEALL_GREEN
+LOAD 1 CarysUnitGroup
 ENUN
-CUSA Carys
-MOVE 10 Rune [30,3]
+MOVE 15 Carys [29,3]
 ENUN
+Text(Ch1Scene3Part1)
 MUSC Sortie_Formation
-//TEXTSTART
-//TEXTSHOW Ch1Scene3
-//TEXTEND
-LOAD1 1 Units3
+FADI 15
+LOAD1 1 EnemyUnits
+LOAD1 1 BrynjaSpawn
 ENUN
 MOVE 10 Brynja [28,3]
 ENUN
-//TEXTCONT
-//TEXTEND
+Text(Ch1Scene3Part2)
+FlashCursor(Carys,60)
+CUSA Carys
 CAMERA [27,17]
 LOAD1 1 Units2
 ENUN
@@ -151,11 +215,8 @@ MOVE 10 Ivarr [29, 19]
 STAL 10
 MOVE 10 Ragna [29, 18]
 ENUN
-STAL 60
-//TEXTCONT
-//TEXTEND
-//REMA
-ENUN
+FlashCursor(Ragna,60)
+Text(Ch1Scene3Part3)
 NoFade
 ENDA
 
@@ -199,14 +260,4 @@ CHAI 0x70
 NoFade
 ENDA
 
-RuneRagna:
-Text(RuneRagnaChapter1)
-NoFade
-ENDA
 
-TopVillage:
-VillageEventItem(Ch1JavelinVillage, House2, Javelin)	
-
-
-BottomVillage:
-VillageEventItem(Ch1HandAxeVillage, House1, HandAxe)

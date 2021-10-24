@@ -44,7 +44,7 @@ A throwing spear that is uncounterable.[X]
 Stl Poleaxe[X]
 
 ## EmptyDesc
-[X]
+ [X]
 
 ## ShortAxeName
 Short Axe[X]

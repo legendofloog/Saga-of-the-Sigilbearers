@@ -30,6 +30,6 @@
 #define _6C_CALL_ROUTINE_ARG   PROC_CALL_ROUTINE_ARG
 #define _6C_19                 PROC_19
 
-#define _6C_YEILD              PROC_YEILD
+#define _6C_YEILD              PROC_YIELD
 
 #endif // HAX_6C_DEFINITIONS_EVENT

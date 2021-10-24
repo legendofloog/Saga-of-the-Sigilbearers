@@ -305,7 +305,7 @@ _prShove_MakeTargetList:
 
 ALIGN 4
 _prShove_TargetCheck:
-	#incbin "asm/Shove_TargetCheck.bin"
+	#incbin "asm/Shove_TargetCheck.dmp"
 	POIN (_prGetShovePosition+1)
 	POIN (prShove_TargetLegality+1)
 

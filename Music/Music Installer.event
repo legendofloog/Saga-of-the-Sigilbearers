@@ -19,9 +19,7 @@ SongTable(0x07,L_FeldIII,MapMusicGroup)
 #include "MusicEvents/lufiadoom.event"
 SongTable(0x08,lufiadoom,MapMusicGroup)
 #include "MusicEvents/FFTTrisectionAlusq.event"
-SongTable(0x09,trisectiontest,MapMusicGroup)
-#include "MusicEvents/FinalFantasyTacticsDecisiveBattle(Alusq).event"
-SongTable(0xA,decbattletest,MapMusicGroup)
+SongTable(0x9, trisectiontest, MapMusicGroup)
 #include "MusicEvents/Castlevania Order of Ecclesia - Lament To The Master (Sme).event"
 SongTable(0xB,LamentToTheMaster,BattleMusicGroup)
 #include "MusicEvents/Lufia 2 Rise of the Sinistrals - Battle 2 (SaXor_the_Nobody).event"
