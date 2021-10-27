@@ -120,3 +120,6 @@ Stl. Grtlance[X]
 
 ## SilverGreatlanceName
 Slv. Grtlance[X]
+
+## WindName
+Wind[X]

@@ -1,0 +1,46 @@
+
+## Ch1Name
+Ch 1 - Reunion[X]
+
+## Ch2Name
+Ch 2 - Holtorn Grove[X]
+
+## Ch3Name
+Ch 3 - Unexpected Encounter[X]
+
+## Ch4Name
+Ch 4 - Wings of Rivald[X]
+
+## Ch4xName
+Ch 4x - Last Stand[X]
+
+## Ch5Name
+Ch 5 - In Defense of Hope[X]
+
+## Ch4xxName
+Ch 4xx - Raging Rivers[X]
+
+## DefeatBossGoalText
+Defeat boss[X]
+
+## FishGoalText
+Protect/Fish[X]
+
+## FishObjectiveText
+Defend the houses and[NL]
+bring fish to them[X]
+
+## DefendDefeatBossObjective
+Defend/Dft. Boss[X]
+
+## DefendDefeatBossObjectiveDesc
+ Protect the elder's house[N]
+for 9 turns or defeat Yanus.[X]
+
+## ArriveCh4xDesc
+  Arrive at the[N]
+mercenary hideout.[X]
+
+## EscapeObjectiveDesc
+Escape with as many[N]
+ units as possible.[X]

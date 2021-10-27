@@ -44,7 +44,7 @@ SetCombatArtCost(05,2) //Gamble
 SetCombatArtCost(06,2) //Adept
 SetCombatArtCost(07,3) //Aether
 SetCombatArtCost(08,0) //Astra
-SetCombatArtCost(09,2) //Dragon Fang
+SetCombatArtCost(09,1) //Blade Dance
 SetCombatArtCost(10,2) //Glacies
 SetCombatArtCost(11,2) //Ignis
 SetCombatArtCost(12,2) //Luna
@@ -61,7 +61,7 @@ MenuCommand(UM_Aether, UM_AetherDesc, NormalText, AetherUsability, AetherEffect,
 
 MenuCommand(UM_Astra, UM_AstraDesc, NormalText, AstraUsability, AstraEffect, $22c31, $22c99)
 
-MenuCommand(UM_DragonFang, UM_DragonFangDesc, NormalText, DragonFangUsability, DragonFangEffect, $22c31, $22c99)
+MenuCommand(UM_BladeDance, UM_BladeDanceDesc, NormalText, BladeDanceUsability, BladeDanceEffect, $22c31, $22c99)
 
 MenuCommand(UM_Glacies, UM_GlaciesDesc, NormalText, GlaciesUsability, GlaciesEffect, $22c31, $22c99)
 
@@ -147,6 +147,19 @@ AstraEffect:
 WORD 8 //Astra art ID
 
 ALIGN 4
+BladeDanceUsability:
+#incbin "CombatArtUsability.dmp"
+POIN SkillTester
+WORD 9 //BladeDance art ID
+POIN CombatArtCostTable
+
+ALIGN 4
+BladeDanceEffect:
+#incbin "CombatArtEffect.dmp"
+WORD 9 //BladeDance art ID
+
+/*
+ALIGN 4
 DragonFangUsability:
 #incbin "CombatArtUsability.dmp"
 POIN SkillTester
@@ -158,6 +171,8 @@ ALIGN 4
 DragonFangEffect:
 #incbin "CombatArtEffect.dmp"
 WORD 9 //Dragon Fang art ID
+
+*/
 
 ALIGN 4
 GlaciesUsability:

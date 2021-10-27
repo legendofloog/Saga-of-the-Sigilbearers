@@ -34,9 +34,11 @@ EscapePointEntry(2,24,EscapeDown)
 EscapePointTerminator
 
 NPCEscapeTableCh4xx:
-EscapePointEntry(10,14,EscapeDown)
-EscapePointEntry(9,14,EscapeDown)
-EscapePointEntry(1,14,EscapeDown)
+EscapePointEntry(0,17,EscapeDown)
+EscapePointEntry(1,17,EscapeDown)
+EscapePointEntry(11,17,EscapeDown)
+EscapePointEntry(12,17,EscapeDown)
+EscapePointEntry(13,17,EscapeDown)
 EscapePointTerminator
 
 NPCEscapeTableCh5:

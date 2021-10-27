@@ -13,122 +13,10 @@ POIN $0 $0 $0
 POIN BeginningScene EndingScene
 
 TurnBasedEvents:
-Survive(Ch4xxDoneFishing,7)
+Survive(Ch4xxDoneFishing,8)
 TurnEventPlayer(19,SecondFishSpawn,3)
+TurnEventPlayer(20,ThirdFishSpawn,5)
 END_MAIN
-
-ALIGN 32
-CharacterBasedEvents:
-END_MAIN
-
-LocationBasedEvents:
-House(0,HartnerHouse,10,2)
-House(0,LeftHouse,6,4)
-House(0,RightHouse,12,5)
-House(0,EindrideHouse,9,8)
-END_MAIN
-
-MiscBasedEvents:
-AREA 8 CheckEnemyDestroyedWestVillage [6,4]
-AREA 9 CheckEnemyDestroyedNorthVillage [6,4]
-AREA 10 CheckEnemyDestroyedSouthVillage [6,4]
-AREA 12 CheckEnemyDestroyedEastVillage [6,4]
-CauseGameOverIfLordDies
-END_MAIN
-
-GameOverStart:
-ASMC 0x800D391
-NoFade
-ENDA
-
-Dunno1:
-END_MAIN
-
-Dunno2:
-END_MAIN 
-
-Dunno3:
-END_MAIN 
-
-Tutorial:
-END_MAIN
-
-Units1:
-
-UNIT Rune Outcast Rune Level(2,Ally,False) [8,5] 0x0 0x0 0x0 0x1 [IronAxe,HandAxe,Vulnerary] NoAI
-UNIT Asgeir AsgeirLord Rune Level(1,Ally,False) [10,5] 0x0 0x0 0x0 0x1 [Glaive,IronLance,Vulnerary] NoAI
-UNIT Ragna Shaman_F Rune Level(1,Ally,False) [9,5] 0x0 0x0 0x0 0x1 [Thunder,Flux,Vulnerary] NoAI
-UNIT Eimund Warrior Rune Level(1,Ally,False) [8,4] 0x0 0x0 0x0 0x1 [BraveAxe,Thunder,Vulnerary] NoAI
-UNIT Ulfr Fighter Rune Level(2,Ally,False) [9,4] 0x0 0x0 0x0 0x1 [IronAxe,Vulnerary] NoAI
-UNIT Ivarr Hunter Rune Level(2,Ally,False) [10,4] 0x0 0x0 0x0 0x1 [IronBow,Vulnerary] NoAI
-UNIT Brynja SwordKnight Rune Level(9,Ally,False) [8,6] 0x0 0x0 0x0 0x1 [SilverSword,IronSword,Vulnerary] NoAI
-UNIT Eimund Myrmidon_F Rune Level(2, Ally, False) [10,6] 0x00 0x00 0x00 0x01 [Shamshir,IronSword,Vulnerary] NoAI
-UNIT
-
-EnemyUnits:
-UNIT 0x70 Archer 0x00 Level(4,Enemy,True) [17,14] 0x00 0x00 0x0 0x00 [IronLongbow] PursueWithoutHeedAI
-UNIT 0x70 Brigand 0x00 Level(4,Enemy,True) [13,9] 0x00 0x00 0x0 0x00 [IronAxe] PursueWithoutHeedAI
-UNIT 0x70 Mercenary 0x00 Level(4,Enemy,True) [17,11] 0x00 0x00 0x0 0x00 [SteelSword] PursueWithoutHeedAI
-UNIT 0x70 Pirate 0x00 Level(4,Enemy,True) [1,9] 0x00 0x00 0x0 0x00 [IronAxe] PursueWithoutHeedAI
-UNIT 0x70 Hunter 0x00 Level(4,Enemy,True) [0,10] 0x00 0x00 0x0 0x00 [IronLongbow] PursueWithoutHeedAI
-UNIT 0x70 Lancer 0x00 Level(4,Enemy,True) [6,9] 0x00 0x00 0x0 0x00 [IronLance] PursueWithoutHeedAI
-UNIT 0x70 Hunter 0x00 Level(4,Enemy,True) [3,14] 0x00 0x00 0x0 0x00 [IronLongbow] AttackInRangeAI
-UNIT 0x70 SwordCav 0x00 Level(4,Enemy,True) [7,13] 0x00 0x00 0x0 0x00 [IronSword] AttackInRangeAI
-UNIT 0x70 Pirate 0x00 Level(4,Enemy,True) [4,11] 0x00 0x00 0x0 0x00 [IronAxe] PursueWithoutHeedAI
-UNIT 0x70 Pirate 0x00 Level(4,Enemy,True) [12,13] 0x00 0x00 0x0 0x00 [IronAxe] PursueWithoutHeedAI
-UNIT
-
-FishGroup1:
-UNIT 0x7A Fish 0x00 Level(1,NPC,True) [2,0] 0x00 0x00 0x0 0x00 [0x0] EscapeOnlyAI
-UNIT 0x7B Fish 0x00 Level(1,NPC,True) [17,2] 0x00 0x00 0x0 0x00 [0x0] EscapeOnlyAI
-UNIT
-
-FishGroup2:
-UNIT 0x7C Fish 0x00 Level(1,NPC,True) [2,0] 0x00 0x00 0x0 0x00 [0x0] EscapeOnlyAI
-UNIT 0x7D Fish 0x00 Level(1,NPC,True) [17,2] 0x00 0x00 0x0 0x00 [0x0] EscapeOnlyAI
-UNIT
-
-Traps1:
-ENDTRAP
-ALIGN 4
-
-Traps2:
-ENDTRAP
-ALIGN 4
-
-BeginningScene:
-ENUT 0x27
-ClearFatigue(Eindride)
-ClearFatigue(Hartner)
-SHOWUNIT Asgeir
-EVBIT_T 5
-TEXTSTART
-TEXTSHOW Ch4xxScene1Part1
-TEXTEND
-TEXTCONT
-TEXTEND
-REMA
-EVBIT_F 5
-CHECK_ALIVE Signe
-BEQ 21 s0 sC
-	Text(Ch4xxScene1Part2SigneAlive)
-	GOTO 22
-LABEL 21
-Text(Ch4xxScene1Part2SigneDead)
-LABEL 22
-EVBIT_T 5
-SetBackground(House1)
-Text(Ch4xxScene1Part3)
-CALL $9EE2C4
-FADI 15
-LOAD1 1 EnemyUnits
-FADU 5
-Text(Ch4xxScene1Part4)
-LOAD1 0 Units1
-LOAD1 1 FishGroup1
-ENUN
-PREP
-ENDA
 
 SecondFishSpawn:
 LOAD1 1 FishGroup2
@@ -140,10 +28,45 @@ STAL 30
 NoFade
 ENDA
 
+ThirdFishSpawn:
+LOAD1 1 FishGroup3
+ENUN
+CAMERA 0x7E
+STAL 30
+CAMERA 0x7F
+STAL 30
+NoFade
+ENDA
+
 Ch4xxDoneFishing:
 CALL EndingScene
 NoFade
 ENDA
+
+ALIGN 32
+CharacterBasedEvents:
+CharacterEventBothWays(21, ViskardRecruit,0,Viskard)
+END_MAIN
+
+ViskardRecruit:
+CALL CheckIfFishEvent
+BEQ 49 s0 sC
+	CALL RemoveFishEvent
+	CUSA Viskard
+	NoFade
+	ENDB
+LABEL 49
+ENUF 21
+NoFade
+ENDA
+
+LocationBasedEvents:
+House(0,HartnerHouse,6,2)
+House(0,LeftHouse,7,6)
+House(0,NorthHouse,12,3)
+House(0,RightHouse,13,7)
+House(0,EindrideHouse,9,10)
+END_MAIN
 
 HartnerHouse:
 CHECK_ACTIVEID Hartner
@@ -212,9 +135,20 @@ BEQ 13 s0 sC
 	NoFade
 	ENDB
 LABEL 13
-SetBackground(House2
+SetBackground(House2)
 Text(Ch4xxHartnerHouseNoFishText)
 CALL $9EE2C4
+NoFade
+ENDA
+
+NorthHouse:
+CALL CheckIfFishEvent
+BEQ 45 s0 sC
+	CALL RemoveFishEvent
+	TILECHANGE 3
+	NoFade
+	ENDB
+LABEL 45
 NoFade
 ENDA
 
@@ -225,7 +159,7 @@ BEQ 1 s0 sC
 	SetBackground(House1)
 	Text(Ch4xxLeftHouseFishText)
 	CALL $9EE2C4
-	TILECHANGE 3
+	TILECHANGE 5
 	NoFade
 	ENDB
 LABEL 1
@@ -242,7 +176,7 @@ BEQ 3 s0 sC
 	SetBackground(House1)
 	Text(Ch4xxRightHouseFishText)
 	CALL $9EE2C4
-	TILECHANGE 5
+	TILECHANGE 7
 	NoFade
 	ENDB
 LABEL 3
@@ -261,7 +195,7 @@ BEQ 4 s0 sC
 		SetBackground(House2)
 		Text(Ch4xxEindrideHouse_EindrideFishText) // event that occurs if eindride brought fish
 		CALL $9EE2C4 
-		TILECHANGE 7
+		TILECHANGE 9
 		NoFade
 		ENDB
 	LABEL 2
@@ -279,7 +213,7 @@ BEQ 23 s0 sC
 		SetBackground(House2)
 		Text(Ch4xxEindrideHouse_SigneFishText)
 		CALL $9EE2C4
-		TILECHANGE 7
+		TILECHANGE 9
 		NoFade
 		ENDB
 	LABEL 24
@@ -291,7 +225,7 @@ BEQ 23 s0 sC
 LABEL 23
 CALL CheckIfFishEvent
 BEQ 10 s0 sC
-	TILECHANGE 7
+	TILECHANGE 9
 	CALL RemoveFishEvent // event that occurs if another unit brought fish
 	SetBackground(House2)
 	Text(Ch4xxEindrideHouseFishText)
@@ -303,6 +237,116 @@ SetBackground(House2)
 Text(Ch4xxEindrideHouseNoFishText)
 CALL $9EE2C4
 NoFade
+ENDA
+
+MiscBasedEvents:
+CauseGameOverIfLordDies
+END_MAIN
+
+GameOverStart:
+ASMC 0x800D391
+NoFade
+ENDB
+
+Dunno1:
+END_MAIN
+
+Dunno2:
+END_MAIN 
+
+Dunno3:
+END_MAIN 
+
+Tutorial:
+END_MAIN
+
+Units1:
+
+UNIT Rune Outcast Rune Level(2,Ally,False) [9,6] 0x0 0x0 0x0 0x1 [IronAxe,HandAxe,Vulnerary] NoAI
+UNIT Asgeir AsgeirLord Rune Level(1,Ally,False) [10,6] 0x0 0x0 0x0 0x1 [Glaive,IronLance,Vulnerary] NoAI
+UNIT Ragna Shaman_F Rune Level(1,Ally,False) [11,6] 0x0 0x0 0x0 0x1 [Thunder,Flux,Vulnerary] NoAI
+UNIT Eimund Warrior Rune Level(1,Ally,False) [9,7] 0x0 0x0 0x0 0x1 [BraveAxe,Thunder,Vulnerary] NoAI
+UNIT Ulfr Fighter Rune Level(2,Ally,False) [10,7] 0x0 0x0 0x0 0x1 [IronAxe,Vulnerary] NoAI
+UNIT Ivarr Hunter Rune Level(2,Ally,False) [11,7] 0x0 0x0 0x0 0x1 [IronBow,Vulnerary] NoAI
+UNIT Brynja SwordKnight Rune Level(9,Ally,False) [9,8] 0x0 0x0 0x0 0x1 [SilverSword,IronSword,Vulnerary] NoAI
+UNIT Eimund Myrmidon_F Rune Level(2, Ally, False) [11,8] 0x00 0x00 0x00 0x01 [Shamshir,IronSword,Vulnerary] NoAI
+UNIT
+
+EnemyUnits:
+UNIT 0x72 Archer 0x00 Level(4,Enemy,True) [15,15] 0x00 0x00 0x0 0x00 [IronLongbow] BossAI
+UNIT 0x72 Brigand 0x00 Level(4,Enemy,True) [12,12] 0x00 0x00 0x0 0x00 [IronAxe] AttackThenLootAI
+UNIT 0x72 Lancer 0x00 Level(4,Enemy,True) [18,3] 0x00 0x00 0x0 0x00 [IronGreatlance] AttackThenLootAI
+UNIT 0x72 Mercenary 0x00 Level(4,Enemy,True) [18,1] 0x00 0x00 0x0 0x00 [SteelSword] AttackThenLootAI
+UNIT 0x72 Pirate 0x00 Level(4,Enemy,True) [1,8] 0x00 0x00 0x0 0x00 [IronAxe] AttackThenLootAI
+UNIT 0x72 Pirate 0x00 Level(4,Enemy,True) [0,14] 0x00 0x00 0x0 0x00 [IronAxe] AttackThenLootAI
+UNIT 0x72 Archer 0x00 Level(4,Enemy,True) [2,12] 0x00 0x00 0x0 0x00 [IronLongbow] BossAI
+UNIT 0x72 Hunter 0x00 Level(4,Enemy,True) [10,16] 0x00 0x00 0x0 0x00 [IronLongbow] BossAI
+UNIT 0x72 Lancer 0x00 Level(4,Enemy,True) [6,10] 0x00 0x00 0x0 0x00 [IronLance] AttackInRangeAI
+UNIT 0x72 Hunter 0x00 Level(4,Enemy,True) [4,15] 0x00 0x00 0x0 0x00 [IronLongbow] BossAI
+UNIT 0x72 SwordCav 0x00 Level(4,Enemy,True) [7,15] 0x00 0x00 0x0 0x00 [IronSword] AttackInRangeAI
+UNIT 0x72 Pirate 0x00 Level(4,Enemy,True) [3,17] 0x00 0x00 0x0 0x00 [Halberd] AttackThenLootAI
+UNIT 0x72 Pirate 0x00 Level(4,Enemy,True) [16,13] 0x00 0x00 0x0 0x00 [IronAxe] AttackThenLootAI
+UNIT 0x72 Pirate 0x00 Level(4,Enemy,True) [19,17] 0x00 0x00 0x0 0x00 [IronAxe] AttackThenLootAI
+UNIT Viskard Pirate 0x00 Level(4,Enemy,True) [18,2] 0x00 0x00 0x0 0x00 [IronPoleaxe,Vulnerary] AttackInRangeAI
+UNIT 0x72 Lancer 0x00 Level(4,Enemy,True) [5,17] 0x00 0x00 0x0 0x00 [KillerLance] AttackInRangeAI
+UNIT
+
+FishGroup1:
+UNIT 0x7A Fish 0x00 Level(1,NPC,True) [1,0] 0x00 0x00 0x0 0x00 [0x0] EscapeOnlyAI
+UNIT 0x7B Fish 0x00 Level(1,NPC,True) [19,5] 0x00 0x00 0x0 0x00 [0x0] EscapeOnlyAI
+UNIT
+
+FishGroup2:
+UNIT 0x7C Fish 0x00 Level(1,NPC,True) [1,0] 0x00 0x00 0x0 0x00 [0x0] EscapeOnlyAI
+UNIT 0x7D Fish 0x00 Level(1,NPC,True) [19,5] 0x00 0x00 0x0 0x00 [0x0] EscapeOnlyAI
+UNIT
+
+FishGroup3:
+UNIT 0x7E Fish 0x00 Level(1,NPC,True) [1,0] 0x00 0x00 0x0 0x00 [0x0] EscapeOnlyAI
+UNIT 0x7F Fish 0x00 Level(1,NPC,True) [19,5] 0x00 0x00 0x0 0x00 [0x0] EscapeOnlyAI
+UNIT
+
+Traps1:
+ENDTRAP
+ALIGN 4
+
+Traps2:
+ENDTRAP
+ALIGN 4
+
+BeginningScene:
+ENUT 0x27
+EVBIT_T 5
+TEXTSTART
+TEXTSHOW Ch4xxScene1Part1
+TEXTEND
+TEXTCONT
+TEXTEND
+REMA
+EVBIT_F 5
+CHECK_ALIVE Signe
+BEQ 21 s0 sC
+	Text(Ch4xxScene1Part2SigneAlive)
+	GOTO 22
+LABEL 21
+Text(Ch4xxScene1Part2SigneDead)
+LABEL 22
+EVBIT_T 5
+SetBackground(House1)
+Text(Ch4xxScene1Part3)
+CALL $9EE2C4
+FADI 15
+LOAD1 1 EnemyUnits
+ENUN
+FADU 5
+Text(Ch4xxScene1Part4)
+LOAD1 0 Units1
+LOAD1 1 FishGroup1
+ENUN
+SHOWUNIT Asgeir
+ClearFatigue(Eindride)
+ClearFatigue(Hartner)
+PREP
 ENDA
 
 CheckIfFishEvent:
@@ -324,6 +368,16 @@ BNE 8 s1 sC
 	GOTO 5
 LABEL 8
 SVAL s1 0x7D
+BNE 54 s1 sC
+	COUNTER_INC 1
+	GOTO 5
+LABEL 54
+SVAL s1 0x7E
+BNE 37 s1 sC
+	COUNTER_INC 1
+	GOTO 5
+LABEL 37
+SVAL s1 0x7F
 BNE 5 s1 sC
 	COUNTER_INC 1
 LABEL 5
@@ -345,13 +399,13 @@ CHECK_ALIVE Eindride
 SetBackground(Village)
 BEQ 16 s0 sC
 COUNTER_CHECK 0
-SVAL s1 4 // checks if you got 4 fish
+SVAL s1 5 // checks if you got 4 fish
 BLE 14 s1 sC // skips if less than 4 fish
 	Text(Ch4xxEndingSceneAllFishPart1Text) // gives something if you got 4 fish
 	GiveItem(HeavyHarpoon, Eindride)
 	GOTO 16
 LABEL 14
-SVAL s1 2
+SVAL s1 3
 BLE 15 s1 sC
 	Text(Ch4xxEndingScenePart1HalfFishText)
 	GiveItem(RedGem, Eindride)

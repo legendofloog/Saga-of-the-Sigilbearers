@@ -1,0 +1,57 @@
+#define SoundRoomEntry(songid,length,name) "WORD songid length 0 name"
+#define SoundRoomTerminator "WORD 0xFFFFFFFF 0 0 0"
+
+// courtesy of joe gamer
+
+ALIGN 4
+NewSoundRoom:
+
+// new entries here
+SoundRoomEntry(ValkyrieProfile_GodSyndrome,0,ValkyrieProfile_GodSyndromeName)
+SoundRoomEntry(UnlimitedSaga_BattleThemeEX,0,UnlimitedSaga_BattleThemeEXName)
+SoundRoomEntry(Feldschlact_III,0,Feldschlact_IIIName)
+SoundRoomEntry(Lufia_Doom,0,Lufia_DoomName)
+SoundRoomEntry(Trisection,0,TrisectionName)
+SoundRoomEntry(Lament_to_the_Master,0,Lament_to_the_MasterName)
+SoundRoomEntry(Lufia2_RoS_Battle2,0,Lufia2_RoS_Battle2Name)
+SoundRoomEntry(FE10_March,0,FE10_MarchName)
+SoundRoomEntry(Sortie_Formation,0,Sortie_FormationName)
+SoundRoomEntry(FE11_Defense,0,FE11_DefenseName)
+SoundRoomEntry(SearchingTheEnemy,0,SearchingTheEnemyName)
+SoundRoomEntry(HarvestDance,0,HarvestDanceName)
+SoundRoomEntry(OneHundredOJ_KaiTheme,0,OneHundredOJ_KaiThemeName)
+SoundRoomEntry(AC_KK_Condor,0,AC_KK_CondorName)
+SoundRoomEntry(RippleIslandEnding,0,RippleIslandEndingName)
+SoundRoomEntry(FE11_CombatMission,0,FE11_CombatMissionName)
+SoundRoomEntry(FE11_Onset,0,FE11_OnsetName)
+SoundRoomEntry(FE11_Preparations,0,FE11_PreparationsName)
+SoundRoomEntry(FE11_TogetherWeRide,0,FE11_TogetherWeRideName)
+SoundRoomEntry(PersonalCombat,0,PersonalCombatName)
+SoundRoomEntry(IntoTheCastle,0,IntoTheCastleName)
+SoundRoomEntry(Rovers,0,RoversName)
+SoundRoomTerminator
+
+PUSH
+ORG 0x1BC14   
+POIN NewSoundRoom
+ORG 0x1BCC4
+POIN NewSoundRoom
+ORG 0xAECA8
+POIN NewSoundRoom
+ORG 0xAECD0
+POIN NewSoundRoom
+ORG 0xAED2C
+POIN NewSoundRoom
+ORG 0xAEEBC
+POIN NewSoundRoom
+ORG 0xAF438
+POIN NewSoundRoom
+ORG 0xAF830
+POIN NewSoundRoom
+ORG 0xAFE30
+POIN NewSoundRoom
+ORG 0xB0080
+POIN NewSoundRoom
+ORG 0xB042C
+POIN NewSoundRoom
+POP

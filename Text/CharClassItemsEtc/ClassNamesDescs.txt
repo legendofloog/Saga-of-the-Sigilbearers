@@ -103,6 +103,9 @@ arrow with speed and precision.[X]
 A skilled wyvern rider, honoring her[NL]
 family by raining arrows from above.[X]
 
+## FighterName
+Axefighter[X]
+
 ## FighterDesc
 Balanced attackers who favor the axe.[NL]
 Fight for reasons known only to them.[X]

@@ -45,7 +45,7 @@ END_MAIN
 GameOverStart:
 ASMC 0x800D391
 NoFade
-ENDA
+ENDB
 
 Dunno1:
 END_MAIN 
@@ -75,50 +75,50 @@ UNIT
 EnemyUnits:
 
 UNIT Hilda Axe_Dragonrider 0x00 Level(5,Enemy,False) [0,16] 0x00 0x00 0x0 0x00 [HandAxe, IronAxe] NeverMoveAI
-UNIT 0x73 Axe_Dragonrider Hilda Level(4, Enemy, True) [1,17] 0x00 0x00 0x0 0x00 [IronAxe] MoveWithLeaderAI
-UNIT 0x73 Axe_Dragonrider Hilda Level(4, Enemy, True) [1,15] 0x00 0x00 0x0 0x00 [IronAxe] MoveWithLeaderAI
-UNIT 0x73 Axe_Dragonrider Hilda Level(4, Enemy, True) [2,16] 0x00 0x00 0x0 0x00 [IronAxe] MoveWithLeaderAI
-UNIT 0x71 Axe_Dragonrider Hilda Level(4, Enemy, True) [0,14] 0x00 0x00 0x0 0x00 [IronAxe] AttackInRangeAI
-UNIT 0x71 Axe_Dragonrider Hilda Level(4, Enemy, True) [3,17] 0x00 0x00 0x0 0x00 [IronAxe] AttackInRangeAI
-UNIT 0x70 Fighter Hilda Level(3, Enemy, True) [19,2] 0x00 0x00 0x0 0x00 [IronAxe] AttackInRangeAI
-UNIT 0x70 Soldier Hilda Level(3,Enemy,True) [18,3] 0x00 0x00 0x0 0x00 [IronLance] AttackInRangeAI
-UNIT 0x70 Soldier Hilda Level(3, Enemy, True) [14,2] 0x00 0x00 0x0 0x00 [IronLance] AttackInRangeAI
-UNIT 0x70 Mercenary Hilda Level(3, Enemy, True) [10,1] 0x00 0x00 0x0 0x00 [SteelSword] AttackInTwoMovementsAI
-UNIT 0x70 Myrmidon Hilda Level(3, Enemy, True) [17,8] 0x00 0x00 0x0 0x00 [IronSword,Vulnerary] AttackInTwoMovementsAI
-UNIT 0x70 Myrmidon Hilda Level(3, Enemy, True) [6,13] 0x00 0x00 0x0 0x00 [IronSword] AttackInTwoMovementsAI
-UNIT 0x70 Mercenary Hilda Level(3, Enemy, True) [23,9] 0x00 0x00 0x0 0x00 [IronSword] AttackInRangeAI
-UNIT 0x70 Fighter Hilda Level(3, Enemy, True) [26,9] 0x00 0x00 0x0 0x00 [IronAxe] AttackInRangeAI
-UNIT 0x70 Soldier Hilda Level(3, Enemy, True) [24,12] 0x00 0x00 0x0 0x00 [IronLance] AttackInRangeAI
-UNIT 0x70 Archer Hilda Level(3, Enemy, True) [19,9] 0x00 0x00 0x0 0x00 [IronBow] AttackInRangeAI
-UNIT 0x70 AxeKnight Hilda Level(3,Enemy,True) [18,14] 0x00 0x00 0x0 0x00 [SteelAxe] NeverMoveAI
-UNIT 0x70 Fighter Hilda Level(3, Enemy, True) [17,19] 0x00 0x00 0x0 0x00 [IronAxe] AttackInRangeAI
-UNIT 0x70 Fighter Hilda Level(3, Enemy, True) [19,17] 0x00 0x00 0x0 0x00 [IronAxe] AttackInRangeAI
-UNIT 0x70 SwordCav Hilda Level(3, Enemy, True) [8,0] 0x00 0x00 0x0 0x00 [IronSword] AttackInRangeAI
-UNIT 0x70 Fighter Hilda Level(3, Enemy, True) [6,4] 0x00 0x00 0x0 0x00 [IronAxe] AttackInTwoMovementsAI
-UNIT 0x70 LanceCav Hilda Level(3, Enemy, True) [3,8] 0x00 0x00 0x0 0x00 [IronLance] AttackInRangeAI
-UNIT 0x70 Hunter Hilda Level(3, Enemy, True) [10,7] 0x00 0x00 0x0 0x00 [IronLongbow] AttackInTwoMovementsAI
-UNIT 0x70 Myrmidon_F Hilda Level(3, Enemy, True) [8,5] 0x00 0x00 0x0 0x00 [IronSword] AttackInRangeAI
-UNIT 0x70 Mercenary Hilda Level(3, Enemy, True) [4,6] 0x00 0x00 0x0 0x00 [SteelSword] AttackInTwoMovementsAI
-UNIT 0x70 Fighter Hilda Level(3, Enemy, True) [5,18] 0x00 0x00 0x0 0x00 [IronAxe,Talisman] AttackInRangeAI
-UNIT 0x70 Soldier Hilda Level(3, Enemy, True) [0,16] 0x00 0x00 0x0 0x00 [IronLance,Vulnerary] AttackInRangeAI
-UNIT 0x70 Fighter Hilda Level(3, Enemy, True) [16,11] 0x00 0x00 0x0 0x00 [IronAxe] AttackInRangeAI
-UNIT 0x70 AxeCav Hilda Level(3, Enemy, True) [13,12] 0x00 0x00 0x0 0x00 [IronAxe] AttackInRangeAI
-UNIT 0x70 Lancer Hilda Level(3, Enemy, True) [9,9] 0x00 0x00 0x0 0x00 [IronLance] AttackInTwoMovementsAI
+UNIT 0x71 Axe_Dragonrider Hilda Level(4, Enemy, True) [1,17] 0x00 0x00 0x0 0x00 [IronAxe] MoveWithLeaderAI
+UNIT 0x71 Axe_Dragonrider Hilda Level(4, Enemy, True) [1,15] 0x00 0x00 0x0 0x00 [IronAxe] MoveWithLeaderAI
+UNIT 0x71 Axe_Dragonrider Hilda Level(4, Enemy, True) [2,16] 0x00 0x00 0x0 0x00 [IronAxe] MoveWithLeaderAI
+UNIT 0x75 Axe_Dragonrider Hilda Level(4, Enemy, True) [0,14] 0x00 0x00 0x0 0x00 [IronAxe] AttackInRangeAI
+UNIT 0x75 Axe_Dragonrider Hilda Level(4, Enemy, True) [3,17] 0x00 0x00 0x0 0x00 [IronAxe] AttackInRangeAI
+UNIT 0x71 Fighter Hilda Level(3, Enemy, True) [19,2] 0x00 0x00 0x0 0x00 [IronAxe] AttackInRangeAI
+UNIT 0x71 Soldier Hilda Level(3,Enemy,True) [18,3] 0x00 0x00 0x0 0x00 [IronLance] AttackInRangeAI
+UNIT 0x71 Soldier Hilda Level(3, Enemy, True) [14,2] 0x00 0x00 0x0 0x00 [IronLance] AttackInRangeAI
+UNIT 0x71 Mercenary Hilda Level(3, Enemy, True) [10,1] 0x00 0x00 0x0 0x00 [SteelSword] AttackInTwoMovementsAI
+UNIT 0x71 Myrmidon Hilda Level(3, Enemy, True) [17,8] 0x00 0x00 0x0 0x00 [IronSword,Vulnerary] AttackInTwoMovementsAI
+UNIT 0x71 Myrmidon Hilda Level(3, Enemy, True) [6,13] 0x00 0x00 0x0 0x00 [IronSword] AttackInTwoMovementsAI
+UNIT 0x71 Mercenary Hilda Level(3, Enemy, True) [23,9] 0x00 0x00 0x0 0x00 [IronBlade] AttackInRangeAI
+UNIT 0x71 Fighter Hilda Level(3, Enemy, True) [26,9] 0x00 0x00 0x0 0x00 [IronAxe] AttackInRangeAI
+UNIT 0x71 Soldier Hilda Level(3, Enemy, True) [24,12] 0x00 0x00 0x0 0x00 [IronLance] AttackInRangeAI
+UNIT 0x71 Archer Hilda Level(3, Enemy, True) [19,9] 0x00 0x00 0x0 0x00 [IronBow] AttackInRangeAI
+UNIT 0x71 AxeKnight Hilda Level(3,Enemy,True) [18,14] 0x00 0x00 0x0 0x00 [SteelAxe] NeverMoveAI
+UNIT 0x71 Fighter Hilda Level(3, Enemy, True) [17,19] 0x00 0x00 0x0 0x00 [IronAxe] AttackInRangeAI
+UNIT 0x71 Fighter Hilda Level(3, Enemy, True) [19,17] 0x00 0x00 0x0 0x00 [IronAxe] AttackInRangeAI
+UNIT 0x71 SwordCav Hilda Level(3, Enemy, True) [8,0] 0x00 0x00 0x0 0x00 [IronSword] AttackInRangeAI
+UNIT 0x71 Fighter Hilda Level(3, Enemy, True) [6,4] 0x00 0x00 0x0 0x00 [IronAxe] AttackInTwoMovementsAI
+UNIT 0x71 LanceCav Hilda Level(3, Enemy, True) [3,8] 0x00 0x00 0x0 0x00 [SteelLance] AttackInRangeAI
+UNIT 0x71 Hunter Hilda Level(3, Enemy, True) [10,7] 0x00 0x00 0x0 0x00 [IronLongbow] AttackInTwoMovementsAI
+UNIT 0x71 Myrmidon_F Hilda Level(3, Enemy, True) [8,5] 0x00 0x00 0x0 0x00 [IronSword] AttackInRangeAI
+UNIT 0x71 Mercenary Hilda Level(3, Enemy, True) [4,6] 0x00 0x00 0x0 0x00 [SteelSword] AttackInTwoMovementsAI
+UNIT 0x71 Fighter Hilda Level(3, Enemy, True) [5,18] 0x00 0x00 0x0 0x00 [IronAxe,Talisman] AttackInRangeAI
+UNIT 0x71 Soldier Hilda Level(3, Enemy, True) [0,16] 0x00 0x00 0x0 0x00 [IronLance,Vulnerary] AttackInRangeAI
+UNIT 0x71 Fighter Hilda Level(3, Enemy, True) [16,11] 0x00 0x00 0x0 0x00 [IronAxe] AttackInRangeAI
+UNIT 0x71 AxeCav Hilda Level(3, Enemy, True) [13,12] 0x00 0x00 0x0 0x00 [IronAxe] AttackInRangeAI
+UNIT 0x71 Lancer Hilda Level(3, Enemy, True) [9,9] 0x00 0x00 0x0 0x00 [IronLance] AttackInTwoMovementsAI
 UNIT
 
 FridaGang:
 UNIT Frida Mercenary_F 0x00 Level(5,NPC,False) [21,18] 0x00 0x00 0x0 0x00 [IronBlade, Vulnerary] PursueWithoutHeedAI
-UNIT 0x70 Fighter Frida Level(3,NPC,True) [22,17] 0x00 0x00 0x0 0x00 [IronAxe] MoveWithLeaderAI
-UNIT 0x70 Fighter Frida Level(3,NPC,True) [22,19] 0x00 0x00 0x0 0x00 [IronAxe] MoveWithLeaderAI
+UNIT 0x6F Fighter Frida Level(3,NPC,True) [22,17] 0x00 0x00 0x0 0x00 [IronAxe] MoveWithLeaderAI
+UNIT 0x6F Fighter Frida Level(3,NPC,True) [22,19] 0x00 0x00 0x0 0x00 [IronAxe] MoveWithLeaderAI
 UNIT
 
 SolveigTroops:
 UNIT 0x71 Axe_Dragonrider Solveig Level(4, NPC, True) [0,15] 0x00 0x00 0x0 0x00 [IronAxe] NoAI
-UNIT 0x70 Axe_Dragonrider Solveig Level(4, NPC, True) [0,17] 0x00 0x00 0x0 0x00 [IronAxe] NoAI
+UNIT 0x71 Axe_Dragonrider Solveig Level(4, NPC, True) [0,17] 0x00 0x00 0x0 0x00 [IronAxe] NoAI
 UNIT
 
 ElderUnitGroup:
-UNIT 0x70 Civilian_2 0x00 Level(4, NPC, True) [15,9] 0x00 0x00 0x0 0x00 [0x0] NoAI
+UNIT 0x71 Civilian_2 0x00 Level(4, NPC, True) [15,9] 0x00 0x00 0x0 0x00 [0x0] NoAI
 UNIT
 
 Traps1:
@@ -353,8 +353,8 @@ BEQ 5 s0 sC
 		TEXTEND
 		LOAD1 1 ElderUnitGroup
 		ENUN
-		CAMERA_CENTERED 0x70
-		CURSOR_FLASHING 0x70
+		CAMERA_CENTERED 0x71
+		CURSOR_FLASHING 0x71
 		STAL 60
 		REMOVE_CURSORS
 		TEXTCONT
@@ -433,7 +433,7 @@ TEXTCONT
 TEXTEND
 MOVE 15 Solveig [11,11]
 STAL 30
-MOVE 15 0x70 [10,10]
+MOVE 15 0x71 [10,10]
 MOVE 15 0x71 [10,12]
 ENUN
 STAL 30

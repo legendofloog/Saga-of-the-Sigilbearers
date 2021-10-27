@@ -59,7 +59,7 @@ END_MAIN
 GameOverStart:
 ASMC 0x800D391
 NoFade
-ENDA
+ENDB
 
 Dunno1:
 END_MAIN 
@@ -111,8 +111,8 @@ UNIT
 
 OpeningGreenCutsceneGroup:
 UNIT Wayland Fighter 0x00 Level(4, NPC, True) [13,12] 0x00 0x00 0x0 0x00 [ShortAxe,SteelAxe] AttackInRangeAI
-UNIT Carys Soldier Wayland Level(1, NPC, True) [12,13] 0x00 0x00 0x0 0x00 [IronLance] AttackInRangeAI
-UNIT 0x70 Mercenary Wayland Level(1, NPC, True) [14,12] 0x00 0x00 0x0 0x00 [IronSword] PursueWithoutHeedAI
+UNIT 0x70 Soldier Wayland Level(1, NPC, True) [12,13] 0x00 0x00 0x0 0x00 [IronLance] AttackInRangeAI
+UNIT Carys Mercenary Wayland Level(1, NPC, True) [14,12] 0x00 0x00 0x0 0x00 [IronSword] PursueWithoutHeedAI
 UNIT 0x70 Fighter Wayland Level(1, NPC, True) [15,13] 0x00 0x00 0x0 0x00 [IronAxe] PursueWithoutHeedAI
 UNIT
 
@@ -122,7 +122,7 @@ UNIT 0x70 Brigand Wayland Level(1, Enemy, True) [7,18] 0x00 0x00 0x0 0x00 [IronA
 UNIT
 
 CarysUnitGroup: 
-UNIT Carys Myrmidon_F 0x00 Level(2, NPC, False) [29,2] 0x00 0x00 0x00 0x00 [Shamshir,IronSword,Vulnerary] AttackInPlaceAI
+UNIT Carys Myrmidon_F 0x00 Level(2, NPC, False) [29,2] 0x00 0x00 0x00 0x00 [Shamshir,IronSword,Vulnerary] NoAI
 UNIT
 
 BrynjaSpawn:
@@ -151,10 +151,11 @@ CALL $9EE2C4
 LOAD1 1 Units1
 LOAD1 1 OpeningGreenCutsceneGroup
 ENUN
+CAMERA Asgeir
 TEXTSTART
 TEXTSHOW Ch1Scene2Part1
 TEXTEND
-CAMERA Asgeir
+CAMERA [29,2]
 CURSOR_FLASHING [29, 2]
 STAL 60
 REMOVE_CURSORS
@@ -200,11 +201,13 @@ FADI 15
 LOAD1 1 EnemyUnits
 LOAD1 1 BrynjaSpawn
 ENUN
+FADU 15
 MOVE 10 Brynja [28,3]
 ENUN
 Text(Ch1Scene3Part2)
 FlashCursor(Carys,60)
 CUSA Carys
+ENUN
 CAMERA [27,17]
 LOAD1 1 Units2
 ENUN

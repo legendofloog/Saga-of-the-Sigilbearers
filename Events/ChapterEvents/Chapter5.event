@@ -44,7 +44,7 @@ END_MAIN
 GameOverStart:
 ASMC 0x800D391
 NoFade
-ENDA
+ENDB
 
 Dunno1:
 END_MAIN
@@ -76,25 +76,25 @@ UNIT
 
 EnemyUnits:
 UNIT Yanus WindMage Yanus Level(3,Enemy,True) [1,21] 0x00 0x00 0x0 0x00 [Wind] AttackInRangeAI
-UNIT 0x71 Ballistician Yanus Level(1,Enemy,True) [6,20] 0x00 0x00 0x0 0x00 [Ballista] NeverMoveAI
-UNIT 0x73 Ballistician Yanus Level(1,Enemy,True) [21,20] 0x00 0x00 0x0 0x00 [Ballista] NeverMoveAI
-UNIT 0x70 Fighter Yanus Level(5,Enemy,True) [2,15] 0x00 0x00 0x0 0x00 [IronAxe] AttackThenEscapeAI
-UNIT 0x70 Brigand Yanus Level(5,Enemy,True) [1,12] 0x00 0x00 0x0 0x00 [IronAxe] AttackThenLootAI
-UNIT 0x70 Brigand Yanus Level(5,Enemy,True) [13,0] 0x00 0x00 0x0 0x00 [IronAxe] AttackThenLootAI
-UNIT 0x70 Hunter Yanus Level(5,Enemy,True) [5,0] 0x00 0x00 0x0 0x00 [IronBow] AttackInRangeAI
-UNIT 0x70 Mercenary Yanus Level(5,Enemy,True) [1,8] 0x00 0x00 0x0 0x00 [IronSword] AttackInTwoMovementsAI
-UNIT 0x70 Fighter Yanus Level(5,Enemy,True) [6,2] 0x00 0x00 0x0 0x00 [IronAxe,Halberd] AttackInRangeAI
-UNIT 0x70 SwordCav Yanus Level(5,Enemy,True) [13,22] 0x00 0x00 0x0 0x00 [IronSword] AttackThenEscapeAI
-UNIT 0x70 LanceCav Yanus Level(5,Enemy,True) [14,22] 0x00 0x00 0x0 0x00 [IronLance] AttackThenEscapeAI
-UNIT 0x70 Mercenary Yanus Level(8,Enemy,True) [24,21] 0x00 0x00 0x0 0x00 [KillingEdge] AttackInRangeAI
-UNIT 0x70 Fighter Yanus Level(5,Enemy,True) [25,18] 0x00 0x00 0x0 0x00 [IronAxe] AttackInTwoMovementsAI
-UNIT 0x70 Hunter Yanus Level(5,Enemy,True) [25,22] 0x00 0x00 0x0 0x00 [IronBow] AttackInTwoMovementsAI
-UNIT 0x70 Hunter Yanus Level(5,Enemy,True) [24,7] 0x00 0x00 0x0 0x00 [IronBow] AttackInRangeAI
-UNIT 0x70 Lancer Yanus Level(5,Enemy,True) [22,11] 0x00 0x00 0x0 0x00 [IronLance] AttackInRangeAI
-UNIT 0x70 Myrmidon Yanus Level(5,Enemy,True) [24,15] 0x00 0x00 0x0 0x00 [IronSword] AttackInTwoMovementsAI
-UNIT 0x70 Soldier Yanus Level(5,Enemy,True) [9,5] 0x00 0x00 0x0 0x00 [IronLance] AttackThenEscapeAI
-UNIT 0x70 Myrmidon Yanus Level(5,Enemy,True) [15,4] 0x00 0x00 0x0 0x00 [IronSword] AttackInTwoMovementsAI
-UNIT 0x70 SwordCav Yanus Level(5,Enemy,True) [6,14] 0x00 0x00 0x0 0x00 [IronSword] AttackInTwoMovementsAI
+UNIT 0x76 Ballistician Yanus Level(1,Enemy,True) [6,20] 0x00 0x00 0x0 0x00 [Ballista] NeverMoveAI
+UNIT 0x77 Ballistician Yanus Level(1,Enemy,True) [21,20] 0x00 0x00 0x0 0x00 [Ballista] NeverMoveAI
+UNIT 0x74 Fighter Yanus Level(5,Enemy,True) [2,15] 0x00 0x00 0x0 0x00 [IronAxe] AttackThenEscapeAI
+UNIT 0x74 Brigand Yanus Level(5,Enemy,True) [1,12] 0x00 0x00 0x0 0x00 [IronAxe] AttackThenLootAI
+UNIT 0x74 Brigand Yanus Level(5,Enemy,True) [13,0] 0x00 0x00 0x0 0x00 [IronAxe] AttackThenLootAI
+UNIT 0x74 Hunter Yanus Level(5,Enemy,True) [5,0] 0x00 0x00 0x0 0x00 [IronBow] AttackInRangeAI
+UNIT 0x74 Mercenary Yanus Level(5,Enemy,True) [1,8] 0x00 0x00 0x0 0x00 [IronSword] AttackInTwoMovementsAI
+UNIT 0x74 Fighter Yanus Level(5,Enemy,True) [6,2] 0x00 0x00 0x0 0x00 [Hammer] AttackInRangeAI
+UNIT 0x74 SwordCav Yanus Level(5,Enemy,True) [13,22] 0x00 0x00 0x0 0x00 [IronSword] AttackThenEscapeAI
+UNIT 0x74 LanceCav Yanus Level(5,Enemy,True) [14,22] 0x00 0x00 0x0 0x00 [IronLance] AttackThenEscapeAI
+UNIT 0x74 Mercenary Yanus Level(8,Enemy,True) [24,21] 0x00 0x00 0x0 0x00 [KillingEdge] AttackInRangeAI
+UNIT 0x74 Fighter Yanus Level(5,Enemy,True) [25,18] 0x00 0x00 0x0 0x00 [IronAxe] AttackInTwoMovementsAI
+UNIT 0x74 Hunter Yanus Level(5,Enemy,True) [25,22] 0x00 0x00 0x0 0x00 [IronBow] AttackInTwoMovementsAI
+UNIT 0x74 Hunter Yanus Level(5,Enemy,True) [24,7] 0x00 0x00 0x0 0x00 [IronBow] AttackInRangeAI
+UNIT 0x74 Lancer Yanus Level(5,Enemy,True) [22,11] 0x00 0x00 0x0 0x00 [IronLance] AttackInRangeAI
+UNIT 0x74 Myrmidon Yanus Level(5,Enemy,True) [24,15] 0x00 0x00 0x0 0x00 [IronSword] AttackInTwoMovementsAI
+UNIT 0x74 Soldier Yanus Level(5,Enemy,True) [9,5] 0x00 0x00 0x0 0x00 [IronGreatlance] AttackThenEscapeAI
+UNIT 0x74 Myrmidon Yanus Level(5,Enemy,True) [15,4] 0x00 0x00 0x0 0x00 [IronSword] AttackInTwoMovementsAI
+UNIT 0x74 SwordCav Yanus Level(5,Enemy,True) [6,14] 0x00 0x00 0x0 0x00 [IronSword] AttackInTwoMovementsAI
 UNIT
 
 LysandraRecruit:
@@ -102,42 +102,42 @@ UNIT Lysandra Bishop Rune Level(1,Ally,False) [22,1] 0x00 0x00 0x0 0x00 [Elixir]
 UNIT
 
 Villager1UnitGroup:
-UNIT 0x79 Civilian 0x0 Level(1,NPC,False) [18,10] 0x00 0x00 0x0 0x00 [0x00] EscapeOnlyAI
+UNIT 0x78 Civilian 0x0 Level(1,NPC,False) [18,10] 0x00 0x00 0x0 0x00 [0x00] EscapeOnlyAI
 UNIT
 
 Villager2UnitGroup:
-UNIT 0x7A Civilian_F 0x0 Level(1,NPC,False) [7,17] 0x00 0x00 0x0 0x00 [0x00] EscapeOnlyAI
+UNIT 0x79 Civilian_F 0x0 Level(1,NPC,False) [7,17] 0x00 0x00 0x0 0x00 [0x00] EscapeOnlyAI
 UNIT
 
 Villager3UnitGroup:
-UNIT 0x7B Civilian_3 0x0 Level(1,NPC,False) [20,17] 0x00 0x00 0x0 0x00 [0x00] EscapeOnlyAI
+UNIT 0x80 Civilian_3 0x0 Level(1,NPC,False) [20,17] 0x00 0x00 0x0 0x00 [0x00] EscapeOnlyAI
 UNIT
 
 Ch5Turn3ReinforcementsUnits:
-UNIT 0x70 SwordCav Yanus Level(5,Enemy,True) [13,22] 0x00 0x00 0x0 0x00 [IronSword] AttackThenEscapeAI
-UNIT 0x70 AxeCav Yanus Level(5,Enemy,True) [14,22] 0x00 0x00 0x0 0x00 [IronAxe] AttackThenEscapeAI
+UNIT 0x74 SwordCav Yanus Level(5,Enemy,True) [13,22] 0x00 0x00 0x0 0x00 [IronSword] AttackThenEscapeAI
+UNIT 0x74 AxeCav Yanus Level(5,Enemy,True) [14,22] 0x00 0x00 0x0 0x00 [IronAxe] AttackThenEscapeAI
 UNIT
 
 Ch5Turn5ReinforcementsUnits:
-UNIT 0x70 LanceCav Yanus Level(5,Enemy,True) [13,22] 0x00 0x00 0x0 0x00 [IronLance] AttackThenEscapeAI
-UNIT 0x70 AxeCav Yanus Level(5,Enemy,True) [14,22] 0x00 0x00 0x0 0x00 [IronAxe] AttackThenEscapeAI
-UNIT 0x70 PegasusKnight Yanus Level(5,Enemy,True) [10,0] 0x00 0x00 0x0 0x00 [IronLance] AttackThenEscapeAI
-UNIT 0x70 PegasusKnight Yanus Level(5,Enemy,True) [9,0] 0x00 0x00 0x0 0x00 [IronLance] AttackThenEscapeAI
-UNIT 0x70 Mercenary Yanus Level(5,Enemy,True) [0,15] 0x00 0x00 0x0 0x00 [IronSword] AttackThenEscapeAI
+UNIT 0x74 LanceCav Yanus Level(5,Enemy,True) [13,22] 0x00 0x00 0x0 0x00 [IronLance] AttackThenEscapeAI
+UNIT 0x74 AxeCav Yanus Level(5,Enemy,True) [14,22] 0x00 0x00 0x0 0x00 [IronAxe] AttackThenEscapeAI
+UNIT 0x74 PegasusKnight Yanus Level(5,Enemy,True) [10,0] 0x00 0x00 0x0 0x00 [IronLance] AttackThenEscapeAI
+UNIT 0x74 PegasusKnight Yanus Level(5,Enemy,True) [9,0] 0x00 0x00 0x0 0x00 [IronLance] AttackThenEscapeAI
+UNIT 0x74 Mercenary Yanus Level(5,Enemy,True) [0,15] 0x00 0x00 0x0 0x00 [IronSword] AttackThenEscapeAI
 UNIT 
 
 Ch5Turn7ReinforcementsUnits:
-UNIT 0x70 LanceCav Yanus Level(5,Enemy,True) [13,22] 0x00 0x00 0x0 0x00 [IronLance] AttackThenEscapeAI
-UNIT 0x70 SwordCav Yanus Level(5,Enemy,True) [14,22] 0x00 0x00 0x0 0x00 [IronSword] AttackThenEscapeAI
-UNIT 0x70 PegasusKnight Yanus Level(5,Enemy,True) [10,0] 0x00 0x00 0x0 0x00 [IronLance] AttackThenEscapeAI
-UNIT 0x70 PegasusKnight Yanus Level(5,Enemy,True) [9,0] 0x00 0x00 0x0 0x00 [IronLance] AttackThenEscapeAI
-UNIT 0x70 Fighter Yanus Level(5,Enemy,True) [0,15] 0x00 0x00 0x0 0x00 [IronAxe] AttackThenEscapeAI
+UNIT 0x74 LanceCav Yanus Level(5,Enemy,True) [13,22] 0x00 0x00 0x0 0x00 [IronLance] AttackThenEscapeAI
+UNIT 0x74 SwordCav Yanus Level(5,Enemy,True) [14,22] 0x00 0x00 0x0 0x00 [IronSword] AttackThenEscapeAI
+UNIT 0x74 PegasusKnight Yanus Level(5,Enemy,True) [10,0] 0x00 0x00 0x0 0x00 [IronLance] AttackThenEscapeAI
+UNIT 0x74 PegasusKnight Yanus Level(5,Enemy,True) [9,0] 0x00 0x00 0x0 0x00 [IronLance] AttackThenEscapeAI
+UNIT 0x74 Fighter Yanus Level(5,Enemy,True) [0,15] 0x00 0x00 0x0 0x00 [IronAxe] AttackThenEscapeAI
 UNIT 
 
 Ch5Turn9ReinforcementsUnits:
-UNIT 0x70 PegasusKnight Yanus Level(5,Enemy,True) [10,0] 0x00 0x00 0x0 0x00 [IronLance] AttackThenEscapeAI
-UNIT 0x70 PegasusKnight Yanus Level(5,Enemy,True) [9,0] 0x00 0x00 0x0 0x00 [IronLance] AttackThenEscapeAI
-UNIT 0x70 Brigand Yanus Level(5,Enemy,True) [0,15] 0x00 0x00 0x0 0x00 [SteelAxe] AttackThenEscapeAI
+UNIT 0x74 PegasusKnight Yanus Level(5,Enemy,True) [10,0] 0x00 0x00 0x0 0x00 [IronLance] AttackThenEscapeAI
+UNIT 0x74 PegasusKnight Yanus Level(5,Enemy,True) [9,0] 0x00 0x00 0x0 0x00 [IronLance] AttackThenEscapeAI
+UNIT 0x74 Brigand Yanus Level(5,Enemy,True) [0,15] 0x00 0x00 0x0 0x00 [SteelPoleaxe] AttackThenEscapeAI
 UNIT 
 
 Traps1:
@@ -280,11 +280,11 @@ LeftTrap:
 TILECHANGE 0x05
 TILECHANGE 0x06
 TILECHANGE 0x07
-CHECK_INAREA 0x71 [6, 20] [6, 20]
+CHECK_INAREA 0x76 [6, 20] [6, 20]
 BEQ 1 s0 sC // checks if ballista is still there
-	CAMERA 0x71
-	KILL 0x71
-	AWAIT_KILL 0x71 //kills it if so
+	CAMERA 0x76
+	KILL 0x76
+	AWAIT_KILL 0x76 //kills it if so
 LABEL 1
 TILECHANGE 0x08
 CHECK_EVENTID 12
@@ -308,11 +308,11 @@ RightTrap:
 TILECHANGE 0x09
 TILECHANGE 0x0A
 TILECHANGE 0x0B
-CHECK_INAREA 0x73 [21, 20] [21, 20]
+CHECK_INAREA 0x77 [21, 20] [21, 20]
 BEQ 2 s0 sC // checks if ballista is still there
-	CAMERA 0x73
-	KILL 0x73
-	AWAIT_KILL 0x73 //kills it if so
+	CAMERA 0x77
+	KILL 0x77
+	AWAIT_KILL 0x77 //kills it if so
 LABEL 2
 TILECHANGE 0x0C
 CHECK_EVENTID 13

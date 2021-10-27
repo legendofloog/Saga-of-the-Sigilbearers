@@ -79,10 +79,10 @@ setMugEntry(IvarrMug, IvarrMugData, 2, 6, 3, 4)
 
 ALIGN 16
 CarysMugData:
-#incbin "Dmp/Ally/Carys/Carys_Mug(MournfulRelic)_mug.dmp"
-#incbin "Dmp/Ally/Carys/Carys_Mug(MournfulRelic)_frames.dmp"
-#incbin "Dmp/Ally/Carys/Carys_Mug(MournfulRelic)_palette.dmp"
-#incbin "Dmp/Ally/Carys/Carys_Mug(MournfulRelic)_minimug.dmp"
+#incbin "Dmp/Ally/Carys/Carys(Relic, sdaht)_mug.dmp"
+#incbin "Dmp/Ally/Carys/Carys(Relic, sdaht)_frames.dmp"
+#incbin "Dmp/Ally/Carys/Carys(Relic, sdaht)_palette.dmp"
+#incbin "Dmp/Ally/Carys/Carys(Relic, sdaht)_minimug.dmp"
 setMugEntry(CarysMug, CarysMugData, 2, 6, 3, 4)
 
 ALIGN 16

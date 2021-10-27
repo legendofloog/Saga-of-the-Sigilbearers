@@ -18,8 +18,8 @@ TurnEventPlayer(8,VillageDestructionWarning,5)
 TurnEventEnemy(9,VillageDestruction,6)
 TurnEventPlayer(10,ReinforcementsWarning,4)
 TurnEventPlayer(11,ReinforcementWave1Event,5)
-TurnEventPlayer(12,HartnerExitWarning,3)
-TurnEventPlayer(13,HartnerLeaves,4)
+TurnEventPlayer(12,HartnerExitWarning,4)
+TurnEventPlayer(13,HartnerLeaves,5)
 TurnEventPlayer(20,DaiChargeWarning,6)
 TurnEventPlayer(21,DaiCharge,7)
 END_MAIN
@@ -42,7 +42,7 @@ END_MAIN
 GameOverStart:
 ASMC 0x800D391
 NoFade
-ENDA
+ENDB
 
 Dunno1:
 END_MAIN 
@@ -81,12 +81,12 @@ UNIT 0x70 Hunter Dai Level(4, Enemy, True) [0,0] 0x00 0x00 0x0 0x00 [IronBow] At
 UNIT 0x70 Fighter Dai Level(4, Enemy, True) [15,1] 0x00 0x00 0x0 0x00 [IronAxe] AttackInRangeAI
 UNIT 0x70 Mercenary Dai Level(4, Enemy, True) [5,6] 0x00 0x00 0x0 0x00 [IronSword] AttackInRangeAI
 UNIT 0x70 Mercenary Dai Level(4, Enemy, True) [16,3] 0x00 0x00 0x0 0x00 [IronSword] AttackInRangeAI
-UNIT 0x70 Soldier Dai Level(4, Enemy, True) [19,5] 0x00 0x00 0x0 0x00 [IronLance,Horseslayer] AttackInRangeAI
+UNIT 0x70 Soldier Dai Level(4, Enemy, True) [19,5] 0x00 0x00 0x0 0x00 [Horseslayer] AttackInRangeAI
 UNIT 0x70 Soldier Dai Level(4, Enemy, True) [1,7] 0x00 0x00 0x0 0x00 [IronLance] AttackInRangeAI
 UNIT 0x70 Axe_Dragonrider Dai Level(4, Enemy, True) [10,15] 0x00 0x00 0x0 0x00 [IronAxe] PursueWithoutHeedAI
 UNIT 0x70 Fighter Dai Level(4, Enemy, True) [14,8] 0x00 0x00 0x0 0x00 [IronAxe] PursueWithoutHeedAI
 UNIT 0x70 Archer Dai Level(4, Enemy, True) [18,10] 0x00 0x00 0x0 0x00 [IronBow] AttackInRangeAI
-UNIT 0x70 Brigand Dai Level(4,Enemy,True) [17,12] 0x00 0x00 0x0 0x00 [IronAxe,SecretBook] EscapeOnlyAI
+UNIT 0x70 Brigand Dai Level(4,Enemy,True) [17,12] 0x00 0x00 0x0 0x00 [IronPoleaxe,SecretBook] EscapeOnlyAI
 UNIT 0x70 Fighter Dai Level(4, Enemy, True) [7,9] 0x00 0x00 0x0 0x00 [IronAxe] AttackInRangeAI
 UNIT 0x70 Hunter Dai Level(4, Enemy, True) [3,11] 0x00 0x00 0x0 0x00 [IronBow] AttackInTwoMovementsAI
 UNIT 0x70 Hunter Dai Level(4, Enemy, True) [11,16] 0x00 0x00 0x0 0x00 [IronBow] AttackInRangeAI
@@ -126,6 +126,7 @@ SetBackground(0x0A)
 Text(Ch4Scene2)
 CALL $9EE2C4
 LOAD1 1 EnemyUnits
+ENUN
 CAMERA Dai
 Text(Ch4DaiIntroText)
 LOAD1 0 Units1

@@ -8,42 +8,7 @@ HP Bars[.][X]
 # 0x00B2
 Set health bar display[X]
 
-# 0x160 Ch1Name
-Ch 1 - Reunion[X]
-
-# 0x161 Ch2Name
-Ch 2 - Holtorn Grove[.][X]
-
-# 0x162 Ch3Name
-Ch 3 - Unexpected Encounter[.][X]
-
-# 0x163 Ch4Name
-Ch 4 - Wings of Rivald[X]
-
-# 0x164 Ch4xName
-Ch 4x - Last Stand[X]
-
-# 0x165 Ch5Name
-Ch 5 - In Defense of Hope[X]
-
-# 0x0166 Ch4xxName
-Ch 4xx - Raging Rivers[X]
-
-# 0x19D DefeatBossGoalText
-Defeat boss[X]
-
-# 0x1A0 FishGoalText
-Protect/Fish[X]
-
-# 0x01A3 FishObjectiveText
-Defend the houses and[NL]
-bring fish to them[X]
-
-# 0x01A4 DefendGoalText
-Defend[X]
-
 #0x3A LearnedSkillText
-#first text ID in the free block
 Learned  [X]
 
 
@@ -54,7 +19,6 @@ Learned  [X]
 #include "unitmenu_text.txt"
 
 #0xd4c LikesText
-#first text ID in the free block
 Likes:[X]
 
 #0xd4d DislikesText
@@ -67,7 +31,6 @@ Height:[X]
 Age:[X]
 
 ## HouseText
-#first text ID in the free block
 [MidRight][LoadFace][CurrentPortrait]Nothing to see here.[A][X]
 
 ## VillageText
@@ -78,7 +41,6 @@ Freeze all enemies[N]
 for one turn[X]
 
 ## nameCamus
-#for identity problems
 Camus[X]
 
 ## nameSirius
@@ -182,3 +144,7 @@ Raises Magic.[X]
 #include "CharClassItemsEtc/ItemNamesDescs.txt"
 
 #include "CharClassItemsEtc/ClassNamesDescs.txt"
+
+#include "CharClassItemsEtc/MusicNames.txt"
+
+#include "CharClassItemsEtc/ChapterNamesDescs.txt"

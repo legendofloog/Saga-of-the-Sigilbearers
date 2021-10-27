@@ -70,6 +70,40 @@ Dai[X]
 ## WaylandName
 Wayland[X]
 
+## FishName
+Fish[X]
+
+## FishDesc
+Salmon that leisurely travel Ralsten's[N]
+rivers. Delicious when grilled.[X]
+
+## HildasTroops
+Hilda's[X]
+
+## HildasTroopsDesc
+The town guard of Alund that sided with[N]
+their captain and took over the town.[X]
+
+## BanditsName
+Bandits[X]
+
+## BanditsDesc
+Ne'er-do-wells that prey on the weak.[N]
+Experts in stealing and running away.[X]
+
+## BerwynName
+Berwyn[X]
+
+## BerwynDesc
+Soldiers in House Berwyn's service.[X]
+
+## VillagerName
+Villager[X]
+
+## VillagerDesc
+A non-combatant that will flee[N]
+at the first hint of battle.[X]
+
 ## RuneDesc
 A pragmatic warrior of Luxean origin.[NL]
 Cynical, but loyal to his friends.[.][X]
@@ -172,3 +206,10 @@ Yanus[X]
 ## YanusDesc
 A leading member of a mercenary group.[N]
 Highly confident in his arcane prowess.[X]
+
+## FridasName
+Frida's[X]
+
+## FridasDesc
+A duo of mercenaries that work under[N]
+Frida. Easily cowed by her orders.[X]

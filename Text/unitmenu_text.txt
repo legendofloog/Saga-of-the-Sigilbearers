@@ -160,3 +160,11 @@ hits and does 1.5x damage.[N]
 ## UM_SwarpDesc
 Swap positions with a distant[N]
 ally.[X]
+
+## UM_BladeDance
+ Blade Dance[X]
+
+## UM_BladeDanceDesc
+Attacks the enemy 3[N]
+times consecutively.[N]
+(1 Durability Per Hit)[X]

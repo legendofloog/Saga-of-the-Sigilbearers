@@ -1,32 +1,44 @@
+Credits
+
 GRAPHICS
 
--Portraits: MournfulRelic (Carys, Hartner, Ivarr, Lysandra, Ragna, Ulfr);
-RandomWizard
-Lenh + ObsidianDaddy for FE6 portraits with blink frames, Blade for skin tones sheet
-
-
-Battle Animations: Alusq, Nuramon, JeytheCount, Maiser6, WarPath, Red Bean, HyperGammaSpaces, Raulster, MeatOfJustice, leo_link, flasuban, MK404, Glenwing, EldritchAbomination, Team SALVAGED, Pushwall, Mikey Seregon, Alfred Kamon, PrincessKilvas, Spud, Blue Druid, Pikmin1211, Skitty, GabrielKnight
-
+SotS Specific
+Portraits: MournfulRelic, RandomWizard, Citrus, devisio, sdaht
 Battle Animation Palettes: sdaht
-
 Map Palettes: pandan
 
-Class Cards: Aruka, Yggdra, N426, Rasdel
+F2U Mugs: Laurent_Lacroix, Levin, CapybaraInSpace, Melia
 
-Map Sprites: Team SALVAGED, flasuban, DerTheVaporeon, Alusq, L95, MeatOfJustice, Leif, Agro, Rexacuse, Peerless, WarPath
+Battle Animations: Nuramon, MK404, HyperGammaSpaces, Raulster, Team SALVAGED, JeyTheCount, Pushwall, Leo_link, flasuban, Orihara_Saki, Warpath, Red Bean, Mikey Seregon, Alfred Kamon, PrincessKilvas, Spud, Blue Druid, Alusq, Maiser6, MeatOfJustice, EldritchAbomination, Skitty, GabrielKnight, Pikmin1211
 
-Tilesets: Flasuban, ZoramineFae
+Class Cards:
+Aruka, Yggdra, N426, Rasdel
 
-Music: Saxor_the_Nobody, Alusq, Sme, SurfingKyogre, Pikmin1211, MrGreen3339, pandan, RSFlame
+Item Icons:
+Beansy
 
-SkillSystem: Circleseverywhere
-Colorz for debuffs, freeze, and dragon veins 
-Monkeybard & Black Mage for most of the skill icons; Blaze for Stances skill icons; vlak for Drive skill icons; Pikmin1211 for miscellaneous icons; Zaim for Indoor March icon; Reds for Quick Riposte icon
+Map Sprites:
+SALVAGED, flasuban, DerTheVaporeon, Alusq, L95, MeatOfJustice, Leif, Agro, Rexacuse, Peerless, Warpath
+
+Spell Anims: HyperGammaSpaces 
+
+Tilesets: Flasuban, N426, Zoramine Fae, Vennobennu
+
+Title Screen: Title Scroll by Rivian, Background from Majin Tensei (ported by Fenreir)
+
+Status Screen: SD9K02
+
+MUSIC
+
+SaXor the Nobody, Sme, Pikmin1211, MrGreen3339, pandan, RSflame
+
+ENGINE HACKS
+SkillSystem: Circleseverywhere, Colorz for debuffs, freeze, and dragon veins, Monkeybard & Black Mage for most of the skill icons; Blaze for Stances skill icons; vlak for Drive skill icons; Pikmin1211 for miscellaneous icons; Zaim for Indoor March icon; Reds for Quick Riposte icon
 Tequila, Rossendale, StanH, Leonarth, 2WB, Teraspark, Darrman, SD9k, Kao, blademaster, Snakey1, Zeta, Kirb, Sme, Ganzap for skills, 7743 for various bugfixes
-Primefusion for the test map
-Str/Mag Split based off of Kirb's FE8 version which is based off of Tequila's FE7 version. RobertFPY, Pikmin1211, and Snakey1 for finalization
+Primefusion for the test map, Str/Mag Split based off of Kirb's FE8 version which is based off of Tequila's FE7 version. RobertFPY, Pikmin1211, and Snakey1 for finalization
 
-ASM Hacks: Pikmin1211, Tequila, StanH, Sme, GratedShtick, 7743, aera, Zane, 2WB, AuraWolf, HyperGammaSpaces, Vennobennu, Snek
+Other Engine Hacks: Tequila, hypergammaspaces, Sme, 7743, Pikmin1211, Clendo, StanH, GratedSchtick, Huichelaar, ZaneAvernathy, 2WB, Aura Wolf, Snek, Scraiza, Vennobennu
 
 Event Assembler: Nintenlord, Crazycolorz5, Vennobennu, Gryz, Circleseverywhere, Camdar, Zahlman
-Animations - Pikmin1211, Maiser6, Skitty, GabrielKnight
+
+Playtesting: Rivian, Warpath, Pikmin1211

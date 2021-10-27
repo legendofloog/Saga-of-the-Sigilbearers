@@ -3,7 +3,7 @@
 
 ALIGN 4
 BossBGMTable:
-BossBGMEntry(Wyland,IntoTheCastle)
+BossBGMEntry(Wayland,IntoTheCastle)
 BossBGMEntry(Renzer,Lament_to_the_Master)
 BossBGMEntry(Hilda,IntoTheCastle)
 BossBGMEntry(Dai,IntoTheCastle)

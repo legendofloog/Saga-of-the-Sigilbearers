@@ -39,7 +39,7 @@ END_MAIN
 GameOverStart:
 ASMC 0x800D391
 NoFade
-ENDA
+ENDB
 
 Dunno1:
 END_MAIN 
@@ -116,12 +116,6 @@ ALIGN 4
 
 Traps2:
 ENDTRAP
-ALIGN 4
-
-ALIGN 4
-EindrideAi2: 
-	AiTryTalkToCharacter(Asgeir)
-	InjectAi2(Ch2_EindrideAI2, EindrideAi2)
 ALIGN 4
 
 BeginningScene:
@@ -326,8 +320,8 @@ EindrideRecruit:
 MUSC FE11_TogetherWeRide
 Text(AsgeirRecruitsEindrideText)
 SVAL s1 0x00000000
-REVEAL Eindride
 CUSA Eindride
+ClearFatigue(Eindride)
 NoFade
 ENDA
 

@@ -67,15 +67,15 @@ Warrior,0,0,21,0
 Brigand,0,0,20,0
 Pirate,0,0,20,0
 Berserker,0,0,21,0
-Monk,1,30,20,0
+Monk,8,40,20,0
 Priest,6,40,20,0
 Bard,1,45,20,0
 Recruit (1),0,0,20,0
 Pegasus Knight,1,10,20,0
 Falcon Knight,3,30,23,3
 Cleric,6,40,20,0
-Troubadour,1,25,20,0
-Valkyrie,4,35,25,2
+Troubadour,6,35,20,0
+Valkyrie,7,35,25,3
 Dancer,1,45,20,0
 Soldier,0,0,20,0
 Necromancer,9,55,30,0

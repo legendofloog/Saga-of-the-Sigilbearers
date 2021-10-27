@@ -32,3 +32,4 @@ ALIGN 4
 ASMC_GetRescuerUnit:
 	#incbin "EVENTSCRIPT_GetCaptureUnitID_20210109/ASMC_Who_is_rescued.dmp"
 
+#include "prep shop each chapter2/Installer.event"

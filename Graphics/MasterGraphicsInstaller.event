@@ -10,3 +10,4 @@
 #include "Class Cards/MasterClassCardInstaller.event"
 #include "TitleScreen/TitleScreen.event"
 #include "ItemIcons/MasterItemIconsInstaller.event"
+#include "StatusScreen/Installer.event"

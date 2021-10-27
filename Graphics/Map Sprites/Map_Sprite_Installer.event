@@ -114,3 +114,9 @@ ALIGN 4
 MageFighterStanding:
 #incbin "Dmp/Great Lord (M) Hector {IS}-stand.dmp"
 
+ALIGN 4
+FishMoving:
+#incbin "Dmp/FishMovingMapAnim.dmp"
+ALIGN 4
+FishStanding:
+#incbin "Dmp/FishStandingMapAnim.dmp"

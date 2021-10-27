@@ -1,0 +1,65 @@
+## ValkyrieProfile_GodSyndromeName
+Unfinished Battle God Syndrome (SaXor)[X]
+
+## UnlimitedSaga_BattleThemeEXName
+U. SaGa - Battle Theme EX (SaXor)[X]
+
+## Feldschlact_IIIName
+SF III - Feldschlact III (SaXor)[X]
+
+## Lufia_DoomName
+Lufia - Doom[X]
+
+## TrisectionName
+FFT - Trisection (Alusq)[X]
+
+## Lament_to_the_MasterName
+Lament to the Master (Sme)[X]
+
+## Lufia2_RoS_Battle2Name
+Lufia 2: RotS - Battle 2 (SaXor)[X]
+
+## FE10_MarchName
+FE10 - March (SaXor)[X]
+
+## Sortie_FormationName
+Sortie Formation (SaXor)[X]
+
+## FE11_DefenseName
+FE11 - Defense (Sme)[X]
+
+## SearchingTheEnemyName
+Searching the Enemy (SurfingKyogre)[X]
+
+## HarvestDanceName
+Tactics Ogre - Harvest Dance[X]
+
+## OneHundredOJ_KaiThemeName
+100 O.J. - Kai's Theme (Pikmin1211)[X]
+
+## AC_KK_CondorName
+AC - K.K. Condor (MrGreen)[X]
+
+## RippleIslandEndingName
+Ripple Island - Ending (pandan)[X]
+
+## FE11_CombatMissionName
+FE11 - Combat Mission (Sme)[X]
+
+## FE11_OnsetName
+FE11 - Onset (SaXor)[X]
+
+## FE11_PreparationsName
+FE11 - Preparations (RSflame)[X]
+
+## FE11_TogetherWeRideName
+FE11 - Together We Ride (Sme)[X]
+
+## PersonalCombatName
+BWS- Personal Combat (RSflame)[X]
+
+## IntoTheCastleName
+KoD - Into the Castle (Sme)[X]
+
+## RoversName
+Tales of Symphonia - Rovers (pandan)[X]

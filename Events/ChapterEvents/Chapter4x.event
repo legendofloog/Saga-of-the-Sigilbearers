@@ -24,7 +24,7 @@ LocationBasedEvents:
 Door(17,3)
 Door(3,9)
 Chest(Mend,2,11)
-Chest(SteelAxe,4,11)
+Chest(SteelLongbow,4,11)
 Arrive(22,3)
 LOCA 7 Civilians1 [6,21] 0x12
 Door(11,21)
@@ -42,7 +42,7 @@ END_MAIN
 GameOverStart:
 ASMC 0x800D391
 NoFade
-ENDA
+ENDB
 
 Dunno1:
 END_MAIN
@@ -90,7 +90,7 @@ UNIT 0x70 Fighter Erlyn Level(4, Enemy, True) [20,19] 0x00 0x00 0x0 0x00 [IronAx
 UNIT 0x70 Myrmidon Erlyn Level(4, Enemy, True) [12,19] 0x00 0x00 0x0 0x00 [IronSword] AttackInRangeAI
 UNIT 0x70 Mercenary Erlyn Level(4, Enemy, True) [7,18] 0x00 0x00 0x0 0x00 [SteelSword] AttackInRangeAI
 UNIT 0x70 Pirate Erlyn Level(5, Enemy, True) [0,20] 0x00 0x00 0x0 0x00 [IronAxe,RedGem] AttackInRangeAI
-UNIT 0x70 Mercenary Erlyn Level(4, Enemy, True) [2,5] 0x00 0x00 0x0 0x00 [IronSword] AttackInRangeAI
+UNIT 0x70 Mercenary Erlyn Level(4, Enemy, True) [2,5] 0x00 0x00 0x0 0x00 [IronBlade] AttackInRangeAI
 UNIT 0x70 Pirate Erlyn Level(4, Enemy, True) [7,2] 0x00 0x00 0x0 0x00 [IronAxe] AttackInRangeAI
 UNIT 0x70 Fighter Erlyn Level(4, Enemy, True) [13,1] 0x00 0x00 0x0 0x00 [IronAxe,Vulnerary] AttackInRangeAI
 UNIT 0x70 Fighter Erlyn Level(4, Enemy, True) [17,4] 0x00 0x00 0x0 0x00 [IronAxe,DoorKey] NeverMoveAI
