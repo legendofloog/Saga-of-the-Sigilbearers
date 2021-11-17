@@ -16,6 +16,7 @@ TurnBasedEvents:
 Survive(Ch4xxDoneFishing,8)
 TurnEventPlayer(19,SecondFishSpawn,3)
 TurnEventPlayer(20,ThirdFishSpawn,5)
+TurnEventPlayer(22,ViskardRecruitWarning,1)
 END_MAIN
 
 SecondFishSpawn:
@@ -40,6 +41,13 @@ ENDA
 
 Ch4xxDoneFishing:
 CALL EndingScene
+NoFade
+ENDA
+
+ViskardRecruitWarning:
+CAMERA Viskard
+FlashCursor(Viskard, 60)
+Text(ViskraRecruitWarningText)
 NoFade
 ENDA
 
@@ -273,22 +281,22 @@ UNIT Eimund Myrmidon_F Rune Level(2, Ally, False) [11,8] 0x00 0x00 0x00 0x01 [Sh
 UNIT
 
 EnemyUnits:
-UNIT 0x72 Archer 0x00 Level(4,Enemy,True) [15,15] 0x00 0x00 0x0 0x00 [IronLongbow] BossAI
-UNIT 0x72 Brigand 0x00 Level(4,Enemy,True) [12,12] 0x00 0x00 0x0 0x00 [IronAxe] AttackThenLootAI
-UNIT 0x72 Lancer 0x00 Level(4,Enemy,True) [18,3] 0x00 0x00 0x0 0x00 [IronGreatlance] AttackThenLootAI
-UNIT 0x72 Mercenary 0x00 Level(4,Enemy,True) [18,1] 0x00 0x00 0x0 0x00 [SteelSword] AttackThenLootAI
-UNIT 0x72 Pirate 0x00 Level(4,Enemy,True) [1,8] 0x00 0x00 0x0 0x00 [IronAxe] AttackThenLootAI
-UNIT 0x72 Pirate 0x00 Level(4,Enemy,True) [0,14] 0x00 0x00 0x0 0x00 [IronAxe] AttackThenLootAI
-UNIT 0x72 Archer 0x00 Level(4,Enemy,True) [2,12] 0x00 0x00 0x0 0x00 [IronLongbow] BossAI
-UNIT 0x72 Hunter 0x00 Level(4,Enemy,True) [10,16] 0x00 0x00 0x0 0x00 [IronLongbow] BossAI
-UNIT 0x72 Lancer 0x00 Level(4,Enemy,True) [6,10] 0x00 0x00 0x0 0x00 [IronLance] AttackInRangeAI
-UNIT 0x72 Hunter 0x00 Level(4,Enemy,True) [4,15] 0x00 0x00 0x0 0x00 [IronLongbow] BossAI
-UNIT 0x72 SwordCav 0x00 Level(4,Enemy,True) [7,15] 0x00 0x00 0x0 0x00 [IronSword] AttackInRangeAI
-UNIT 0x72 Pirate 0x00 Level(4,Enemy,True) [3,17] 0x00 0x00 0x0 0x00 [Halberd] AttackThenLootAI
-UNIT 0x72 Pirate 0x00 Level(4,Enemy,True) [16,13] 0x00 0x00 0x0 0x00 [IronAxe] AttackThenLootAI
-UNIT 0x72 Pirate 0x00 Level(4,Enemy,True) [19,17] 0x00 0x00 0x0 0x00 [IronAxe] AttackThenLootAI
+UNIT 0x73 Archer 0x00 Level(4,Enemy,True) [15,15] 0x00 0x00 0x0 0x00 [IronLongbow] BossAI
+UNIT 0x73 Brigand 0x00 Level(4,Enemy,True) [12,12] 0x00 0x00 0x0 0x00 [IronAxe] AttackThenLootAI
+UNIT 0x73 Lancer 0x00 Level(4,Enemy,True) [18,3] 0x00 0x00 0x0 0x00 [IronGreatlance] AttackThenLootAI
+UNIT 0x73 Mercenary 0x00 Level(4,Enemy,True) [18,1] 0x00 0x00 0x0 0x00 [SteelSword] AttackThenLootAI
+UNIT 0x73 Pirate 0x00 Level(4,Enemy,True) [1,8] 0x00 0x00 0x0 0x00 [IronAxe] AttackThenLootAI
+UNIT 0x73 Pirate 0x00 Level(4,Enemy,True) [0,14] 0x00 0x00 0x0 0x00 [IronAxe] AttackThenLootAI
+UNIT 0x73 Archer 0x00 Level(4,Enemy,True) [2,12] 0x00 0x00 0x0 0x00 [IronLongbow] BossAI
+UNIT 0x73 Hunter 0x00 Level(4,Enemy,True) [10,16] 0x00 0x00 0x0 0x00 [IronLongbow] BossAI
+UNIT 0x73 Lancer 0x00 Level(4,Enemy,True) [6,10] 0x00 0x00 0x0 0x00 [IronLance] AttackInRangeAI
+UNIT 0x73 Hunter 0x00 Level(4,Enemy,True) [4,15] 0x00 0x00 0x0 0x00 [IronLongbow] BossAI
+UNIT 0x73 SwordCav 0x00 Level(4,Enemy,True) [7,15] 0x00 0x00 0x0 0x00 [IronSword] AttackInRangeAI
+UNIT 0x73 Pirate 0x00 Level(4,Enemy,True) [3,17] 0x00 0x00 0x0 0x00 [Halberd] AttackThenLootAI
+UNIT 0x73 Pirate 0x00 Level(4,Enemy,True) [16,13] 0x00 0x00 0x0 0x00 [IronAxe] AttackThenLootAI
+UNIT 0x73 Pirate 0x00 Level(4,Enemy,True) [19,17] 0x00 0x00 0x0 0x00 [IronAxe] AttackThenLootAI
 UNIT Viskard Pirate 0x00 Level(4,Enemy,True) [18,2] 0x00 0x00 0x0 0x00 [IronPoleaxe,Vulnerary] AttackInRangeAI
-UNIT 0x72 Lancer 0x00 Level(4,Enemy,True) [5,17] 0x00 0x00 0x0 0x00 [KillerLance] AttackInRangeAI
+UNIT 0x73 Lancer 0x00 Level(4,Enemy,True) [5,17] 0x00 0x00 0x0 0x00 [KillerLance] AttackInRangeAI
 UNIT
 
 FishGroup1:
@@ -395,6 +403,7 @@ NoFade
 ENDA
 
 EndingScene:
+MUSC 0x7FFF
 CHECK_ALIVE Eindride
 SetBackground(Village)
 BEQ 16 s0 sC
@@ -422,6 +431,6 @@ BEQ 30 s0 sC
 	Text(Ch4xxHartnerEndingSceneText)
 LABEL 30
 Text(Ch4xxEndingScenePart4Text)
-MNC2 0x05 // goes to chapter 5
+MNC2 Chapter5 // goes to chapter 5
 NoFade
 ENDA

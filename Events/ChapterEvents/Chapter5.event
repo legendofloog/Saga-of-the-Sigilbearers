@@ -61,7 +61,7 @@ END_MAIN
 Units1:
 
 UNIT Rune Outcast Rune Level(2,Ally,False) [11,7] 0x0 0x0 0x0 0x1 [IronAxe,HandAxe,Vulnerary] NoAI
-UNIT Asgeir AsgeirLord Rune Level(1,Ally,False) [11,13] 0x0 0x0 0x0 0x1 [Glaive,IronLance,Vulnerary] NoAI
+UNIT Asgeir AsgeirLord Rune Level(1,Ally,False) [11,12] 0x0 0x0 0x0 0x1 [Glaive,IronLance,Vulnerary] NoAI
 UNIT Ragna RagnaLord Rune Level(1,Ally,False) [10,8] 0x0 0x0 0x0 0x1 [Thunder,Flux,Vulnerary] NoAI
 UNIT Eimund Warrior Rune Level(1,Ally,False) [12,8] 0x0 0x0 0x0 0x1 [BraveAxe,Thunder,Vulnerary] NoAI
 UNIT Ulfr Fighter Rune Level(2,Ally,False) [11,8] 0x0 0x0 0x0 0x1 [IronAxe,Vulnerary] NoAI
@@ -94,7 +94,7 @@ UNIT 0x74 Lancer Yanus Level(5,Enemy,True) [22,11] 0x00 0x00 0x0 0x00 [IronLance
 UNIT 0x74 Myrmidon Yanus Level(5,Enemy,True) [24,15] 0x00 0x00 0x0 0x00 [IronSword] AttackInTwoMovementsAI
 UNIT 0x74 Soldier Yanus Level(5,Enemy,True) [9,5] 0x00 0x00 0x0 0x00 [IronGreatlance] AttackThenEscapeAI
 UNIT 0x74 Myrmidon Yanus Level(5,Enemy,True) [15,4] 0x00 0x00 0x0 0x00 [IronSword] AttackInTwoMovementsAI
-UNIT 0x74 SwordCav Yanus Level(5,Enemy,True) [6,14] 0x00 0x00 0x0 0x00 [IronSword] AttackInTwoMovementsAI
+UNIT 0x74 SwordCav Yanus Level(5,Enemy,True) [7,13] 0x00 0x00 0x0 0x00 [IronSword] AttackInTwoMovementsAI
 UNIT
 
 LysandraRecruit:
@@ -414,6 +414,6 @@ BNE 14 s1 sC
 	GIVEITEM Asgeir
 LABEL 14
 Text(Ch5EndingScene2)
-MNC2 0x06 //goto Chapter 6 
+MNTS 0x0 //goto title screen
 NoFade
 ENDA

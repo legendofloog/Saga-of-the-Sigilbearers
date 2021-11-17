@@ -1,29 +1,29 @@
 INLINE GaidenSpellCostTable,Spell Cost
 Nothing,0
 Iron Sword,0
-Slim Sword,0
+Skyrender,0
 Steel Sword,0
 Silver Sword,0
 Iron Blade,0
 Steel Blade,0
 Silver Blade,0
-Poison Sword,0
-Rapier,0
-Siegfried (Mani Katti),0
+Filet Knife,0
+Wo Dao,0
+Magebane,0
 Brave Sword,0
 Shamshir,0
 Killing Edge,0
 Armorslayer,0
-Wyrmslayer,0
-Light Brand,0
-Runesword,0
+Thunder Sword,0
+Ice Sword,0
+Fire Sword,0
 Lancereaver,0
 Zanbato,0
 Iron Lance,0
-Slim Lance,0
+Harpoon,0
 Steel Lance,0
 Silver Lance,0
-Toxin Lance,0
+Heavy Harpoon,0
 Brave Lance,0
 Killer Lance,0
 Horseslayer,0
@@ -33,46 +33,46 @@ Axereaver,0
 Iron Axe,0
 Steel Axe,0
 Silver Axe,0
-Poison Axe,0
+Steel Poleaxe,0
 Brave Axe,0
 Killer Axe,0
 Halberd,0
 Hammer,0
 Devil Axe,0
-Hand Axe,0
+Short Axe,0
 Tomahawk,0
 Swordreaver,0
-Swordslayer,0
-Hatchet,0
+Iron Poleaxe,0
+Hand Axe,0
 Iron Bow,0
 Steel Bow,0
 Silver Bow,0
-Poison Bow,0
+Steel Longbow,0
 Killer Bow,0
 Brave Bow,0
-Short Bow,0
-Longbow,0
+Silver Longbow,0
+Iron Longbow,0
 Ballista,0
 Iron Ballista,0
 Killer Ballista,0
 Fire,2
 Thunder,2
-Elfire,4
+Wind,4
 Bolting,8
-Fimbulvetr,6
-Binding Blade(Forblaze),8
+Tornado,6
+Forblaze,8
 Excalibur,8
 Lightning,2
-Shine,3
-Divine,4
+Ellight,3
+Naturebane,4
 Purge,8
 Aura,6
-Luce (DUMMY),8
+Resire,8
 Flux,2
 Luna,3
 Nosferatu,4
-Eclipse,8
-Fenrir,6
+Fenrir,8
+Hel,6
 Gleipnir,8
 Heal,2
 Mend,4
@@ -89,7 +89,7 @@ Torch,3
 Hammerne,12
 Unlock,4
 Barrier,4
-Dragon Axe,0
+Anew,0
 Angelic Robe,0
 Energy Ring,0
 Secret Book,0
@@ -99,18 +99,18 @@ Dragonshield,0
 Talisman,0
 Swiftsoles,0
 Body Ring,0
-Hero Crest,0
-Knight Crest,0
-Orion's Bolt,0
-Elysian Whip,0
-Guiding Ring,0
+Iron Greatlance,0
+Steel Greatlance,0
+Silver Greatlance,0
+Longbolt,6
+Farbolt,10
 Chest Key,0
 Door Key,0
-Lockpick,0
+Arcthunder,6
 Vulnerary,0
 Elixir,0
 Pure Water,0
-Antitoxin,0
+Free Slot,0
 Torch,0
 Filli Shield,0
 Member Card,0

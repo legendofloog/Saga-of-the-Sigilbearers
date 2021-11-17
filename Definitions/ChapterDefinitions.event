@@ -6,6 +6,7 @@
 #define Chapter5 0x05 //5
 #define Chapter4xx 0x06 //4xx
 #define Chapter6 0x07 //6
+#define Chapter7 0x08
 #define Chapter10 0x09
 #define Chapter11 0x0A
 #define Chapter12 0x0B
@@ -31,11 +32,11 @@
 #define Chapter2MapChanges 0x09
 #define Chapter3MapChanges 0x0C
 #define Chapter4MapChanges 0x13
-#define Chapter5MapChanges 0x16
-#define Chapter6MapChanges 0x1D
-#define Chapter7MapChanges 0x20
-#define Chapter8MapChanges 0x23
-#define Chapter9MapChanges 0x26
+#define Chapter4xMapChanges 0x16
+#define Chapter5MapChanges 0x1D
+#define Chapter4xxMapChanges 0x20
+#define Chapter6MapChanges 0x23
+#define Chapter7MapChanges 0x26
 #define Chapter10MapChanges 0x29
 #define Chapter11MapChanges 0x2C
 #define Chapter12MapChanges 0x32
@@ -60,11 +61,11 @@
 #define Chapter2Map 0x08
 #define Chapter3Map 0x0B
 #define Chapter4Map 0x11
-#define Chapter5Map 0x15
-#define Chapter6Map 0x1B
-#define Chapter7Map 0x1F
-#define Chapter8Map 0x22
-#define Chapter9Map 0x25
+#define Chapter4xMap 0x15
+#define Chapter5Map 0x1B
+#define Chapter4xxMap 0x1F
+#define Chapter6Map 0x22
+#define Chapter7Map 0x25
 #define Chapter10Map 0x28
 #define Chapter11Map 0x2B
 #define Chapter12Map 0x31
@@ -116,22 +117,26 @@
 
 // ObjectType
 #define FieldsObjectID 0x01
+#define ZoraFieldsObjectID 0x76
 #define FlasubanVillageObjectID 0x88
 #define ZoraFortObjectID 0x8A
 
 
 // PaletteID
 #define SnowFieldsPaletteID 0x2
+#define ZoraFieldsSnowPaletteID 0x77
 #define FlasubanVillageSnowPalette 0x89
 #define FlasubanVillageNormalPaletteID 0x8F
 #define ZoraFortPaletteID 0x8B
 
 // TileConfig
 #define FieldsConfigID 0x03
+#define ZoraFieldsMapchipConfigID 0x78
 #define FlasubanVillageMapchipConfigID 0x92
 #define ZoraFortConfigID 0x8C
 
 // TileAnimations
 #define FieldsMapAnimations 0x05
+#define ZoraFieldsTileAnimationsID 0x79
 #define FlasubanVillageTileAnimationsID 0x95
 

@@ -113,8 +113,7 @@ UNIT 0x6F Fighter Frida Level(3,NPC,True) [22,19] 0x00 0x00 0x0 0x00 [IronAxe] M
 UNIT
 
 SolveigTroops:
-UNIT 0x71 Axe_Dragonrider Solveig Level(4, NPC, True) [0,15] 0x00 0x00 0x0 0x00 [IronAxe] NoAI
-UNIT 0x71 Axe_Dragonrider Solveig Level(4, NPC, True) [0,17] 0x00 0x00 0x0 0x00 [IronAxe] NoAI
+UNIT 0x71 Dracoknight Solveig Level(4, NPC, True) [0,15] 0x00 0x00 0x0 0x00 [IronAxe] NoAI
 UNIT
 
 ElderUnitGroup:
@@ -434,7 +433,6 @@ TEXTEND
 MOVE 15 Solveig [11,11]
 STAL 30
 MOVE 15 0x71 [10,10]
-MOVE 15 0x71 [10,12]
 ENUN
 STAL 30
 MUSC RippleIslandEnding

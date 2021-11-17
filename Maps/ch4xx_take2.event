@@ -26,7 +26,7 @@ ALIGN 4
 MapData:
   #incbin "ch4xx_take2_data.dmp"
 
-SetChapterData(Chapter4xx, FlasubanVillageObjectID, 0, FlasubanVillageSnowPalette, FlasubanVillageMapchipConfigID, Chapter7Map, MapData, FlasubanVillageTileAnimationsID, 0, Chapter7MapChanges)
+SetChapterData(Chapter4xx, FlasubanVillageObjectID, 0, FlasubanVillageSnowPalette, FlasubanVillageMapchipConfigID, Chapter4xxMap, MapData, FlasubanVillageTileAnimationsID, 0, Chapter4xxMapChanges)
 
 ALIGN 4
 HartnerHouseDestroyed:
@@ -82,6 +82,6 @@ MapChangesData:
   TileMap(9, 9, 10, 1, 1, BottomHouseFishGiven)
   TileMapEnd
 
-EventPointerTable(Chapter7MapChanges, MapChangesData)
+EventPointerTable(Chapter4xxMapChanges, MapChangesData)
 
 }

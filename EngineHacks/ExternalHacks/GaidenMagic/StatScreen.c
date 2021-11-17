@@ -10,6 +10,7 @@ TextHandle* GaidenStatScreen(int x, int y, TextHandle* currHandle) // Called fro
 		const ItemData* item = GetItemData(spells[i]);
 		DrawIcon(&StatScreenBufferMap[iconY][iconX],item->iconId,0x4000);
 		
+		
 		tile += 6;
 		currHandle->tileIndexOffset = tile;
 		currHandle->xCursor = 0;
@@ -23,7 +24,7 @@ TextHandle* GaidenStatScreen(int x, int y, TextHandle* currHandle) // Called fro
 		Text_SetColorId(currHandle,TEXT_COLOR_NORMAL);
 		Text_InsertString(currHandle,0,TEXT_COLOR_NORMAL,GetStringFromIndex(item->nameTextId));
 		Text_Display(currHandle,&StatScreenBufferMap[iconY][iconX+2]);
-		
+
 		currHandle++;
 		if ( iconX == x ) { iconX += 8; }
 		else { iconX = x; iconY += 2; }

@@ -26,7 +26,7 @@ ALIGN 4
 MapData:
   #incbin "Ch4x_v2_data.dmp"
 
-SetChapterData(Chapter4x, ZoraFortObjectID, 0, ZoraFortPaletteID, ZoraFortConfigID, Chapter5Map, MapData, 0, 0, Chapter5MapChanges)
+SetChapterData(Chapter4x, ZoraFortObjectID, 0, ZoraFortPaletteID, ZoraFortConfigID, Chapter4xMap, MapData, 0, 0, Chapter4xMapChanges)
 
 ALIGN 4
 Top_Switch_Door:
@@ -77,6 +77,6 @@ MapChangesData:
   TileMap(8, 16, 21, 3, 1, Right_Prisoner_Door)
   TileMapEnd
 
-EventPointerTable(Chapter5MapChanges, MapChangesData)
+EventPointerTable(Chapter4xMapChanges, MapChangesData)
 
 }

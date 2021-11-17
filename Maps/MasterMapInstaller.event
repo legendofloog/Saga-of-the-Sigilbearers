@@ -5,3 +5,4 @@
 #include "Ch4x_v2.event"
 #include "ch4_take2_again.event"
 #include "Ch5_shorter.event"
+#include "ch7.event"

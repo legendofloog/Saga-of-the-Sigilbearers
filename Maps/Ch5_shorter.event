@@ -26,7 +26,7 @@ ALIGN 4
 MapData:
   #incbin "Ch5_shorter_data.dmp"
 
-SetChapterData(Chapter5, FlasubanVillageObjectID, 0, FlasubanVillageNormalPaletteID, FlasubanVillageMapchipConfigID, Chapter6Map, MapData, FlasubanVillageTileAnimationsID, 0, Chapter6MapChanges)
+SetChapterData(Chapter5, FlasubanVillageObjectID, 0, FlasubanVillageNormalPaletteID, FlasubanVillageMapchipConfigID, Chapter5Map, MapData, FlasubanVillageTileAnimationsID, 0, Chapter5MapChanges)
 
 ALIGN 4
 LysandraHouseDestroyed:
@@ -107,6 +107,6 @@ MapChangesData:
   TileMap(14, 20, 16, 1, 1, YellowHouseRightVisited)
   TileMapEnd
 
-EventPointerTable(Chapter6MapChanges, MapChangesData)
+EventPointerTable(Chapter5MapChanges, MapChangesData)
 
 }

@@ -1,4 +1,6 @@
 EventPointerTable(FlasubanVillageTileAnimationsID, SnowVillageAnimation)
+EventPointerTable(ZoraFieldsTileAnimationsID, ZoraFieldsAnimation)
+
 #define tilesetAnimation(speed, size, pointer)    "BYTE speed 0; SHORT size; POIN pointer"
 
 ALIGN 4
@@ -27,6 +29,31 @@ SnowVillageAnimation7:
 #incbin "TilesetAnimations/SnowVillageAnims/snowvillageanims007.dmp"
 
 ALIGN 4
+ZoraFieldsAnimation0:
+#incbin "TilesetAnimations/ZoraFieldsAnims/tile_animasinos.mapanime_1_000.dmp"
+ALIGN 4
+ZoraFieldsAnimation1:
+#incbin "TilesetAnimations/ZoraFieldsAnims/tile_animasinos.mapanime_1_001.dmp"
+ALIGN 4
+ZoraFieldsAnimation2:
+#incbin "TilesetAnimations/ZoraFieldsAnims/tile_animasinos.mapanime_1_002.dmp"
+ALIGN 4
+ZoraFieldsAnimation3:
+#incbin "TilesetAnimations/ZoraFieldsAnims/tile_animasinos.mapanime_1_003.dmp"
+ALIGN 4
+ZoraFieldsAnimation4:
+#incbin "TilesetAnimations/ZoraFieldsAnims/tile_animasinos.mapanime_1_004.dmp"
+ALIGN 4
+ZoraFieldsAnimation5:
+#incbin "TilesetAnimations/ZoraFieldsAnims/tile_animasinos.mapanime_1_005.dmp"
+ALIGN 4
+ZoraFieldsAnimation6:
+#incbin "TilesetAnimations/ZoraFieldsAnims/tile_animasinos.mapanime_1_006.dmp"
+ALIGN 4
+ZoraFieldsAnimation7:
+#incbin "TilesetAnimations/ZoraFieldsAnims/tile_animasinos.mapanime_1_007.dmp"
+
+ALIGN 4
 SnowVillageAnimation:
 tilesetAnimation(0x1C,0x1000,SnowVillageAnimation0)
 tilesetAnimation(0x1C,0x1000,SnowVillageAnimation1)
@@ -36,4 +63,16 @@ tilesetAnimation(0x1C,0x1000,SnowVillageAnimation4)
 tilesetAnimation(0x1C,0x1000,SnowVillageAnimation5)
 tilesetAnimation(0x1C,0x1000,SnowVillageAnimation6)
 tilesetAnimation(0x1C,0x1000,SnowVillageAnimation7)
+WORD 0 0
+
+ALIGN 4
+ZoraFieldsAnimation:
+tilesetAnimation(0x1C,0x1000,ZoraFieldsAnimation0)
+tilesetAnimation(0x1C,0x1000,ZoraFieldsAnimation1)
+tilesetAnimation(0x1C,0x1000,ZoraFieldsAnimation2)
+tilesetAnimation(0x1C,0x1000,ZoraFieldsAnimation3)
+tilesetAnimation(0x1C,0x1000,ZoraFieldsAnimation4)
+tilesetAnimation(0x1C,0x1000,ZoraFieldsAnimation5)
+tilesetAnimation(0x1C,0x1000,ZoraFieldsAnimation6)
+tilesetAnimation(0x1C,0x1000,ZoraFieldsAnimation7)
 WORD 0 0

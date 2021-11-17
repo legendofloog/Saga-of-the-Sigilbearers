@@ -123,3 +123,15 @@ Slv. Grtlance[X]
 
 ## WindName
 Wind[X]
+
+## LongboltName
+Longbolt[X]
+
+## FarboltName
+Farbolt[X]
+
+## ArcthunderName
+Arcthunder[X]
+
+## ArcthunderDesc
+Eff. vs dragons.[X]

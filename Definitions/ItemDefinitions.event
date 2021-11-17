@@ -25,6 +25,9 @@
 #define IronGreatlance 0x64
 #define SteelGreatlance 0x65
 #define SilverGreatlance 0x66
+#define Longbolt 0x67
+#define Farbolt 0x68
+#define Arcthunder 0x6b
 
 
 #define Glaive 0x78

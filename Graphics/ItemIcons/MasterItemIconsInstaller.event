@@ -25,5 +25,8 @@ ItemIconSlot(0x38,"Beansy/Wind.png")
 ItemIconSlot(0x62,"Beansy/Iron GreatLance.png")
 ItemIconSlot(0x63,"Beansy/Steel GreatLance.png")
 ItemIconSlot(0x64,"Beansy/Silver GreatLance.png")
+ItemIconSlot(0x65,"Celice/Longbolt.png")
+ItemIconSlot(0x66,"Celice/Farbolt.png")
+ItemIconSlot(0x69,"Celice/Arcthunder.png")
 POP
 

@@ -13,7 +13,9 @@
 #define Hunter 0x17
 #define Hunter_F 0x18
 #define Axe_Dragonrider 0x1F
+#define DragonRider Axe_Dragonrider
 #define Bow_Dragonrider 0x20
+#define Dracoknight 0x21
 #define Lancer 0x23
 #define Soldier_F 0x24
 #define WindMage 0x25

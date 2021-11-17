@@ -14,11 +14,16 @@ FILL 4*0xFF
 ALIGN 4
 RagnaSpellList:
 	BYTE 1 Flux
+	BYTE 4 Longbolt
+	BYTE 7 Luna
+	BYTE 10 Farbolt
 	BYTE 0 0
 
 ALIGN 4
 EimundSpellList:
 	BYTE 1 Thunder
+	BYTE 1 Arcthunder
+	BYTE 10|0x80 Bolting
 	BYTE 0 0
 
 GaidenList(Ragna,RagnaSpellList) // This macro writes this entry to the spell list table.

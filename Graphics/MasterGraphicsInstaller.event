@@ -11,3 +11,4 @@
 #include "TitleScreen/TitleScreen.event"
 #include "ItemIcons/MasterItemIconsInstaller.event"
 #include "StatusScreen/Installer.event"
+#include "BattleFrame/BattleFrameInstaller.event"

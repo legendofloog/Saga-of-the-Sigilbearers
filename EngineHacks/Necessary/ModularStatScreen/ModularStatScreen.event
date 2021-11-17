@@ -17,6 +17,7 @@
   
   #include "DisplayGrowthsOptions/DisplayGrowthsOptions.event"
   #include "WeaponRankStatScreen/WeaponRankStatScreen.event"
+  #include "SupportRtext/Installer.event"
  
   PUSH
     ORG 0x205b24 //24 for stat screen
@@ -37,12 +38,6 @@
     ORG $87f40
       POIN NewPageNamePalette
 
-    ORG $889d0
-      SHORT $e010 //Temporary r-text fix to prevent freezing
-
-    ORG $889f2  
-      SHORT $BD30
-      BL(RText_Page4_ladder) //this has to be in bl range somewhere
 
     // Make all the arrows line up with the stats and stuff
 
@@ -107,17 +102,6 @@
 	  ORG $86E44
         jumpToHack(MSS_leftpage)
 
-    ORG $087184
-
-      // This is Vanilla Stat Screen Page
-      // This is now free (because unused) space
-      // We'll use this for stuff that needs to
-      // be in BL range
-
-    RText_Page4_ladder:
-      // page 4 helptext hook
-      #incbin "asm/rtext_page4.dmp"
-      POIN RText_Page4
 
   POP
   

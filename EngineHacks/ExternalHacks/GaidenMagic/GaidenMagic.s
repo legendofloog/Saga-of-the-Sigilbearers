@@ -3199,7 +3199,7 @@ GaidenStatScreen:
 @ StatScreen.c:8: 	for ( int i = 0 ; spells[i] ; i++ )
 	cmp	r0, #0	@ _15,
 	bne	.L338		@,
-@ StatScreen.c:32: }
+@ StatScreen.c:33: }
 	movs	r0, r4	@, currHandle
 	add	sp, sp, #28	@,,
 	@ sp needed	@
@@ -3226,58 +3226,58 @@ GaidenStatScreen:
 	adds	r0, r0, r3	@ tmp151, tmp150, tmp195
 	ldr	r3, .L339+12	@ tmp153,
 	bl	.L14		@
-@ StatScreen.c:13: 		tile += 6;
+@ StatScreen.c:14: 		tile += 6;
 	ldr	r3, [sp, #4]	@ tile, %sfp
 	adds	r3, r3, #6	@ tile,
-@ StatScreen.c:15: 		currHandle->xCursor = 0;
+@ StatScreen.c:16: 		currHandle->xCursor = 0;
 	movs	r5, #0	@ tmp155,
-@ StatScreen.c:14: 		currHandle->tileIndexOffset = tile;
+@ StatScreen.c:15: 		currHandle->tileIndexOffset = tile;
 	strh	r3, [r4]	@ tile, MEM[base: currHandle_16, offset: 0B]
-@ StatScreen.c:13: 		tile += 6;
+@ StatScreen.c:14: 		tile += 6;
 	str	r3, [sp, #4]	@ tile, %sfp
-@ StatScreen.c:17: 		currHandle->tileWidth = 6;
+@ StatScreen.c:18: 		currHandle->tileWidth = 6;
 	movs	r3, #6	@ tmp199,
-@ StatScreen.c:22: 		Text_Clear(currHandle);
+@ StatScreen.c:23: 		Text_Clear(currHandle);
 	movs	r0, r4	@, currHandle
-@ StatScreen.c:15: 		currHandle->xCursor = 0;
+@ StatScreen.c:16: 		currHandle->xCursor = 0;
 	strb	r5, [r4, #2]	@ tmp155, MEM[base: currHandle_16, offset: 2B]
-@ StatScreen.c:16: 		currHandle->colorId = TEXT_COLOR_NORMAL;
+@ StatScreen.c:17: 		currHandle->colorId = TEXT_COLOR_NORMAL;
 	strb	r5, [r4, #3]	@ tmp155, MEM[base: currHandle_16, offset: 3B]
-@ StatScreen.c:17: 		currHandle->tileWidth = 6;
+@ StatScreen.c:18: 		currHandle->tileWidth = 6;
 	strb	r3, [r4, #4]	@ tmp198, MEM[base: currHandle_16, offset: 4B]
-@ StatScreen.c:18: 		currHandle->useDoubleBuffer = 0;
+@ StatScreen.c:19: 		currHandle->useDoubleBuffer = 0;
 	strb	r5, [r4, #5]	@ tmp155, MEM[base: currHandle_16, offset: 5B]
-@ StatScreen.c:19: 		currHandle->currentBufferId = 0;
+@ StatScreen.c:20: 		currHandle->currentBufferId = 0;
 	strb	r5, [r4, #6]	@ tmp155, MEM[base: currHandle_16, offset: 6B]
-@ StatScreen.c:20: 		currHandle->unk07 = 0;
+@ StatScreen.c:21: 		currHandle->unk07 = 0;
 	strb	r5, [r4, #7]	@ tmp155, MEM[base: currHandle_16, offset: 7B]
-@ StatScreen.c:22: 		Text_Clear(currHandle);
+@ StatScreen.c:23: 		Text_Clear(currHandle);
 	ldr	r3, .L339+16	@ tmp167,
 	bl	.L14		@
-@ StatScreen.c:23: 		Text_SetColorId(currHandle,TEXT_COLOR_NORMAL);
+@ StatScreen.c:24: 		Text_SetColorId(currHandle,TEXT_COLOR_NORMAL);
 	movs	r1, r5	@, tmp155
 	movs	r0, r4	@, currHandle
 	ldr	r3, .L339+20	@ tmp168,
 	bl	.L14		@
-@ StatScreen.c:24: 		Text_InsertString(currHandle,0,TEXT_COLOR_NORMAL,GetStringFromIndex(item->nameTextId));
+@ StatScreen.c:25: 		Text_InsertString(currHandle,0,TEXT_COLOR_NORMAL,GetStringFromIndex(item->nameTextId));
 	ldr	r3, [sp, #16]	@ item, %sfp
 	ldrh	r0, [r3]	@ *item_32, *item_32
 	ldr	r3, .L339+24	@ tmp170,
 	bl	.L14		@
-@ StatScreen.c:24: 		Text_InsertString(currHandle,0,TEXT_COLOR_NORMAL,GetStringFromIndex(item->nameTextId));
+@ StatScreen.c:25: 		Text_InsertString(currHandle,0,TEXT_COLOR_NORMAL,GetStringFromIndex(item->nameTextId));
 	movs	r2, r5	@, tmp155
-@ StatScreen.c:24: 		Text_InsertString(currHandle,0,TEXT_COLOR_NORMAL,GetStringFromIndex(item->nameTextId));
+@ StatScreen.c:25: 		Text_InsertString(currHandle,0,TEXT_COLOR_NORMAL,GetStringFromIndex(item->nameTextId));
 	movs	r3, r0	@ _10, tmp186
-@ StatScreen.c:24: 		Text_InsertString(currHandle,0,TEXT_COLOR_NORMAL,GetStringFromIndex(item->nameTextId));
+@ StatScreen.c:25: 		Text_InsertString(currHandle,0,TEXT_COLOR_NORMAL,GetStringFromIndex(item->nameTextId));
 	movs	r1, r5	@, tmp155
 	movs	r0, r4	@, currHandle
 	ldr	r5, .L339+28	@ tmp171,
 	bl	.L270		@
-@ StatScreen.c:25: 		Text_Display(currHandle,&StatScreenBufferMap[iconY][iconX+2]);
+@ StatScreen.c:26: 		Text_Display(currHandle,&StatScreenBufferMap[iconY][iconX+2]);
 	ldr	r3, [sp, #20]	@ _56, %sfp
-@ StatScreen.c:25: 		Text_Display(currHandle,&StatScreenBufferMap[iconY][iconX+2]);
+@ StatScreen.c:26: 		Text_Display(currHandle,&StatScreenBufferMap[iconY][iconX+2]);
 	adds	r1, r6, #2	@ tmp172, iconX,
-@ StatScreen.c:25: 		Text_Display(currHandle,&StatScreenBufferMap[iconY][iconX+2]);
+@ StatScreen.c:26: 		Text_Display(currHandle,&StatScreenBufferMap[iconY][iconX+2]);
 	adds	r1, r1, r3	@ tmp173, tmp172, _56
 	ldr	r3, .L339+8	@ tmp202,
 	lsls	r1, r1, #1	@ tmp174, tmp173,
@@ -3285,20 +3285,20 @@ GaidenStatScreen:
 	adds	r1, r1, r3	@ tmp175, tmp174, tmp202
 	ldr	r3, .L339+32	@ tmp177,
 	bl	.L14		@
-@ StatScreen.c:28: 		if ( iconX == x ) { iconX += 8; }
+@ StatScreen.c:29: 		if ( iconX == x ) { iconX += 8; }
 	ldr	r3, [sp, #8]	@ x, %sfp
-@ StatScreen.c:27: 		currHandle++;
+@ StatScreen.c:28: 		currHandle++;
 	adds	r4, r4, #8	@ currHandle,
-@ StatScreen.c:28: 		if ( iconX == x ) { iconX += 8; }
+@ StatScreen.c:29: 		if ( iconX == x ) { iconX += 8; }
 	cmp	r6, r3	@ iconX, x
 	bne	.L336		@,
-@ StatScreen.c:28: 		if ( iconX == x ) { iconX += 8; }
+@ StatScreen.c:29: 		if ( iconX == x ) { iconX += 8; }
 	adds	r6, r6, #8	@ iconX,
 .L337:
 	adds	r7, r7, #1	@ ivtmp.409,
 	b	.L335		@
 .L336:
-@ StatScreen.c:29: 		else { iconX = x; iconY += 2; }
+@ StatScreen.c:30: 		else { iconX = x; iconY += 2; }
 	ldr	r3, [sp, #12]	@ y, %sfp
 	adds	r3, r3, #2	@ y,
 	str	r3, [sp, #12]	@ y, %sfp
@@ -3328,37 +3328,37 @@ GaidenRTextGetter:
 	@ Function supports interworking.
 	@ args = 0, pretend = 0, frame = 0
 	@ frame_needed = 0, uses_anonymous_args = 0
-@ StatScreen.c:37: 	proc->type = SpellsGetter(gpStatScreenUnit,-1)[index]; // I think if this is positive, it treats this as an item bubble.
+@ StatScreen.c:38: 	proc->type = SpellsGetter(gpStatScreenUnit,-1)[index]; // I think if this is positive, it treats this as an item bubble.
 	movs	r1, #1	@ tmp140,
-@ StatScreen.c:35: {
+@ StatScreen.c:36: {
 	push	{r4, r5, r6, lr}	@
-@ StatScreen.c:35: {
+@ StatScreen.c:36: {
 	movs	r4, r0	@ proc, tmp137
-@ StatScreen.c:39: }
+@ StatScreen.c:40: }
 	@ sp needed	@
-@ StatScreen.c:36: 	int index = *(proc->rTextData+0x12);
+@ StatScreen.c:37: 	int index = *(proc->rTextData+0x12);
 	ldr	r3, [r0, #44]	@ tmp141, proc_12(D)->rTextData
 	ldrb	r5, [r3, #18]	@ _2, MEM[(char *)_1 + 18B]
-@ StatScreen.c:37: 	proc->type = SpellsGetter(gpStatScreenUnit,-1)[index]; // I think if this is positive, it treats this as an item bubble.
+@ StatScreen.c:38: 	proc->type = SpellsGetter(gpStatScreenUnit,-1)[index]; // I think if this is positive, it treats this as an item bubble.
 	ldr	r3, .L342	@ tmp126,
 	rsbs	r1, r1, #0	@, tmp140
 	ldr	r0, [r3]	@, gpStatScreenUnit
 	bl	SpellsGetter		@
-@ StatScreen.c:37: 	proc->type = SpellsGetter(gpStatScreenUnit,-1)[index]; // I think if this is positive, it treats this as an item bubble.
+@ StatScreen.c:38: 	proc->type = SpellsGetter(gpStatScreenUnit,-1)[index]; // I think if this is positive, it treats this as an item bubble.
 	movs	r3, r4	@ tmp129, proc
-@ StatScreen.c:37: 	proc->type = SpellsGetter(gpStatScreenUnit,-1)[index]; // I think if this is positive, it treats this as an item bubble.
+@ StatScreen.c:38: 	proc->type = SpellsGetter(gpStatScreenUnit,-1)[index]; // I think if this is positive, it treats this as an item bubble.
 	ldrb	r0, [r0, r5]	@ _7, *_6
-@ StatScreen.c:37: 	proc->type = SpellsGetter(gpStatScreenUnit,-1)[index]; // I think if this is positive, it treats this as an item bubble.
+@ StatScreen.c:38: 	proc->type = SpellsGetter(gpStatScreenUnit,-1)[index]; // I think if this is positive, it treats this as an item bubble.
 	adds	r3, r3, #78	@ tmp129,
 	strh	r0, [r3]	@ _7, proc_12(D)->type
-@ StatScreen.c:38: 	proc->textID = GetItemData(proc->type)->descTextId;
+@ StatScreen.c:39: 	proc->textID = GetItemData(proc->type)->descTextId;
 	ldr	r3, .L342+4	@ tmp131,
 	bl	.L14		@
-@ StatScreen.c:38: 	proc->textID = GetItemData(proc->type)->descTextId;
+@ StatScreen.c:39: 	proc->textID = GetItemData(proc->type)->descTextId;
 	ldrh	r3, [r0, #2]	@ tmp135,
 	adds	r4, r4, #76	@ tmp134,
 	strh	r3, [r4]	@ tmp135, proc_12(D)->textID
-@ StatScreen.c:39: }
+@ StatScreen.c:40: }
 	pop	{r4, r5, r6}
 	pop	{r0}
 	bx	r0
@@ -3380,97 +3380,97 @@ GaidenRTextLooper:
 	@ args = 0, pretend = 0, frame = 0
 	@ frame_needed = 0, uses_anonymous_args = 0
 	push	{r3, r4, r5, r6, r7, lr}	@
-@ StatScreen.c:43: 	int index = *(proc->rTextData+0x12);
+@ StatScreen.c:44: 	int index = *(proc->rTextData+0x12);
 	ldr	r3, [r0, #44]	@ tmp173, proc_26(D)->rTextData
 	ldrb	r4, [r3, #18]	@ _2, MEM[(char *)_1 + 18B]
-@ StatScreen.c:44: 	if ( proc->direction == DIRECTION_RIGHT )
+@ StatScreen.c:45: 	if ( proc->direction == DIRECTION_RIGHT )
 	movs	r3, r0	@ tmp140, proc
 	adds	r3, r3, #80	@ tmp140,
 	ldrh	r3, [r3]	@ _3,
-@ StatScreen.c:42: {
+@ StatScreen.c:43: {
 	movs	r5, r0	@ proc, tmp161
-@ StatScreen.c:44: 	if ( proc->direction == DIRECTION_RIGHT )
+@ StatScreen.c:45: 	if ( proc->direction == DIRECTION_RIGHT )
 	cmp	r3, #16	@ _3,
 	bne	.L345		@,
-@ StatScreen.c:47: 		while ( index >= 0 && !DoesUnitKnowSpell(gpStatScreenUnit,SpellsGetter(gpStatScreenUnit,-1)[index]) )
+@ StatScreen.c:48: 		while ( index >= 0 && !DoesUnitKnowSpell(gpStatScreenUnit,SpellsGetter(gpStatScreenUnit,-1)[index]) )
 	movs	r7, #1	@ tmp160,
 	rsbs	r7, r7, #0	@ tmp160, tmp160
 .L346:
-@ StatScreen.c:47: 		while ( index >= 0 && !DoesUnitKnowSpell(gpStatScreenUnit,SpellsGetter(gpStatScreenUnit,-1)[index]) )
+@ StatScreen.c:48: 		while ( index >= 0 && !DoesUnitKnowSpell(gpStatScreenUnit,SpellsGetter(gpStatScreenUnit,-1)[index]) )
 	ldr	r3, .L354	@ tmp142,
 	ldr	r6, [r3]	@ gpStatScreenUnit.123_4, gpStatScreenUnit
-@ StatScreen.c:47: 		while ( index >= 0 && !DoesUnitKnowSpell(gpStatScreenUnit,SpellsGetter(gpStatScreenUnit,-1)[index]) )
+@ StatScreen.c:48: 		while ( index >= 0 && !DoesUnitKnowSpell(gpStatScreenUnit,SpellsGetter(gpStatScreenUnit,-1)[index]) )
 	movs	r1, r7	@, tmp160
 	movs	r0, r6	@, gpStatScreenUnit.123_4
 	bl	SpellsGetter		@
-@ StatScreen.c:47: 		while ( index >= 0 && !DoesUnitKnowSpell(gpStatScreenUnit,SpellsGetter(gpStatScreenUnit,-1)[index]) )
+@ StatScreen.c:48: 		while ( index >= 0 && !DoesUnitKnowSpell(gpStatScreenUnit,SpellsGetter(gpStatScreenUnit,-1)[index]) )
 	ldrb	r1, [r0, r4]	@ *_7, *_7
 	movs	r0, r6	@, gpStatScreenUnit.123_4
 	bl	DoesUnitKnowSpell		@
-@ StatScreen.c:47: 		while ( index >= 0 && !DoesUnitKnowSpell(gpStatScreenUnit,SpellsGetter(gpStatScreenUnit,-1)[index]) )
+@ StatScreen.c:48: 		while ( index >= 0 && !DoesUnitKnowSpell(gpStatScreenUnit,SpellsGetter(gpStatScreenUnit,-1)[index]) )
 	cmp	r0, #0	@ tmp163,
 	bne	.L344		@,
-@ StatScreen.c:49: 			RTextUp(proc);
+@ StatScreen.c:50: 			RTextUp(proc);
 	movs	r0, r5	@, proc
 	ldr	r3, .L354+4	@ tmp141,
 	bl	.L14		@
-@ StatScreen.c:47: 		while ( index >= 0 && !DoesUnitKnowSpell(gpStatScreenUnit,SpellsGetter(gpStatScreenUnit,-1)[index]) )
+@ StatScreen.c:48: 		while ( index >= 0 && !DoesUnitKnowSpell(gpStatScreenUnit,SpellsGetter(gpStatScreenUnit,-1)[index]) )
 	subs	r4, r4, #2	@ index, index,
 	bpl	.L346		@,
 .L344:
-@ StatScreen.c:63: }
+@ StatScreen.c:64: }
 	@ sp needed	@
 	pop	{r3, r4, r5, r6, r7}
 	pop	{r0}
 	bx	r0
 .L345:
-@ StatScreen.c:53: 	else if ( proc->direction == DIRECTION_DOWN )
+@ StatScreen.c:54: 	else if ( proc->direction == DIRECTION_DOWN )
 	cmp	r3, #128	@ _3,
 	bne	.L344		@,
-@ StatScreen.c:56: 		if ( !DoesUnitKnowSpell(gpStatScreenUnit,SpellsGetter(gpStatScreenUnit,-1)[index]) )
+@ StatScreen.c:57: 		if ( !DoesUnitKnowSpell(gpStatScreenUnit,SpellsGetter(gpStatScreenUnit,-1)[index]) )
 	movs	r1, #1	@,
-@ StatScreen.c:56: 		if ( !DoesUnitKnowSpell(gpStatScreenUnit,SpellsGetter(gpStatScreenUnit,-1)[index]) )
+@ StatScreen.c:57: 		if ( !DoesUnitKnowSpell(gpStatScreenUnit,SpellsGetter(gpStatScreenUnit,-1)[index]) )
 	ldr	r7, .L354	@ tmp145,
 	ldr	r6, [r7]	@ gpStatScreenUnit.126_10, gpStatScreenUnit
-@ StatScreen.c:56: 		if ( !DoesUnitKnowSpell(gpStatScreenUnit,SpellsGetter(gpStatScreenUnit,-1)[index]) )
+@ StatScreen.c:57: 		if ( !DoesUnitKnowSpell(gpStatScreenUnit,SpellsGetter(gpStatScreenUnit,-1)[index]) )
 	rsbs	r1, r1, #0	@,
 	movs	r0, r6	@, gpStatScreenUnit.126_10
 	bl	SpellsGetter		@
-@ StatScreen.c:56: 		if ( !DoesUnitKnowSpell(gpStatScreenUnit,SpellsGetter(gpStatScreenUnit,-1)[index]) )
+@ StatScreen.c:57: 		if ( !DoesUnitKnowSpell(gpStatScreenUnit,SpellsGetter(gpStatScreenUnit,-1)[index]) )
 	ldrb	r1, [r0, r4]	@ *_13, *_13
 	movs	r0, r6	@, gpStatScreenUnit.126_10
 	bl	DoesUnitKnowSpell		@
-@ StatScreen.c:56: 		if ( !DoesUnitKnowSpell(gpStatScreenUnit,SpellsGetter(gpStatScreenUnit,-1)[index]) )
+@ StatScreen.c:57: 		if ( !DoesUnitKnowSpell(gpStatScreenUnit,SpellsGetter(gpStatScreenUnit,-1)[index]) )
 	cmp	r0, #0	@ tmp165,
 	bne	.L344		@,
-@ StatScreen.c:58: 			RTextLeft(proc);
+@ StatScreen.c:59: 			RTextLeft(proc);
 	movs	r0, r5	@, proc
 	ldr	r6, .L354+8	@ tmp148,
 	bl	.L15		@
-@ StatScreen.c:60: 			if ( index % 2 && !DoesUnitKnowSpell(gpStatScreenUnit,SpellsGetter(gpStatScreenUnit,-1)[index-1]) ) { RTextLeft(proc); }
+@ StatScreen.c:61: 			if ( index % 2 && !DoesUnitKnowSpell(gpStatScreenUnit,SpellsGetter(gpStatScreenUnit,-1)[index-1]) ) { RTextLeft(proc); }
 	lsls	r3, r4, #31	@ tmp172, _2,
 	bpl	.L344		@,
-@ StatScreen.c:60: 			if ( index % 2 && !DoesUnitKnowSpell(gpStatScreenUnit,SpellsGetter(gpStatScreenUnit,-1)[index-1]) ) { RTextLeft(proc); }
+@ StatScreen.c:61: 			if ( index % 2 && !DoesUnitKnowSpell(gpStatScreenUnit,SpellsGetter(gpStatScreenUnit,-1)[index-1]) ) { RTextLeft(proc); }
 	movs	r1, #1	@,
-@ StatScreen.c:60: 			if ( index % 2 && !DoesUnitKnowSpell(gpStatScreenUnit,SpellsGetter(gpStatScreenUnit,-1)[index-1]) ) { RTextLeft(proc); }
+@ StatScreen.c:61: 			if ( index % 2 && !DoesUnitKnowSpell(gpStatScreenUnit,SpellsGetter(gpStatScreenUnit,-1)[index-1]) ) { RTextLeft(proc); }
 	ldr	r7, [r7]	@ gpStatScreenUnit.130_16, gpStatScreenUnit
-@ StatScreen.c:60: 			if ( index % 2 && !DoesUnitKnowSpell(gpStatScreenUnit,SpellsGetter(gpStatScreenUnit,-1)[index-1]) ) { RTextLeft(proc); }
+@ StatScreen.c:61: 			if ( index % 2 && !DoesUnitKnowSpell(gpStatScreenUnit,SpellsGetter(gpStatScreenUnit,-1)[index-1]) ) { RTextLeft(proc); }
 	rsbs	r1, r1, #0	@,
 	movs	r0, r7	@, gpStatScreenUnit.130_16
 	bl	SpellsGetter		@
-@ StatScreen.c:60: 			if ( index % 2 && !DoesUnitKnowSpell(gpStatScreenUnit,SpellsGetter(gpStatScreenUnit,-1)[index-1]) ) { RTextLeft(proc); }
+@ StatScreen.c:61: 			if ( index % 2 && !DoesUnitKnowSpell(gpStatScreenUnit,SpellsGetter(gpStatScreenUnit,-1)[index-1]) ) { RTextLeft(proc); }
 	adds	r4, r0, r4	@ tmp156, tmp166, _2
 	subs	r4, r4, #1	@ tmp157,
 	movs	r0, r7	@, gpStatScreenUnit.130_16
 	ldrb	r1, [r4]	@ *_19, *_19
 	bl	DoesUnitKnowSpell		@
-@ StatScreen.c:60: 			if ( index % 2 && !DoesUnitKnowSpell(gpStatScreenUnit,SpellsGetter(gpStatScreenUnit,-1)[index-1]) ) { RTextLeft(proc); }
+@ StatScreen.c:61: 			if ( index % 2 && !DoesUnitKnowSpell(gpStatScreenUnit,SpellsGetter(gpStatScreenUnit,-1)[index-1]) ) { RTextLeft(proc); }
 	cmp	r0, #0	@ tmp167,
 	bne	.L344		@,
-@ StatScreen.c:60: 			if ( index % 2 && !DoesUnitKnowSpell(gpStatScreenUnit,SpellsGetter(gpStatScreenUnit,-1)[index-1]) ) { RTextLeft(proc); }
+@ StatScreen.c:61: 			if ( index % 2 && !DoesUnitKnowSpell(gpStatScreenUnit,SpellsGetter(gpStatScreenUnit,-1)[index-1]) ) { RTextLeft(proc); }
 	movs	r0, r5	@, proc
 	bl	.L15		@
-@ StatScreen.c:63: }
+@ StatScreen.c:64: }
 	b	.L344		@
 .L355:
 	.align	2

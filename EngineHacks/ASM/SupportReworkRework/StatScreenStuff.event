@@ -1,0 +1,65 @@
+
+ALIGN 4
+SupportRTextStatNames:
+String("Atk") ; BYTE 0x00
+String("Def") ; BYTE 0x00
+String("Hit") ; BYTE 0x00
+String("Avo") ; BYTE 0x00
+String("Crt") ; BYTE 0x00
+String("Ddg") ; BYTE 0x00
+
+ALIGN 4
+TotalCurrentSupportBonusesText:
+String("Total current bonuses:"); BYTE 0x00
+
+//ALIGN 4
+//MSS_page4:
+//#incbin "mss_page4.dmp"
+
+//ALIGN 4
+//Page4 stuff
+//These first five should not be edited, they're the same as the other statscreen pages
+
+  
+//Below here is customizable
+//X/Y values are relative to the "moving supports around" edits above, will need to be changed if you're keeping them on page 3
+
+
+
+ALIGN 4
+SupportStatScreenBlueBox:
+#incbin "StatScreenBigBox.dmp"
+
+ALIGN 4
+SupportStatScreenSmallBox:
+#incbin "StatScreenSmallBox.dmp"
+
+/*ALIGN 4 // This has been replaced with the chad tmx2tsa :sunglasses:.
+SupportStatScreenBlueBox:
+BYTE 15 3 // Width, Height.
+SHORT 0x07 0x0409 0x0A 0x0A 0x0A 0x0A 0x0A 0x0A 0x0A 0x0A 0x0A 0x0A 0x0A 0x0A 0x09 0x08 // Bottom row, dark background
+SHORT 0x04 0x05 0x05 0x05 0x05 0x05 0x05 0x05 0x05 0x05 0x05 0x05 0x05 0x05 0x05 0x06
+SHORT 0x04 0x0409 0x0A 0x0A 0x0A 0x0A 0x0A 0x0A 0x0A 0x0A 0x0A 0x0A 0x0A 0x0A 0x09 0x06 // Dark background
+SHORT 0x01 0x02 0x02 0x02 0x02 0x02 0x02 0x02 0x02 0x02 0x02 0x02 0x02 0x02 0x02 0x03*/
+
+/* Tile notes:
+		0x00 = Blank
+		0x01 = Upper left corner
+		0x02 = Normal but upper edge is a darker horizontal line. This is intended as an upper border
+		0x03 = Upper right corner
+		0x04 = Left edge border without corners
+		0x05 = Normal
+		0x06 = Right edge border without corners
+		0x07 = Bottom left corner
+		0x08 = Bottom right corner
+		0x09 = Normal but darker. 0x09 seems to surround lines of 0x0A. Maybe a transition between 0x05 and 0x0A?
+		0x0A = Darker blue designed to be behind numbers
+		0x0B = Right-facing white arrow
+		0x0C = Small flourish on white horizontal line (leads into center rhombus shape)
+		0x0D = White horizontal line
+		0x0E = Wite horizontal line beginning/end
+		0x0F+ = Blank
+		
+		0x04 in the higher byte is a horizontal flip
+*/
+

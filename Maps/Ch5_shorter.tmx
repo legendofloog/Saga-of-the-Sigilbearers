@@ -6,8 +6,8 @@
    <property name="Anims1" value="FlasubanVillageTileAnimationsID"/>
    <property name="ChapterID" value="Chapter5"/>
    <property name="Main" value=""/>
-   <property name="MapChangesID" value="Chapter6MapChanges"/>
-   <property name="MapID" value="Chapter6Map"/>
+   <property name="MapChangesID" value="Chapter5MapChanges"/>
+   <property name="MapID" value="Chapter5Map"/>
    <property name="ObjectType" value="FlasubanVillageObjectID"/>
    <property name="PaletteID" value="FlasubanVillageNormalPaletteID"/>
    <property name="TileConfig" value="FlasubanVillageMapchipConfigID"/>

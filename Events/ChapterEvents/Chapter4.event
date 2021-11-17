@@ -311,24 +311,24 @@ BEQ 5 s0 sC //if not set goto LABEL 0x14
 	//TEXTSHOW Ch4GaidenChoiceText
 	//TEXTEND
 	//REMA
-	SVAL s1 1
-	BNE 11 s1 sC
-		EVBIT_MODIFY 0
-		//Text(Ch4GaidenChoiceYesText)
-		MNC2 0x04
-		NoFade
-		ENDB
-	LABEL 11
-	EVBIT_MODIFY 0
+	//SVAL s1 1
+	//BNE 11 s1 sC
+	//EVBIT_MODIFY 0
+	//Text(Ch4GaidenChoiceYesText)
+	MNC2 Chapter4x
+	//NoFade
+	//ENDB
+	//LABEL 11
+	//EVBIT_MODIFY 0
 	//Text(Ch4GaidenChoiceNoText)
-	MNC2 0x05
+	//MNC2 0x05
 	NoFade
 	ENDB
 LABEL 5
 SetBackground(0x15)
 MUSC 0x2B
 Text(Ch4EndingSceneGaidenNotGet1)
-MNC2 0x05 //goto titlescreen
+MNC2 Chapter5 //goto titlescreen
 LABEL 6
 NoFade
 ENDA

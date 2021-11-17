@@ -6,6 +6,7 @@ SotS Specific
 Portraits: MournfulRelic, RandomWizard, Citrus, devisio, sdaht
 Battle Animation Palettes: sdaht
 Map Palettes: pandan
+Maps: RW (Chapter 7)
 
 F2U Mugs: Laurent_Lacroix, Levin, CapybaraInSpace, Melia
 
@@ -15,7 +16,7 @@ Class Cards:
 Aruka, Yggdra, N426, Rasdel
 
 Item Icons:
-Beansy
+Beansy, Celice
 
 Map Sprites:
 SALVAGED, flasuban, DerTheVaporeon, Alusq, L95, MeatOfJustice, Leif, Agro, Rexacuse, Peerless, Warpath
@@ -24,7 +25,11 @@ Spell Anims: HyperGammaSpaces
 
 Tilesets: Flasuban, N426, Zoramine Fae, Vennobennu
 
+Map Palettes: Jellyunicorn
+
 Title Screen: Title Scroll by Rivian, Background from Majin Tensei (ported by Fenreir)
+
+Battle Frame: Hypergammaspaces
 
 Status Screen: SD9K02
 
@@ -41,4 +46,4 @@ Other Engine Hacks: Tequila, hypergammaspaces, Sme, 7743, Pikmin1211, Clendo, St
 
 Event Assembler: Nintenlord, Crazycolorz5, Vennobennu, Gryz, Circleseverywhere, Camdar, Zahlman
 
-Playtesting: Rivian, Warpath, Pikmin1211
+Playtesting: Rivian, Warpath, Pikmin1211, Addam

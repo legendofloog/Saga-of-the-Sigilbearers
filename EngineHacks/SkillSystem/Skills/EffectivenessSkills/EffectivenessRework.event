@@ -40,6 +40,9 @@ WORD 0
 FlierEffectiveness:
 SetWeaponEffectiveness(FlierType, 6)
 WORD 0
+DragonEffectiveness:
+SetWeaponEffectiveness(DragonType, 6)
+WORD 0
 
 #define SetProtection(type_list) "SHORT 0 type_list"
 FlierProtection:

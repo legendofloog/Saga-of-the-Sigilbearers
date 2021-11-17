@@ -148,3 +148,6 @@ Raises Magic.[X]
 #include "CharClassItemsEtc/MusicNames.txt"
 
 #include "CharClassItemsEtc/ChapterNamesDescs.txt"
+
+## BaseConvoSelectConvoText
+Select conversation?[No][X]

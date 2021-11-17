@@ -74,7 +74,7 @@ Tutorial:
 END_MAIN
 
 Units1:
-UNIT Rune Outcast Rune Level(2,Ally,False) [34,17] 0x0 0x0 0x0 0x1 [HandAxe,IronAxe,Vulnerary] NoAI
+UNIT Rune Outcast Rune Level(3,Ally,False) [34,17] 0x0 0x0 0x0 0x1 [HandAxe,IronAxe,Vulnerary] NoAI
 UNIT Asgeir AsgeirLord Rune Level(1,Ally,False) [33,18] 0x0 0x0 0x0 0x1 [Glaive,IronLance,Vulnerary] NoAI
 UNIT Brynja SwordKnight Rune Level(9,Ally,False) [34,19] 0x0 0x0 0x0 0x1 [SilverSword,IronSword,Vulnerary] NoAI
 UNIT
@@ -220,6 +220,11 @@ MOVE 10 Ragna [29, 18]
 ENUN
 FlashCursor(Ragna,60)
 Text(Ch1Scene3Part3)
+SetSupport(Rune,Ragna,CSupport)
+SetSupport(Rune,Asgeir,CSupport)
+SetSupport(Asgeir,Brynja,CSupport)
+SetSupport(Ragna,Eimund,CSupport)
+SetSupport(Ulfr,Ivarr,CSupport)
 NoFade
 ENDA
 

@@ -1,4 +1,6 @@
 
+#include "SupportReworkRework/SupportRework.event"
+
 #include "Fixes/MasterFixesInstaller.event"
 #include "FixedAutolevels.event"
 
